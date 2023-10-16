@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    font-family:'Poppins', sans-serif;
+
+    --p1-primaria:#000000;
+    --p1-secundaria:#3E432E;
+    --p1-ternaria:#616F39;
+    --p1-quaternaria:#A7D129;
+
+    --p2-primaria:#212121;
+    --p2-secundaria:#323232;
+    --p2-ternaria:#0D7377;
+    --p2-quaternaria:#14FFEC;
+
+    --p3-primaria:#03001C;
+    --p3-secundaria:#301E67;
+    --p3-ternaria:#5B8F89;
+    --p3-quaternaria:#B6EADA;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100vh;
+    
+}
+html::-webkit-scrollbar{
+    width: 0;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .tela-login{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    .tela-login .logo{
+        height: 50vh;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 5.8), transparent), url("../imagens/albunsRover.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        color: whitesmoke;
+    }
+    .tela-login .logo img{
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    .tela-login .logo h2{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding: auto;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+    }
+    .tela-login .logo p{
+        position: absolute;
+        width: 70%;
+        bottom: 0;
+        font-size: 12px;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #a3a3a3;
+    }
+
+
+    .tela-login .login-btns{
+        height: 50vh;
+        background-color: var(--p1-primaria);
+        
+    }
+    
+    .tela-login .login-btns button{
+        width: 80%;
+        height: 10%;
+        background-image: linear-gradient(to right, var(--p1-ternaria), var(--p1-quaternaria));
+        border: none;
+        border-radius: 10px;
+        color: var(--p1-primaria);
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    .tela-login .login-btns #or{
+        margin-top: 20px;
+        color: #a3a3a3;
+        font-size: 14px;
+    }
+    .tela-login .login-btns #btn{
+        letter-spacing: 2px;
+        width: 80%;
+        height: 10%;
+        text-decoration: none;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 1px solid white;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+}
+
