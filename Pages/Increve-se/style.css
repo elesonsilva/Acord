@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    font-family:'Poppins', sans-serif;
+
+    --p1-primaria:#000000;
+    --p1-secundaria:#3E432E;
+    --p1-ternaria:#616F39;
+    --p1-quaternaria:#A7D129;
+
+    --p2-primaria:#212121;
+    --p2-secundaria:#323232;
+    --p2-ternaria:#0D7377;
+    --p2-quaternaria:#14FFEC;
+
+    --p3-primaria:#03001C;
+    --p3-secundaria:#301E67;
+    --p3-ternaria:#5B8F89;
+    --p3-quaternaria:#B6EADA;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100vh;
+    
+}
+html::-webkit-scrollbar{
+    width: 0;
+    
+}
+@media screen and (max-width: 600px) {
+    body{
+        background-color: var(--p1-primaria);
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    h2{
+        top: 0;
+        font-size: 30px;
+        margin-top: -20px;
+    }
+    form{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .input-box{
+        position: relative;
+        height: 50px;
+        margin: 10px 0;
+        text-align: left;
+        
+    }
+    .input-box label{
+        position: absolute;
+        left: 10px;
+        top: 0;
+        font-size: 16px;
+        font-weight: 500;
+        pointer-events: none;
+        transition: 0.5s;
+    }
+    .input-box input{
+        background: transparent;
+        border: none;
+        color: white;
+        width: 100%;
+        font-weight: 700;
+        font-size: 16px;
+        border-bottom: 2px solid white;
+        box-sizing: border-box;
+        outline: none;
+        padding: 0px 10px ;
+        
+    }
+    
+    .input-box input:focus~.L-inputBox,
+    .input-box:valid~.L-inputBox {
+        color: var(--p1-quaternaria);
+        top: -35%;
+    }
+    .input-box p{
+        position: absolute;
+        bottom: 0;
+        letter-spacing: 0.5px;
+        color: #a3a3a3;
+        margin-left: 5px;
+    }
+    form button{
+        width: 100%;
+        height: 45px;
+        background: var(--p1-quaternaria);
+        border: none;
+        outline: none;
+        border-radius: 60px;
+        cursor: pointer;
+        font-size: 18px;
+        color: var(--p1-primaria);
+        font-weight: 700;
+    }
+    .L-ano{
+        color: var(--p1-quaternaria);
+        margin-top: -15px;
+    }
+}

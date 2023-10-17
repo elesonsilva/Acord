@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscrever-se</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <img src="../imagens/logoIncrevaseVerde.png" alt="">
-    <form>
+    <img src="../../imagens/logoIncrevaseVerde.png" alt="" class="imagem-logo">
+    <h2>Inscrever-se</h2>
+    <form action="#">
         <div class="input-box">
-            <label for="NomePerfil">Nome</label>
             <p>Esse nome aparecerá no seu perfil</p>
             <input type="text" name="NomePerfil" id="NomePerfil">
+            <label for="NomePerfil" class="L-inputBox">Nome</label>
         </div>
         <div class="input-box">
-            <label for="anoNasc">Data de Nascimento</label>
             <input type="date" name="anoNasc" id="anoNasc">
+            <label for="anoNasc" class="L-ano">Data de Nascimento</label>
         </div>
         <div class="inputgenero">
-            <label for="Genero">Gênero</label>
+            <h2>Genero</h2>
             <input type="radio" name="Genero" id="Genero" value="Homem">
             <label for="Homem">Homem</label>
             <input type="radio" name="Genero" id="Genero" value="Mulher">
@@ -33,16 +35,16 @@
             <label for="Prefiro não dizer">Prefiro não dizer</label>
         </div>
         <div class="input-box">
-            <label for="email">E-mail</label>
             <input type="email" name="email" id="email">
+            <label for="email" class="L-inputBox">E-mail</label>
         </div>
         <div class="input-box">
-            <label for="ConfirmEmail">Confirme seu E-mail</label>
             <input type="email" name="ConfirmEmail" id="ConfirmEmail">
+            <label for="ConfirmEmail" class="L-inputBox">Confirme seu E-mail</label>
         </div>
         <div class="input-box">
-            <label for="Senha">Senha</label>
             <input type="password" name="Senha" id="Senha">
+            <label for="Senha" class="L-inputBox">Senha</label>
         </div>
         <button type="submit">Inscrever-se</button>
     </form>
