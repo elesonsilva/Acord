@@ -56,7 +56,7 @@ html::-webkit-scrollbar{
     .tela-login .logo img{
         text-align: center;
         position: absolute;
-        top: 15%;
+        top: 10%;
         left: 50%;
         transform: translate(-50%, 50%);
     }
@@ -71,7 +71,7 @@ html::-webkit-scrollbar{
         font-size: 20px;
         font-weight: 700;
         letter-spacing: 2px;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
     .tela-login .logo p{
         position: absolute;
