@@ -14,7 +14,7 @@
     <form action="#">
         <div class="input-box">
             <p>Esse nome aparecerá no seu perfil</p>
-            <input type="text" name="NomePerfil" id="NomePerfil">
+            <input type="text" name="NomePerfil" id="NomePerfil" required="favor preencha esse campo">
             <label for="NomePerfil" class="L-inputBox">Nome</label>
         </div>
         <div class="input-box">
@@ -23,28 +23,47 @@
         </div>
         <div class="inputgenero">
             <h2>Genero</h2>
-            <input type="radio" name="Genero" id="Genero" value="Homem">
-            <label for="Homem">Homem</label>
-            <input type="radio" name="Genero" id="Genero" value="Mulher">
-            <label for="Mulher">Mulher</label>
-            <input type="radio" name="Genero" id="Genero" value="Não binário">
-            <label for="Não binário">Não binário</label>
-            <input type="radio" name="Genero" id="Genero" value="Outro">
-            <label for="Outro">Outro</label>
-            <input type="radio" name="Genero" id="Genero" value="Prefiro não dizer">
-            <label for="Prefiro não dizer">Prefiro não dizer</label>
+            <input type="radio" name="Genero" id="Genero" value="Homem" class="input-radio">
+            <label for="Homem">
+                <div class="radio-btn"></div>
+                <span>Homem</span>
+            </label>
+            <input type="radio" name="Genero" id="Genero" value="Mulher" class="input-radio">
+            <label for="Mulher">
+                <div class="radio-btn"></div>
+                <span>Mulher</span>
+            </label>
+            <input type="radio" name="Genero" id="Genero" value="Não binário" class="input-radio">
+            <label for="Não binário">
+                <div class="radio-btn"></div>
+                <span>Não binário</span>
+            </label>
+            <input type="radio" name="Genero" id="Genero" value="Outro" class="input-radio">
+            <label for="Outro">
+                <div class="radio-btn"></div>
+                <span>Outro</span>
+            </label>
+            <input type="radio" name="Genero" id="Genero" value="Prefiro não dizer" class="input-radio">
+            <label for="Prefiro não dizer">
+                <div class="radio-btn"></div>
+                <span>Prefiro não dizer</span>
+            </label>
         </div>
         <div class="input-box">
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required="favor preencha esse campo">
             <label for="email" class="L-inputBox">E-mail</label>
         </div>
         <div class="input-box">
-            <input type="email" name="ConfirmEmail" id="ConfirmEmail">
+            <input type="email" name="ConfirmEmail" id="ConfirmEmail" required="favor preencha esse campo">
             <label for="ConfirmEmail" class="L-inputBox">Confirme seu E-mail</label>
         </div>
         <div class="input-box">
-            <input type="password" name="Senha" id="Senha">
+            <input type="password" name="Senha" id="Senha" required="favor preencha esse campo">
             <label for="Senha" class="L-inputBox">Senha</label>
+        </div>
+        <div class="input-box">
+            <input type="password" name="Senha" id="Senha" required="favor preencha esse campo">
+            <label for="Senha" class="L-inputBox">Confirme a senha</label>
         </div>
         <button type="submit">Inscrever-se</button>
     </form>

@@ -68,6 +68,17 @@ html::-webkit-scrollbar{
         pointer-events: none;
         transition: 0.5s;
     }
+    .input-box .L-inputBox{
+        position: absolute;
+        left: 10px;
+        top: 0;
+        font-size: 16px;
+        font-weight: 500;
+        pointer-events: none;
+        transition: 0.5s;
+        color: white;
+    }
+    
     .input-box input{
         background: transparent;
         border: none;
@@ -78,15 +89,17 @@ html::-webkit-scrollbar{
         border-bottom: 2px solid white;
         box-sizing: border-box;
         outline: none;
-        padding: 0px 10px ;
+        
+        
         
     }
     
-    .input-box input:focus~.L-inputBox,
-    .input-box:valid~.L-inputBox {
-        color: var(--p1-quaternaria);
+    .input-box input:valid ~ .L-inputBox,
+    .input-box input:focus ~ .L-inputBox{
         top: -35%;
+        color: var(--p1-quaternaria);
     }
+    
     .input-box p{
         position: absolute;
         bottom: 0;
@@ -94,6 +107,57 @@ html::-webkit-scrollbar{
         color: #a3a3a3;
         margin-left: 5px;
     }
+    .inputgenero{
+        width: 100%;
+        display: block;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .inputgenero h2{
+        font-size: 18px;
+        letter-spacing: 1.5px;
+    }
+    .inputgenero .input-radio{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 0;
+        margin-left: 40px;
+        opacity: 0;
+    }
+    .inputgenero label{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .inputgenero .radio-btn{
+        width: 20px;
+        height: 20px;
+        border-radius: 100px;
+        border: 1px solid white;
+        display: block;
+        margin-right: 1rem;
+    }
+    input[type="radio"] + label{
+        color: #ccc;
+        font-style: italic;
+        -webkit-box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0,2);
+        box-shadow: 0px 0px 1px 1px rgba(255, 255 , 255, 0,2);;
+    }
+    input[type="radio"]:checked + label span{
+        color: var(--p1-quaternaria);
+    }
+    input[type="radio"]:checked + label span ~ .radio-btn{
+        background-image: radial-gradient(circle, white 20%,var(--p1-quaternaria));
+        background-color: var(--p1-quaternaria);
+    }
+    
     form button{
         width: 100%;
         height: 45px;
