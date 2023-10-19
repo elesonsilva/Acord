@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    font-family:'Poppins', sans-serif;
+
+    --p1-primaria:#000000;
+    --p1-secundaria:#3E432E;
+    --p1-ternaria:#616F39;
+    --p1-quaternaria:#A7D129;
+
+    --p2-primaria:#212121;
+    --p2-secundaria:#323232;
+    --p2-ternaria:#0D7377;
+    --p2-quaternaria:#14FFEC;
+
+    --p3-primaria:#03001C;
+    --p3-secundaria:#301E67;
+    --p3-ternaria:#5B8F89;
+    --p3-quaternaria:#B6EADA;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    
+    
+}
+html::-webkit-scrollbar{
+    width: 0;
+    
+}
+
+@media screen and (max-width: 600px){
+    body{
+        width: 100%;
+        background-color: var(--p1-primaria);
+        color: white;
+        
+    }
+    .topo-perfil{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .topo-perfil .foto-perfil-user{
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+    }
+    .topo-perfil .back-notificacoes{
+        background-color: #323232;
+        border-radius: 20px;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    .topo-perfil .back-notificacoes .bi{
+        position: relative;
+        left: 25%;
+        top: 25%;
+    }
+    .plays-favoritos{
+        position: relative;
+        width: 90%;
+        left: 5%;
+        margin-top: 10%;
+    }
+    .plays-favoritos .img-disco-music{
+        width: 100%;
+        border-radius: 20px;
+    }
+}

@@ -93,7 +93,7 @@ html::-webkit-scrollbar{
     .tela-login .login-btns button{
         width: 90%;
         height: 14%;
-        background-image: linear-gradient(to right, var(--p1-ternaria), var(--p1-quaternaria));
+        background: var(--p1-quaternaria);
         border: none;
         border-radius: 10px;
         color: var(--p1-primaria);
