@@ -184,4 +184,12 @@ html::-webkit-scrollbar{
         color: var(--p1-quaternaria);
         margin-top: -25px;
     }
+    body .btnvoltar{
+        color: #a3a3a3;
+        padding-bottom: 20px;
+    }
+    body a{
+        color: white;
+        text-decoration: none;
+    }
 }
