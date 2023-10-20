@@ -70,37 +70,86 @@ html::-webkit-scrollbar{
     .plays-favoritos{
         position: relative;
         width: 90%;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .plays-favoritos img{
+        position: relative;
+        width: 100%;
         left: 5%;
-        margin-top: 10%;
+        margin-top: 5%;
         height: 180px;
-        background-image: url(Imagens-tela-principal/ed-sheeran-eyes-closed-.jpg);
+        /*background-image: url(Imagens-tela-principal/ed-sheeran-eyes-closed-.jpg);*/
         border-radius: 20px;
+        object-fit: cover;
+        
     }
     
     .plays-favoritos .musica-faixa{
         position: absolute;
         width: 100%;
+        left: 5%;
         bottom: 0;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-top: 10px;
         
+    }
+    .plays-favoritos  .musica-faixa h2{
+        font-size: 18px;
+        margin-left: 5%;
+        font-weight: 700;
+        padding: 10px 0 5px 5px;
+        line-height: 10px;
+        
+    }
+    .plays-favoritos  .musica-faixa p{
+        position: relative;
+        font-size: 14px;
+        margin-left: 5%;
+        padding: 0px 0px 15px 5px;
+        color: var(--p1-quaternaria);
+        font-weight: 700;
     }
     .plays-favoritos .musica-faixa a{
         position: absolute;
         right: 0;
         bottom: 0;
-        margin-right: 20px;
-        margin-bottom: 20px;
+        margin-right: 15px;
+        margin-bottom: 15px;
         background-color: var(--p1-quaternaria);
-        padding: 10px 25px;
+        padding: 8px 20px 8px 35px;
         text-decoration: none;
         color: black;
         border-radius: 20px;
         font-size: 18px;
         font-weight: 700;
-        align-items: center;
+        
     }
     .plays-favoritos .musica-faixa .bi{
         position: absolute;
         left: 0;
-        margin-right: 5px;
+        margin-left: 8px;
+        padding-bottom: 5px;
+    }
+    .two{
+        position: absolute;
+        top: 0;
+        margin-top: 19%;
+        width: 80%;
+        left: 5%;
+        z-index: -1;
+    }
+    .tree{
+        position: absolute;
+        top: 0;
+        margin-top: 18%;
+        width: 70%;
+        left: 10%;
+        z-index: -2;
     }
 }
