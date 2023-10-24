@@ -175,9 +175,9 @@ html::-webkit-scrollbar{
     }
     .secao-pesquisa .btn-pesquisa{
         background-color: #323232;
-        border-radius: 20px;
-        width: 50px;
-        height: 50px;
+        border-radius: 15px;
+        width: 40px;
+        height: 40px;
         align-items: center;
         justify-content: center;
     }
@@ -188,4 +188,69 @@ html::-webkit-scrollbar{
         color: white;
     }
 
+
+
+    .text-options{
+        position: relative;
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        left: 5%;
+        margin-top: 5%;
+    }
+    .text-options h3{
+        color: #7e7e7e;
+        font-size: 18px;
+    }
+    .text-options a{
+        text-decoration: none;
+        color: #7e7e7e;
+        font-size: 16px;
+        
+    }
+
+    .scroll-horizontal{
+        position: absolute;
+        width: 90%;
+        height: 200px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        left: 5%;
+    
+    }
+    .scroll-horizontal .playlists{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        left: 0;
+        transition: 0.5s all ease-in-out;
+    }
+    .scroll-horizontal .playlists .capa-playlist{
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 60px;
+        margin: 15px 10px;
+        text-align: center;        
+    }
+    .capa-playlist img{
+        width: 100px;
+        height: 110px;
+        background-size: cover;
+        border-radius: 25px;
+    }
+    .capa-playlist .playlist-titulo{
+        width: 100%;
+        font-size: 14px;
+    }
+    .capa-playlist .desc-playlist{
+        width: 100%;
+        color: #7e7e7e;
+        font-size: 10px;
+        font-weight: 700;
+    }
 }
