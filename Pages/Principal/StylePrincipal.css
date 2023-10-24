@@ -253,4 +253,7 @@ html::-webkit-scrollbar{
         font-size: 10px;
         font-weight: 700;
     }
+    .models{
+        display: none;
+    }
 }
