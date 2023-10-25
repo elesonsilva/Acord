@@ -9,9 +9,24 @@ TopPlaylists.map((intem, index)=>{
 
 })
 
-    const swiper = new Swiper(".playlists", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        centeredSlides: false,
+   let conteiner = document.querySelector('.scroll-horizontal')
+   let card = document.querySelector('.playlists')
+   let isPressDonw = false;
+   let cursorXSpace;
+   
 
-    });
+   conteiner.addEventListener('touchstart', (e)=>{
+    //alert('prestou')
+    isPressDonw = true;
+    cursorXSpace = e.offsetX - card.offsetLeft;
+    console.log(card.offsetLeft)
+    
+   })
+   
+   conteiner.addEventListener('touchmove', (e)=>{
+    if(!isPressDonw) return;
+    e.preventDefault()
+    card.style.left = `${e.offsetX - cursorXSpace}px`
+    
+   })
+   

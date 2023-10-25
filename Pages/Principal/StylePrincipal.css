@@ -222,12 +222,12 @@ html::-webkit-scrollbar{
     }
     .scroll-horizontal .playlists{
         position: absolute;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        display: grid;
+        grid-template-columns: repeat(6,120px);
         align-items: center;
         left: 0;
         transition: 0.5s all ease-in-out;
+        pointer-events: none;
     }
     .scroll-horizontal .playlists .capa-playlist{
         display: flex;
@@ -256,4 +256,27 @@ html::-webkit-scrollbar{
     .models{
         display: none;
     }
+
+
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 }
