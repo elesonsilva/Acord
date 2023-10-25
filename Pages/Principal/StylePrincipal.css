@@ -209,50 +209,7 @@ html::-webkit-scrollbar{
         
     }
 
-    .scroll-horizontal{
-        position: absolute;
-        width: 90%;
-        height: 200px;
-        background-color: transparent;
-        display: flex;
-        flex-direction: row;
-        overflow: hidden;
-        left: 5%;
     
-    }
-    .scroll-horizontal .playlists{
-        position: absolute;
-        display: grid;
-        grid-template-columns: repeat(6,120px);
-        align-items: center;
-        left: 0;
-        transition: 0.5s all ease-in-out;
-        pointer-events: none;
-    }
-    .scroll-horizontal .playlists .capa-playlist{
-        display: flex;
-        flex-direction: column;
-        width: 100px;
-        height: 60px;
-        margin: 15px 10px;
-        text-align: center;        
-    }
-    .capa-playlist img{
-        width: 100px;
-        height: 110px;
-        background-size: cover;
-        border-radius: 25px;
-    }
-    .capa-playlist .playlist-titulo{
-        width: 100%;
-        font-size: 14px;
-    }
-    .capa-playlist .desc-playlist{
-        width: 100%;
-        color: #7e7e7e;
-        font-size: 10px;
-        font-weight: 700;
-    }
     .models{
         display: none;
     }
@@ -260,23 +217,35 @@ html::-webkit-scrollbar{
 
 
     .swiper {
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 180px;
+        margin-top: 10px;
       }
   
       .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        width: 100px;
+        height: 60px;
+        text-align: center;  
+        
       }
   
       .swiper-slide img {
         display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        width: 100px;
+        height: 110px;
+        background-size: cover;
+        border-radius: 25px;
       }
+      .swiper-slide .playlist-titulo , .album-titulo{
+        width: 100%;
+        font-size: 14px;
+    }
+    .swiper-slide .desc-playlist, .desc-album{
+        width: 100%;
+        color: #7e7e7e;
+        font-size: 10px;
+        font-weight: 700;
+    }
 }

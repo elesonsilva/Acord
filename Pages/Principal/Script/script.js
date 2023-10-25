@@ -1,32 +1,26 @@
 
 TopPlaylists.map((intem, index)=>{
-    let topPLayListItem = document.querySelector('.playlists .capa-playlist').cloneNode(true)
+    let topPLayListItem = document.querySelector('.card-playlist .swiper-slide').cloneNode(true)
 
-    document.querySelector('.playlists').append(topPLayListItem)
-    topPLayListItem.querySelector('.capa-playlist img').src = intem.img
-    topPLayListItem.querySelector('.capa-playlist .playlist-titulo').innerHTML = intem.tituloPlayList
-    topPLayListItem.querySelector('.capa-playlist .desc-playlist').innerHTML = intem.descPlayList
+    document.querySelector('.card-playlist').append(topPLayListItem)
+    topPLayListItem.querySelector('.swiper-slide img').src = intem.img
+    topPLayListItem.querySelector('.swiper-slide .playlist-titulo').innerHTML = intem.tituloPlayList
+    topPLayListItem.querySelector('.swiper-slide .desc-playlist').innerHTML = intem.descPlayList
 
 })
+TopAlbuns.map((intem, index)=>{
+    let albunsItem = document.querySelector('.card-album .swiper-slide').cloneNode(true)
 
-   let conteiner = document.querySelector('.scroll-horizontal')
-   let card = document.querySelector('.playlists')
-   let isPressDonw = false;
-   let cursorXSpace;
-   
+    document.querySelector('.card-album').append(albunsItem)
+    albunsItem.querySelector('.swiper-slide img').src = intem.img
+    albunsItem.querySelector('.swiper-slide .album-titulo').innerHTML = intem.tituloAlbum
+    albunsItem.querySelector('.swiper-slide .desc-album').innerHTML = intem.descAlbum
+})
 
-   conteiner.addEventListener('touchstart', (e)=>{
-    //alert('prestou')
-    isPressDonw = true;
-    cursorXSpace = e.offsetX - card.offsetLeft;
-    console.log(card.offsetLeft)
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: false,
     
-   })
-   
-   conteiner.addEventListener('touchmove', (e)=>{
-    if(!isPressDonw) return;
-    e.preventDefault()
-    card.style.left = `${e.offsetX - cursorXSpace}px`
-    
-   })
+  });
    
