@@ -17,6 +17,15 @@ TopAlbuns.map((intem, index)=>{
     albunsItem.querySelector('.swiper-slide .desc-album').innerHTML = intem.descAlbum
 })
 
+TopMusica.map((intem, index)=>{
+    let musicaItem = document.querySelector('.card-musica .swiper-slide').cloneNode(true)
+
+    document.querySelector('.card-musica').append(musicaItem)
+    musicaItem.querySelector('.swiper-slide img').src = intem.img
+    musicaItem.querySelector('.swiper-slide .musica-titulo').innerHTML = intem.tituloMUsica
+    musicaItem.querySelector('.swiper-slide .nome-artista').innerHTML = intem.artista
+})
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,

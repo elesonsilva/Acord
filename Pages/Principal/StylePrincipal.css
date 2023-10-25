@@ -238,11 +238,11 @@ html::-webkit-scrollbar{
         background-size: cover;
         border-radius: 25px;
       }
-      .swiper-slide .playlist-titulo , .album-titulo{
+      .swiper-slide .playlist-titulo , .album-titulo , .musica-titulo{
         width: 100%;
         font-size: 14px;
     }
-    .swiper-slide .desc-playlist, .desc-album{
+    .swiper-slide .desc-playlist, .desc-album , .nome-artista{
         width: 100%;
         color: #7e7e7e;
         font-size: 10px;

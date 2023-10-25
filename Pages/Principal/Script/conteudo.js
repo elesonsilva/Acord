@@ -2,7 +2,7 @@ let TopPlaylists =[
     {
         id:1,
         img:'Imagens-tela-principal/eletronica-playlist.png',
-        tituloPlayList:'Eletrônica',
+        tituloMUsica:'Eletrônica',
         descPlayList: 'seleção dos Djs'
     },
     {
@@ -62,6 +62,39 @@ let TopAlbuns =[
         descAlbum: 'Bad obsession'
     }
 ]
+let TopMusica =[
+    {
+        id:1,
+        img:'Imagens-tela-principal/agente-fez-amor.jpg',
+        tituloMUsica:'A Gente Fez Amor',
+        artista: 'Gusttavo Lima'
+    },
+    {
+        id:2,
+        img:'Imagens-tela-principal/Luísa_Sonza_-_Braba.png',
+        tituloMUsica:'Braba',
+        artista: 'Luísa Sonza'
+    },
+    {
+        id:3,
+        img:'Imagens-tela-principal/maiara-e-maraisa.jpg',
+        tituloMUsica:'Aí Eu Bebo',
+        artista: 'Maiara & Maraisa'
+    },
+    {
+        id:4,
+        img:'Imagens-tela-principal/anavitoria-vitor-kley.jpg',
+        tituloMUsica:'Pupila',
+        artista: 'Anavitória e Vitor Kley'
+    },
+    {
+        id:5,
+        img:'Imagens-tela-principal/just-the-way.jpg',
+        tituloMUsica:'Just the Way You Are',
+        artista: 'Bruno Mars'
+    }
+]
 
 JSON.stringify(TopPlaylists);
 JSON.stringify(TopAlbuns);
+JSON.stringify(TopMusica);
