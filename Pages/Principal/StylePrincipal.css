@@ -307,7 +307,7 @@ html::-webkit-scrollbar{
     .lista-aberta .categoria .img-lista{
         position: relative;
         width: 100%;
-        height: 320px;
+        height: 300px;
         
         
     }
@@ -322,7 +322,7 @@ html::-webkit-scrollbar{
     .informacoes .titulo-lista{
         position: absolute;
         bottom: 0;
-        margin-bottom: 20%;
+        margin-bottom: 40%;
         margin-left: 5%;
         font-size: 30px;
     }
@@ -330,13 +330,17 @@ html::-webkit-scrollbar{
         position: absolute;
         bottom: 0;
         margin-left: 5%;
-        margin-bottom: 12%;
+        margin-bottom: 30%;
+    }
+    .informacoes .bi{
+        margin-left: 3%;
     }
     .informacoes .curtidas-lista{
         position: absolute;
         width: 100%;
         display: flex;
         bottom: 0;
+        margin-bottom: 15%;
         justify-content: space-between;
     }
     .curtidas-lista img{
@@ -360,4 +364,71 @@ html::-webkit-scrollbar{
         right: 0;
         margin-right: 5%;
     }
+    .lista-aberta .btn-goup-acoes{
+        position: relative;
+        display: flex;
+        width: 90%;
+        height: 50px;
+        justify-content: space-between;
+        margin-left: 5%;
+       
+        
+    }
+    .btn-goup-acoes a{
+        text-decoration: none;
+        color: white;
+        background-color: #212121;
+        padding: 10px 18px;
+        border-radius: 5px;
+    }
+    .btn-goup-acoes .bi{
+        margin-right: 5px;
+        transform: translateY(5px);
+    }
+    .lista-aberta .btnplay{
+        position: relative;
+        display: flex;
+        margin-left: 5%;
+    }
+    .btnplay a{
+        margin-top: 5%;
+        width: 95%;
+        text-decoration: none;
+        text-align: center;
+        color: var(--p1-primaria);
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 18px;
+        font-weight: 700;
+        background-color: var(--p1-quaternaria);
+    }
+    .btnplay .bi{
+        margin-right: 5px;
+        transform: translateY(5px);
+    }
+    .lista-aberta .lista-musica{
+        width: 100%;
+        height: 80px;
+        margin-top: 10%;
+        display: flex;
+    }
+    .lista-musica .img-musica{
+        width: 80px;
+        height: 80px;
+        border-radius: 15px;
+        margin-left: 5%;
+    }
+    .lista-musica h3{
+        width: 100%;
+        font-size: 14px;
+        margin: 10px;
+    }
+    .lista-musica p{
+        
+        font-size: 12px;
+        color: #7e7e7e;
+        font-weight: 700;
+    }
+    
 }
