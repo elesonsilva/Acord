@@ -252,4 +252,45 @@ html::-webkit-scrollbar{
         font-size: 10px;
         font-weight: 700;
     }
+
+    header{
+        position: fixed;
+        bottom: 0;
+        z-index: 111;
+        display: flex;
+        background-color: white;
+        width: 100%;
+        height: 8%;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        
+    }
+    header nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        width: 80%;
+        margin-left: 10%;    
+    }
+    header nav a{
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    header nav .bi{
+        color: #212121;
+    }
+    header nav .checked{
+        color: var(--p1-quaternaria);
+        flex-direction: column;
+        text-align: justify;
+    }
+    header nav .checked::before{
+        content: '';
+        
+    }
+    .musica{
+        margin-bottom: 50px;
+    }
 }
