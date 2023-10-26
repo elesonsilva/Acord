@@ -2,7 +2,7 @@ let TopPlaylists =[
     {
         id:1,
         img:'Imagens-tela-principal/eletronica-playlist.png',
-        tituloMUsica:'Eletrônica',
+        tituloPlayList:'Eletrônica',
         descPlayList: 'seleção dos Djs'
     },
     {
