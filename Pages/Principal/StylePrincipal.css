@@ -43,6 +43,9 @@ html::-webkit-scrollbar{
         color: white;
         
     }
+    .pagina-principal{
+        display: none;
+    }
     .topo-perfil{
         display: flex;
         align-items: center;
@@ -292,5 +295,69 @@ html::-webkit-scrollbar{
     }
     .musica{
         margin-bottom: 50px;
+    }
+
+
+    .lista-aberta{
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+   
+    .lista-aberta .categoria .img-lista{
+        position: relative;
+        width: 100%;
+        height: 320px;
+        
+        
+    }
+    .lista-aberta .categoria .informacoes{
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        top: 0;
+        margin-top: 10%;
+        background-image: linear-gradient(to top, var(--p1-primaria), transparent);
+    }
+    .informacoes .titulo-lista{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 20%;
+        margin-left: 5%;
+        font-size: 30px;
+    }
+    .informacoes .desc-lista{
+        position: absolute;
+        bottom: 0;
+        margin-left: 5%;
+        margin-bottom: 12%;
+    }
+    .informacoes .curtidas-lista{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        bottom: 0;
+        justify-content: space-between;
+    }
+    .curtidas-lista img{
+        width: 80px;
+        height: 40px;
+        margin-left: 5%;
+    }
+    .curtidas-lista .qtd-likes{
+        position: absolute;
+        font-size: 12px;
+        right: 0;
+        margin-right: 25%;
+        bottom: 0;
+        margin-bottom: 3%;
+    }
+    .curtidas-lista .duracao{
+        position: absolute;
+        font-size: 12px;
+        bottom: 0;
+        margin-bottom: 3%;
+        right: 0;
+        margin-right: 5%;
     }
 }
