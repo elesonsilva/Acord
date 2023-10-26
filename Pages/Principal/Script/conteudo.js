@@ -62,6 +62,38 @@ let TopAlbuns =[
         descAlbum: 'Bad obsession'
     }
 ]
+let MusicasPlayList =[
+    {
+        id:1,
+        img:'Imagens-tela-principal/agente-fez-amor.jpg',
+        titulo:'A Gente Fez Amor',
+        NomeArtista: 'Gusttavo Lima'
+    },
+    {
+        id:2,
+        img:'Imagens-tela-principal/Luísa_Sonza_-_Braba.png',
+        titulo:'Braba',
+        NomeArtista: 'Luísa Sonza'
+    },
+    {
+        id:3,
+        img:'Imagens-tela-principal/maiara-e-maraisa.jpg',
+        titulo:'Aí Eu Bebo',
+        NomeArtista: 'Maiara & Maraisa'
+    },
+    {
+        id:4,
+        img:'Imagens-tela-principal/anavitoria-vitor-kley.jpg',
+        titulo:'Pupila',
+        NomeArtista: 'Anavitória e Vitor Kley'
+    },
+    {
+        id:5,
+        img:'Imagens-tela-principal/just-the-way.jpg',
+        titulo:'Just the Way You Are',
+        NomeArtista: 'Bruno Mars'
+    }
+]
 let TopMusica =[
     {
         id:1,
