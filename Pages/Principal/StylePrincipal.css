@@ -44,7 +44,7 @@ html::-webkit-scrollbar{
         
     }
     .pagina-principal{
-        display: none;
+        display: block;
     }
     .topo-perfil{
         display: flex;
@@ -302,6 +302,7 @@ html::-webkit-scrollbar{
         position: relative;
         top: 0;
         width: 100%;
+        display: none;
     }
    
     .lista-aberta .categoria .img-lista{

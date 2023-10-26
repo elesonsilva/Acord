@@ -7,6 +7,13 @@ TopPlaylists.map((intem, index)=>{
     topPLayListItem.querySelector('.swiper-slide .playlist-titulo').innerHTML = intem.tituloPlayList
     topPLayListItem.querySelector('.swiper-slide .desc-playlist').innerHTML = intem.descPlayList
 
+    topPLayListItem.querySelector('.swiper-slide img').addEventListener('click', (e)=>{
+        document.querySelector('.pagina-principal').style.display = 'none'
+        document.querySelector('.').style.display = 'none'
+
+
+    })
+
 })
 TopAlbuns.map((intem, index)=>{
     let albunsItem = document.querySelector('.card-album .swiper-slide').cloneNode(true)
