@@ -17,10 +17,12 @@ TopPlaylists.map((intem, index)=>{
 
         MusicasPlayList.map((musicaplaylist, index)=>{
             let musicasPlayListIntem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
-            document.querySelector('.lista-aberta').append(MusicasPlayList)
+            document.querySelector('.lista-aberta').append(musicasPlayListIntem)
 
             musicasPlayListIntem.querySelector('.lista-musica img').src = musicaplaylist.img
-            musicasPlayListIntem.querySelector('.lista-musica .')
+            musicasPlayListIntem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = musicaplaylist.titulo
+            musicasPlayListIntem.querySelector('.lista-musica .informacoes-musica p').innerHTML = musicaplaylist.NomeArtista
+
         })
 
     })
