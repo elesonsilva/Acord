@@ -8,8 +8,11 @@ TopPlaylists.map((intem, index)=>{
     topPLayListItem.querySelector('.swiper-slide .desc-playlist').innerHTML = intem.descPlayList
 
     topPLayListItem.querySelector('.swiper-slide img').addEventListener('click', (e)=>{
+        e.preventDefault()
         document.querySelector('.pagina-principal').style.display = 'none'
-        document.querySelector('.').style.display = 'none'
+        document.querySelector('.lista-aberta').style.display = 'block'
+
+        document.querySelector('.lista-aberta .categoria .img-lista').src = intem.img
 
 
     })
