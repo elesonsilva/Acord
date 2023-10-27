@@ -3,7 +3,39 @@ let TopPlaylists =[
         id:1,
         img:'Imagens-tela-principal/eletronica-playlist.png',
         tituloPlayList:'Eletrônica',
-        descPlayList: 'seleção dos Djs'
+        descPlayList: 'seleção dos Djs',
+        Musicas:[
+            {
+                id:1,
+                img:'Imagens-tela-principal/bruno-album.jpg',
+                tituloAlbum:'Bruno Mars',
+                descAlbum: 'XXIV Magic'
+            },
+            {
+                id:2,
+                img:'Imagens-tela-principal/anavitoria-albun.jpg',
+                tituloPlayList:'AnaVitória',
+                descAlbum: 'O tempo é agora'
+            },
+            {
+                id:3,
+                img:'Imagens-tela-principal/coldplay-album.jpg',
+                tituloAlbum:'Coldplay',
+                descAlbum: 'A Rush of Blood to the Head'
+            },
+            {
+                id:4,
+                img:'Imagens-tela-principal/ivete-album.jpg',
+                tituloAlbum:'Ivete Sangalo',
+                descAlbum: 'O mundo vai'
+            },
+            {
+                id:5,
+                img:'Imagens-tela-principal/guns-album.jpg',
+                tituloAlbum:'Guns N Roses',
+                descAlbum: 'Bad obsession'
+            }
+        ]
     },
     {
         id:2,

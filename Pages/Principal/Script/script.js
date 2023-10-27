@@ -15,7 +15,7 @@ TopPlaylists.map((intem, index)=>{
         document.querySelector('.lista-aberta .informacoes .titulo-lista').innerHTML = intem.tituloPlayList
         document.querySelector('.lista-aberta .informacoes .desc-lista').innerHTML = intem.descPlayList
 
-        MusicasPlayList.map((musicaplaylist, index)=>{
+        Musicas.map((musicaplaylist, index)=>{
             let musicasPlayListIntem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
             document.querySelector('.lista-aberta').append(musicasPlayListIntem)
 
