@@ -7,33 +7,33 @@ let TopPlaylists =[
         Musicas:[
             {
                 id:1,
-                img:'Imagens-tela-principal/bruno-album.jpg',
-                tituloAlbum:'Bruno Mars',
-                descAlbum: 'XXIV Magic'
+                img:'Imagens-tela-principal/agente-fez-amor.jpg',
+                titulo:'A Gente Fez Amor',
+                NomeArtista: 'Gusttavo Lima'
             },
             {
                 id:2,
-                img:'Imagens-tela-principal/anavitoria-albun.jpg',
-                tituloPlayList:'AnaVitória',
-                descAlbum: 'O tempo é agora'
+                img:'Imagens-tela-principal/Luísa_Sonza_-_Braba.png',
+                titulo:'Braba',
+                NomeArtista: 'Luísa Sonza'
             },
             {
                 id:3,
-                img:'Imagens-tela-principal/coldplay-album.jpg',
-                tituloAlbum:'Coldplay',
-                descAlbum: 'A Rush of Blood to the Head'
+                img:'Imagens-tela-principal/maiara-e-maraisa.jpg',
+                titulo:'Aí Eu Bebo',
+                NomeArtista: 'Maiara & Maraisa'
             },
             {
                 id:4,
-                img:'Imagens-tela-principal/ivete-album.jpg',
-                tituloAlbum:'Ivete Sangalo',
-                descAlbum: 'O mundo vai'
+                img:'Imagens-tela-principal/anavitoria-vitor-kley.jpg',
+                titulo:'Pupila',
+                NomeArtista: 'Anavitória e Vitor Kley'
             },
             {
                 id:5,
-                img:'Imagens-tela-principal/guns-album.jpg',
-                tituloAlbum:'Guns N Roses',
-                descAlbum: 'Bad obsession'
+                img:'Imagens-tela-principal/just-the-way.jpg',
+                titulo:'Just the Way You Are',
+                NomeArtista: 'Bruno Mars'
             }
         ]
     },
