@@ -4,7 +4,7 @@ let TopPlaylists =[
         img:'Imagens-tela-principal/eletronica-playlist.png',
         tituloPlayList:'Eletrônica',
         descPlayList: 'seleção dos Djs',
-        imagensMusica:{
+        imagensMusica: {
             img01:'Imagens-tela-principal/agente-fez-amor.jpg',
             img02:'Imagens-tela-principal/Luísa_Sonza_-_Braba.png',
             img03:'Imagens-tela-principal/maiara-e-maraisa.jpg',
