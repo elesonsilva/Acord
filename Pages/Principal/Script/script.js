@@ -1,8 +1,9 @@
 
 TopPlaylists.map((intem, index)=>{
     let topPLayListItem = document.querySelector('.card-playlist .swiper-slide').cloneNode(true)
-
     document.querySelector('.card-playlist').append(topPLayListItem)
+
+    
     topPLayListItem.querySelector('.swiper-slide img').src = intem.img
     topPLayListItem.querySelector('.swiper-slide .playlist-titulo').innerHTML = intem.tituloPlayList
     topPLayListItem.querySelector('.swiper-slide .desc-playlist').innerHTML = intem.descPlayList
@@ -14,25 +15,12 @@ TopPlaylists.map((intem, index)=>{
         document.querySelector('.lista-aberta .categoria .img-lista').src = intem.img
         document.querySelector('.lista-aberta .informacoes .titulo-lista').innerHTML = intem.tituloPlayList
         document.querySelector('.lista-aberta .informacoes .desc-lista').innerHTML = intem.descPlayList
-
-
-        
-        
-        
-        
-        MusicasPlayList.map((musicaplaylist, index)=>{
-            let musicasPlayListIntem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
-            document.querySelector('.lista-aberta').append(musicasPlayListIntem)
-
-            musicasPlayListIntem.querySelector('.lista-musica img').src = musicaplaylist.img
-            musicasPlayListIntem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = musicaplaylist.titulo
-            musicasPlayListIntem.querySelector('.lista-musica .informacoes-musica p').innerHTML = musicaplaylist.NomeArtista
-
-        })
+     
 
     })
 
-})
+}
+)
 TopAlbuns.map((intem, index)=>{
     let albunsItem = document.querySelector('.card-album .swiper-slide').cloneNode(true)
 
@@ -86,3 +74,13 @@ function transicao(){
     document.querySelector('.pagina-principal').style.display = 'none'
     document.querySelector('.lista-aberta').style.display = 'block'
 }
+
+TopPlaylists.map((musica, index)=>{
+    let musicaItem =  document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
+        document.querySelector('.lista-aberta').append(musicaItem)
+
+        
+        musicaItem.querySelector('.lista-musica img').src = musica.imagensMusica.img01
+
+        
+   })
