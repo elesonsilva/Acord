@@ -78,9 +78,12 @@ function transicao(){
 TopPlaylists.map((musica, index)=>{
     let musicaItem =  document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
         document.querySelector('.lista-aberta').append(musicaItem)
-
         
+        
+             
         musicaItem.querySelector('.lista-musica img').src = musica.imagensMusica.img01
+        musicaItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = musica.tituloDasMUsicas.t1
+        musicaItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = musica.artistas.art1
 
         
    })
