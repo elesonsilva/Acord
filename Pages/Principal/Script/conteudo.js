@@ -20,8 +20,8 @@ let TopPlaylists =[
     {
         id:4,
         img:'Imagens-tela-principal/playlist-acostic.png',
-        tituloPlayList:'Acustica',
-        descPlayList: 'Mais ouvidas na parada'
+        tituloPlayList:'MPB',
+        descPlayList: 'As Mais Tocadas Nos Barzinhos'
     },
     {
         id:5,

@@ -109,40 +109,138 @@ let Rock =[
         Artista: 'Scorpions',
         Audio:'Medias/PlayListRock/Audio/ScorpionsAlwaysSomewhere.mp3'
     },
+    {
+        id:6,
+        img:'Medias/PlayListRock/Imagens/direstraits.jpg',
+        NomeDaMusica:'Sultans of Swing',
+        Artista: 'Dire Straits',
+        Audio:'Medias/PlayListRock/Audio/DireStraitsSultansOfSwing.mp3'
+    },
+    {
+        id:7,
+        img:'Medias/PlayListRock/Imagens/guns.jpg',
+        NomeDaMusica:'Sweet Child O Mine',
+        Artista: 'Guns N Roses',
+        Audio:'Medias/PlayListRock/Audio/GunsNRosesSweetChildOMineOfficial.mp3'
+    },
+    {
+        id:8,
+        img:'Medias/PlayListRock/Imagens/Metallica.jpg',
+        NomeDaMusica:'Nothing Else Matters',
+        Artista: 'Metallica',
+        Audio:'Medias/PlayListRock/Audio/MetallicaNothingElseMatters.mp3'
+    },
     
 ]
 let Acustica =[
     {
         id:1,
-        img:'Imagens-tela-principal/agente-fez-amor.jpg',
-        NomeDaMusica:'A Gente Fez Amor',
-        Artista: 'Gusttavo Lima',
-        Audio:''
+        img:'Medias/PlayListAcustica/Imagens/Jorgeversilo.jpg',
+        NomeDaMusica:'Homem-Aranha',
+        Artista: 'Jorge Vercillo',
+        Audio:'Medias/PlayListAcustica/Audios/JorgeVercilloHomemAranha.mp3'
     },
     {
         id:2,
-        img:'Imagens-tela-principal/Luísa_Sonza_-_Braba.png',
-        NomeDaMusica:'Braba',
-        Artista: 'Luísa Sonza',
-        Audio:''
-
+        img:'Medias/PlayListAcustica/Imagens/Jorgeversilo.jpg',
+        NomeDaMusica:'Monalisa ',
+        Artista: 'Jorge Vercillo',
+        Audio:'Medias/PlayListAcustica/Audios/JorgeVercilloMonalisa.mp3'
     },
+    {
+        id:3,
+        img:'Medias/PlayListAcustica/Imagens/Jorgeversilo.jpg',
+        NomeDaMusica:'Que Nem Maré ',
+        Artista: 'Jorge Vercillo',
+        Audio:'Medias/PlayListAcustica/Audios/JorgeVercilloQueNemMaré.mp3'
+    },
+    {
+        id:4,
+        img:'Medias/PlayListAcustica/Imagens/Jorgeversilo.jpg',
+        NomeDaMusica:'Final Feliz',
+        Artista: 'Jorge Vercillo',
+        Audio:'Medias/PlayListAcustica/Audios/JorgeVercilloFinalFeliz.mp3'
+    },
+    
 ]
 let Cover =[
     {
         id:1,
-        img:'Imagens-tela-principal/agente-fez-amor.jpg',
-        NomeDaMusica:'A Gente Fez Amor',
-        Artista: 'Gusttavo Lima',
-        Audio:''
+        img:'Medias/PlayListCover/Imagens/BiaMaques.jpg',
+        NomeDaMusica:'Nosso quadro Ana Castela',
+        Artista: 'Bia Marques cover',
+        Audio:'Medias/PlayListCover/Audios/NossoquadroAnaCastelaBiaMarquescover.mp3'
     },
     {
         id:2,
-        img:'Imagens-tela-principal/Luísa_Sonza_-_Braba.png',
-        NomeDaMusica:'Braba',
-        Artista: 'Luísa Sonza',
-        Audio:''
-
+        img:'Medias/PlayListCover/Imagens/amarina.jpg',
+        NomeDaMusica:'Amarelo, azul e branco| Anavitória e Rita Lee',
+        Artista: 'Amarina',
+        Audio:'Medias/PlayListCover/Audios/AMARELOAZULEBRANCOAnavitóriaCoverdeAMARINA.mp3'
+    },
+    {
+        id:3,
+        img:'Medias/PlayListCover/Imagens/amarina.jpg',
+        NomeDaMusica:'MASHUP FORRÓ',
+        Artista: 'Amarina',
+        Audio:'Medias/PlayListCover/Audios/MASHUPFORRÓCoverdeAMARINA.mp3'
+    },
+    {
+        id:4,
+        img:'Medias/PlayListCover/Imagens/amarina.jpg',
+        NomeDaMusica:'ANUNCIAÇÃO | Alceu Valença',
+        Artista: 'Amarina',
+        Audio:'Medias/PlayListCover/Audios/ANUNCIAÇÃOAlceuValençaCoverdeAMARINA.mp3'
+    },
+    {
+        id:5,
+        img:'Medias/PlayListCover/Imagens/amarina.jpg',
+        NomeDaMusica:'SAMURAI | Djavan',
+        Artista: 'Amarina',
+        Audio:'Medias/PlayListCover/Audios/SAMURAIDjavanCoverdeAMARINA.mp3'
+    },
+    {
+        id:6,
+        img:'Medias/PlayListCover/Imagens/BiaMaques.jpg',
+        NomeDaMusica:'Cartão Black',
+        Artista: 'Bia Marques cover',
+        Audio:'Medias/PlayListCover/Audios/CartãoBlackBiaMarquescover.mp3'
+    },
+    {
+        id:7,
+        img:'Medias/PlayListCover/Imagens/BiaMaques.jpg',
+        NomeDaMusica:'Se for amor | João Gomes',
+        Artista: 'Bia Marques cover',
+        Audio:'Medias/PlayListCover/Audios/seforamorbiamarques.mp3'
+    },
+    {
+        id:8,
+        img:'Medias/PlayListCover/Imagens/BiaMaques.jpg',
+        NomeDaMusica:'Eu tenho medo | Zé Vaqueiro',
+        Artista: 'Bia Marques cover',
+        Audio:'Medias/PlayListCover/Audios/EutenhomedoZéVaqueiroBiaMarquescover.mp3'
+    },
+    {
+        id:9,
+        img:'Medias/PlayListCover/Imagens/amarinacover.jpg',
+        NomeDaMusica:'MALANDRAGEM | Cássia Eller',
+        Artista: 'Amarina',
+        Audio:'Medias/PlayListCover/Audios/malandragemAmarina.mp3'
+    },
+    {
+        id:10,
+        img:'Medias/PlayListCover/Imagens/hqBia.jpg',
+        NomeDaMusica:'Surreal ',
+        Artista: 'Bia Marques cover',
+        Audio:'Medias/PlayListCover/Audios/SurrealversãoBiaMarques.mp3'
+    },
+    
+    {
+        id:11,
+        img:'Medias/PlayListCover/Imagens/amarinacover.jpg',
+        NomeDaMusica:'MONALISA | Jorge Vercillo',
+        Artista: 'Amarina',
+        Audio:'Medias/PlayListCover/Audios/MONALISAJorgeVercilloCoverdeAMARINA.mp3'
     },
 ]
 JSON.stringify(Eletronica)
