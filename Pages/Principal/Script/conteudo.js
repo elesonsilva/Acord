@@ -1,31 +1,9 @@
 let TopPlaylists =[
     {
         id:1,
-        img:'Imagens-tela-principal/eletronica-playlist.png',
+        img:'Imagens-tela-principal/Gatoeletronica.png',
         tituloPlayList:'Eletrônica',
         descPlayList: 'seleção dos Djs',
-        imagensMusica: {
-            img01:'Imagens-tela-principal/agente-fez-amor.jpg',
-            img02:'Imagens-tela-principal/Luísa_Sonza_-_Braba.png',
-            img03:'Imagens-tela-principal/maiara-e-maraisa.jpg',
-            img04:'Imagens-tela-principal/anavitoria-vitor-kley.jpg',
-            img05:'Imagens-tela-principal/just-the-way.jpg'
-        },
-        tituloDasMUsicas:{
-            t1:'A Gente Fez Amor',
-            t2:'Braba',
-            t3:'Aí Eu Bebo',
-            t4:'Pupila',
-            t5:'Just the Way You Are',
-        },
-        artistas:{
-            art1:'Gusttavo Lima',
-            art2:'Luísa Sonza',
-            art3:'Maiara & Maraisa',
-            art4:'Anavitória e Vitor Kley',
-            art5:'Bruno Mars',
-        }
-        
     },
     {
         id:2,

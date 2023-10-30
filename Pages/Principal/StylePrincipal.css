@@ -415,6 +415,8 @@ html::-webkit-scrollbar{
         margin-left: 5%;
         display: flex;
         justify-content: space-between;
+        margin-bottom: 60px;
+       
     }
     .lista-musica .img-musica{
         width: 80px;
@@ -429,9 +431,11 @@ html::-webkit-scrollbar{
     }
     .informacoes-musica h3{
         font-size: 16px;
+        margin-left: 5px;
     }
     .informacoes-musica p{
         font-size: 12px;
+        margin-left: 5px;
         color: #7e7e7e;
     }
     .lista-musica .bi{
@@ -440,5 +444,6 @@ html::-webkit-scrollbar{
         
         
     }
+    
     
 }

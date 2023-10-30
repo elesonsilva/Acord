@@ -18,15 +18,23 @@ TopPlaylists.map((intem, index)=>{
      
         if(intem.id === 1){
             playlistEletronica()
-            //alert("abriu eletronica")
+            
         }
         if(intem.id === 2){
             playlistFestival()
-            //alert("abriu festival")
+            
         }
         if(intem.id === 3){
             playlistRock()
-            //alert("abriu festival")
+            
+        }
+        if(intem.id === 4){
+            playlistAcustica()
+            
+        }
+        if(intem.id === 5){
+            playlistCover()
+            
         }
     })
 
@@ -126,5 +134,27 @@ function transicao(){
         rockItem.querySelector('.lista-musica img').src = rock.img
         rockItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = rock.NomeDaMusica
         rockItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = rock.Artista
+    })
+   }
+   function playlistAcustica(){
+    Acustica.map((acustica, index)=>{
+        let acusticaItem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
+        document.querySelector('.lista-aberta').append(acusticaItem)
+
+
+        acusticaItem.querySelector('.lista-musica img').src = acustica.img
+        acusticaItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = acustica.NomeDaMusica
+        acusticaItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = acustica.Artista
+    })
+   }
+   function playlistCover(){
+    Cover.map((cover, index)=>{
+        let coverItem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
+        document.querySelector('.lista-aberta').append(coverItem)
+
+
+        coverItem.querySelector('.lista-musica img').src = cover.img
+        coverItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = cover.NomeDaMusica
+        coverItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = cover.Artista
     })
    }
