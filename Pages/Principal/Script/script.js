@@ -74,7 +74,7 @@ function transicao(){
     document.querySelector('.pagina-principal').style.display = 'none'
     document.querySelector('.lista-aberta').style.display = 'block'
 }
-
+/*
 TopPlaylists.map((musica, index)=>{
     let musicaItem =  document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
         document.querySelector('.lista-aberta').append(musicaItem)
@@ -86,4 +86,4 @@ TopPlaylists.map((musica, index)=>{
         musicaItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = musica.artistas.art1
 
         
-   })
+   })*/
