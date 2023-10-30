@@ -41,8 +41,8 @@ let Eletronica =[
     {
         id:6,
         img:'Medias/PlayListEletronica/Imagens/Showtek.jpg',
-        NomeDaMusica:'David Guetta e Showtek',
-        Artista: 'Bad',
+        NomeDaMusica:'Bad',
+        Artista: 'David Guetta e Showtek',
         Audio:'Medias/PlayListEletronica/Audios/DavidGuetta-ShowtekBadftVassy.mp3'
 
     }
@@ -50,25 +50,25 @@ let Eletronica =[
 let Festival =[
     {
         id:1,
-        img:'Imagens-tela-principal/agente-fez-amor.jpg',
-        NomeDaMusica:'A Gente Fez Amor',
-        Artista: 'Gusttavo Lima',
-        Audio:''
+        img:'Medias/PlayListFestival/Imagens/Brimelliott.jpg',
+        NomeDaMusica:'Terrified',
+        Artista: 'Brynn Elliott',
+        Audio:'Medias/PlayListFestival/Audios/BrynnElliottTerrified.mp3'
     },
     {
         id:2,
-        img:'Imagens-tela-principal/Luísa_Sonza_-_Braba.png',
-        NomeDaMusica:'Braba',
-        Artista: 'Luísa Sonza',
-        Audio:''
+        img:'Medias/PlayListFestival/Imagens/uptownFunk.jpg',
+        NomeDaMusica:'Uptown Funk',
+        Artista: 'Mark Ronson ft. Bruno Mars',
+        Audio:'Medias/PlayListFestival/Audios/UptownFunk.mp3'
 
     },
     {
         id:3,
-        img:'Imagens-tela-principal/maiara-e-maraisa.jpg',
-        NomeDaMusica:'Aí Eu Bebo',
-        Artista: 'Maiara & Maraisa',
-        Audio:''
+        img:'Medias/PlayListFestival/Imagens/Beyonce_-_Halo.png',
+        NomeDaMusica:'Halo',
+        Artista: 'Beyoncé',
+        Audio:'Medias/PlayListFestival/Audios/BeyoncéHalo.mp3'
 
     },
     
