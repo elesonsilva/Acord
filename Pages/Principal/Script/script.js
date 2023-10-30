@@ -16,11 +16,25 @@ TopPlaylists.map((intem, index)=>{
         document.querySelector('.lista-aberta .informacoes .titulo-lista').innerHTML = intem.tituloPlayList
         document.querySelector('.lista-aberta .informacoes .desc-lista').innerHTML = intem.descPlayList
      
-
+        if(intem.id === 1){
+            playlistEletronica()
+            //alert("abriu eletronica")
+        }
+        if(intem.id === 2){
+            playlistFestival()
+            //alert("abriu festival")
+        }
+        if(intem.id === 3){
+            playlistRock()
+            //alert("abriu festival")
+        }
     })
 
 }
 )
+
+
+
 TopAlbuns.map((intem, index)=>{
     let albunsItem = document.querySelector('.card-album .swiper-slide').cloneNode(true)
 
@@ -38,6 +52,8 @@ TopAlbuns.map((intem, index)=>{
         document.querySelector('.lista-aberta .informacoes .desc-lista').innerHTML = intem.descAlbum
     })
 })
+
+
 
 TopMusica.map((intem, index)=>{
     let musicaItem = document.querySelector('.card-musica .swiper-slide').cloneNode(true)
@@ -65,25 +81,50 @@ var swiper = new Swiper(".mySwiper", {
   });
 
   
+
+
+
 document.querySelector('.lista-aberta .categoria .informacoes .bi').addEventListener('click',()=>{
-    document.querySelector('.pagina-principal').style.display = 'block'
-    document.querySelector('.lista-aberta').style.display = 'none'
+    window.location.reload()
 })  
+
+
 
 function transicao(){
     document.querySelector('.pagina-principal').style.display = 'none'
     document.querySelector('.lista-aberta').style.display = 'block'
 }
-/*
-TopPlaylists.map((musica, index)=>{
-    let musicaItem =  document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
-        document.querySelector('.lista-aberta').append(musicaItem)
-        
-        
-             
-        musicaItem.querySelector('.lista-musica img').src = musica.imagensMusica.img01
-        musicaItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = musica.tituloDasMUsicas.t1
-        musicaItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = musica.artistas.art1
 
-        
-   })*/
+   function playlistEletronica(){
+    Eletronica.map((eletronica, index)=>{
+        let eletronicaItem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
+        document.querySelector('.lista-aberta').append(eletronicaItem)
+
+
+        eletronicaItem.querySelector('.lista-musica img').src = eletronica.img
+        eletronicaItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = eletronica.NomeDaMusica
+        eletronicaItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = eletronica.Artista
+    })
+   }
+   function playlistFestival(){
+    Festival.map((festival, index)=>{
+        let festivalItem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
+        document.querySelector('.lista-aberta').append(festivalItem)
+
+
+        festivalItem.querySelector('.lista-musica img').src = festival.img
+        festivalItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = festival.NomeDaMusica
+        festivalItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = festival.Artista
+    })
+   }
+   function playlistRock(){
+    Rock.map((rock, index)=>{
+        let rockItem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
+        document.querySelector('.lista-aberta').append(rockItem)
+
+
+        rockItem.querySelector('.lista-musica img').src = rock.img
+        rockItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = rock.NomeDaMusica
+        rockItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = rock.Artista
+    })
+   }
