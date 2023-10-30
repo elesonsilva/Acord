@@ -76,19 +76,40 @@ let Festival =[
 let Rock =[
     {
         id:1,
-        img:'Imagens-tela-principal/agente-fez-amor.jpg',
-        NomeDaMusica:'A Gente Fez Amor',
-        Artista: 'Gusttavo Lima',
-        Audio:''
+        img:'Medias/PlayListRock/Imagens/drsim.jpg',
+        NomeDaMusica:'May the Force Be With You',
+        Artista: 'Dr. Sin',
+        Audio:'Medias/PlayListRock/Audio/DrSinMaytheforcebewithyou.mp3'
     },
     {
         id:2,
-        img:'Imagens-tela-principal/Luísa_Sonza_-_Braba.png',
-        NomeDaMusica:'Braba',
-        Artista: 'Luísa Sonza',
-        Audio:''
-
+        img:'Medias/PlayListRock/Imagens/scorpions.jpg',
+        NomeDaMusica:'Still Loving You',
+        Artista: 'Scorpions',
+        Audio:'Medias/PlayListRock/Audio/ScorpionsStillLovingYou.mp3'
     },
+    {
+        id:3,
+        img:'Medias/PlayListRock/Imagens/whinofchange.jpg',
+        NomeDaMusica:'Wind of Change',
+        Artista: 'Scorpions',
+        Audio:'Medias/PlayListRock/Audio/ScorpionsWindOfChange.mp3'
+    },
+    {
+        id:4,
+        img:'Medias/PlayListRock/Imagens/whinofchange.jpg',
+        NomeDaMusica:'Send Me an Angel',
+        Artista: 'Scorpions',
+        Audio:'Medias/PlayListRock/Audio/ScorpionsSendMeAnAngel.mp3'
+    },
+    {
+        id:5,
+        img:'Medias/PlayListRock/Imagens/acoustica.jpg',
+        NomeDaMusica:'Always Somewhere',
+        Artista: 'Scorpions',
+        Audio:'Medias/PlayListRock/Audio/ScorpionsAlwaysSomewhere.mp3'
+    },
+    
 ]
 let Acustica =[
     {
