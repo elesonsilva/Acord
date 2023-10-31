@@ -7,7 +7,6 @@
     <title>Pagina Principal</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.2/swiper-bundle.min.css">
     <link rel="stylesheet" href="StylePrincipal.css">
-
 </head>
 
 <body>
@@ -224,20 +223,19 @@
             </svg>
         </div>
         <div class="player">
-            <audio controls>
+            <audio  class="musicaSom">
                 <source src="Medias/PlayListEletronica/Audios/AlamWalkerFaded.mp3" type="audio/mpeg">
             </audio>
-            <input type="range" value="0" name="" id="progesso">
+            <input type="range" value="0" name="" id="progesso" class="progresso">
             <div class="controles">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-skip-start" viewBox="0 0 16 16">
                         <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.52-.302 1.233.043 1.233.696v7.384c0 .653-.713.998-1.233.696L5 8.752V12a.5.5 0 0 1-1 0V4zm7.5.633L5.696 8l5.804 3.367V4.633z"/>
                     </svg>
                 </div>
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
-                    </svg>
+                <div class="play-btn">
+                    <span></span>
+                    <span></span>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-skip-end" viewBox="0 0 16 16">

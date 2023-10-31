@@ -158,3 +158,22 @@ function transicao(){
         coverItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = cover.Artista
     })
    }
+
+
+let progresso = document.querySelector('.progresso')   
+let musicaSom = document.querySelector('.musicaSom')   
+let playbtn = document.querySelector('.play-btn')
+musicaSom.onloadedmetadata = function(){
+    progresso.max = musicaSom.duration
+    progresso.value = musicaSom.currentTime
+    
+}
+playbtn.addEventListener('click', ()=>{
+   // alert('funnn')
+   if(playbtn.className.includes('pause')){
+    musicaSom.play()
+   }else{
+    musicaSom.pause()
+   }
+    playbtn.classList.toggle('pause')
+})

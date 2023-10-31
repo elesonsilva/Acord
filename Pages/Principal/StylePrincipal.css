@@ -550,14 +550,15 @@ html::-webkit-scrollbar{
         border-radius: 4px;
         cursor: pointer;
         background-color: #7e7e7e;
+        overflow-y: hidden;
     }
     #progesso::-webkit-slider-thumb{
         -webkit-appearance: none;
         background: var(--p1-quaternaria);
-        width: 15px;
-        height: 15px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
-        box-shadow: 0 5px 5px rgba(255, 255, 255, 0.1);
+        box-shadow: -400px 0 0 400px var(--p1-quaternaria);
     }
     .player .controles{
         width: 100%;
@@ -568,10 +569,41 @@ html::-webkit-scrollbar{
     .player .controles div{
         margin: 15px;
     }
-    .controles div:nth-child(2){
-        transform: scale(1.2);
+    .controles .play-btn{
+        transform: scale(1.5);
         width: 40px;
         height: 40px;
-        
+        background-color: white;
+        border-radius: 50%;
     }
+    .play-btn span{
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 20px;
+        border-radius: 2px;
+        background: var(--p1-primaria);
+        transition: 0.5s;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .play-btn span:nth-child(2){
+        left: 55%;
+        transform-origin: center;
+
+    }
+    .play-btn.pause span:nth-child(2){
+        transform: translateY(-50%) scaleY(0);
+    }
+    .play-btn.pause span:nth-child(1){
+        width: 35%;
+        left: 35%;
+        transform: translate(-50% -50%);
+        border-radius: 0;
+        clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+    }
+    
+    
+
 }
