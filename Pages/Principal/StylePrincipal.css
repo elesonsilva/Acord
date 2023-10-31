@@ -531,4 +531,47 @@ html::-webkit-scrollbar{
         top: 25%;
         color: white;
     }
+    .page-player .btn-group-opcoes{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+        margin-left: 5%;
+    }
+    .player{
+        width: 90%;
+        margin-left: 5%;
+        align-items: center;
+    }
+    .player #progesso{
+        -webkit-appearance: none;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #7e7e7e;
+    }
+    #progesso::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        background: var(--p1-quaternaria);
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        box-shadow: 0 5px 5px rgba(255, 255, 255, 0.1);
+    }
+    .player .controles{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .player .controles div{
+        margin: 15px;
+    }
+    .controles div:nth-child(2){
+        transform: scale(1.2);
+        width: 40px;
+        height: 40px;
+        
+    }
 }
