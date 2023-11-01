@@ -22,12 +22,13 @@ TopPlaylists.map((intem, index)=>{
                 playbtn.click()
                 document.querySelector('.lista-aberta').style.display = 'none'
                 document.querySelector('.page-player').style.display = 'block'
+
                 const avancar = document.querySelector('.btn-avancar')
                 const voltar = document.querySelector('.btn-voltar')
 
                 let tempomusica = 0
                 let barraprogresso = document.querySelector('.progresso')
-                const tempo = document.querySelector('tempo-corrido')
+                const tempocorrendo = document.getElementById('tempo')
                 const duracaomusica = document.querySelector('.duracao-musica') 
                 
                 const musicas = (i)=>{
@@ -39,7 +40,7 @@ TopPlaylists.map((intem, index)=>{
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
                     document.querySelector('.player .musicaSom ').src = lista.Audio
                     
-                   
+                   tempocorrendo.innerHTML ='00:00'
                     setTimeout(()=>{
                         barraprogresso.max = musicaSom.duration
                         console.log(musicaSom.duration)
@@ -58,7 +59,8 @@ TopPlaylists.map((intem, index)=>{
                 }
                 //barra de progresso
                 setInterval(()=>{
-                    barraprogresso.value = musicaSom.currentTime;   
+                    barraprogresso.value = musicaSom.currentTime;  
+                    tempocorrendo.innerHTML = formatoTempo(musicaSom.currentTime) 
                 },500)
 
                 musicas(0) 
@@ -236,7 +238,6 @@ function transicao(){
 
 let tempomusica = 0
 let barraprogresso = document.querySelector('.progresso')  
-const tempocorrido = document.querySelector('tempo-corrido')
 const duracaomusica = document.querySelector('.duracao-musica') 
 const musicaSom = document.querySelector('.musicaSom')   
 let playbtn = document.querySelector('.play-btn')
@@ -254,8 +255,8 @@ playbtn.addEventListener('click', ()=>{
     playbtn.classList.toggle('pause')
 })
 
-//barra de progresso
+/*barra de progresso
 setInterval(()=>{
     barraprogresso.value = musicaSom.currentTime;
-},500)
+},500)*/
 
