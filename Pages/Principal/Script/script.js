@@ -19,7 +19,7 @@ TopPlaylists.map((intem, index)=>{
         if(intem.id === 1){
             playlistEletronica()
             document.querySelector('.btnplay').addEventListener('click',()=>{
-                //alert('eletronica play')
+                playbtn.click()
                 document.querySelector('.lista-aberta').style.display = 'none'
                 document.querySelector('.page-player').style.display = 'block'
                 const avancar = document.querySelector('.btn-avancar')
