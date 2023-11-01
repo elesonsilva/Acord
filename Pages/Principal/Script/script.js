@@ -24,33 +24,68 @@ TopPlaylists.map((intem, index)=>{
                 document.querySelector('.page-player').style.display = 'block'
                 const avancar = document.querySelector('.btn-avancar')
                 const voltar = document.querySelector('.btn-voltar')
+
+                let tempomusica = 0
+                let barraprogresso = document.querySelector('.progresso')
+                const tempo = document.querySelector('tempo-corrido')
+                const duracaomusica = document.querySelector('.duracao-musica') 
                 
                 const musicas = (i)=>{
                     let lista = Eletronica[i]
-                    currentMusic = i
+                    tempomusica = i
+                    barraprogresso.value = 0
                     document.querySelector('.musica-atual .img-da-musica').src = lista.img
                     document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
                     document.querySelector('.player .musicaSom ').src = lista.Audio
+                    
+                   
+                    setTimeout(()=>{
+                        barraprogresso.max = musicaSom.duration
+                        console.log(musicaSom.duration)
+                        duracaomusica.innerHTML = formatoTempo(musicaSom.duration) 
+                    }, 300)
+
                 }
-                musicas(0)
+                
+                
+                const formatoTempo = (time)=>{
+                    let min = Math.floor(time / 60)
+                    if(min < 10){ min = `0${min}`}
+                    let sec = Math.floor(time / 60)
+                    if(sec < 10){ sec = `0${sec}`}
+                    return `${min}:${sec}` 
+                }
+                //barra de progresso
+                setInterval(()=>{
+                    barraprogresso.value = musicaSom.currentTime;   
+                },500)
+
+                musicas(0) 
+               
+
+                barraprogresso.addEventListener('change', ()=>{
+                    musicaSom.currentTime = barraprogresso.value;
+                })
+
+              
 
                 avancar.addEventListener('click', ()=>{
-                    if(currentMusic >= Eletronica.length -1){
-                        currentMusic = 0
+                    if(tempomusica >= Eletronica.length -1){
+                        tempomusica = 0
                     }else{
-                        currentMusic++
+                        tempomusica++
                     }
-                    musicas(currentMusic)
+                    musicas(tempomusica)
                     playbtn.click()
                 })
                 voltar.addEventListener('click', ()=>{
-                    if(currentMusic <=0){
-                        currentMusic = Eletronica.length -1
+                    if(tempomusica <=0){
+                        tempomusica = Eletronica.length -1
                     }else{
-                        currentMusic--
+                        tempomusica--
                     }
-                    musicas(currentMusic)
+                    musicas(tempomusica)
                     playbtn.click()
                 })
                 
@@ -206,6 +241,9 @@ const duracaomusica = document.querySelector('.duracao-musica')
 const musicaSom = document.querySelector('.musicaSom')   
 let playbtn = document.querySelector('.play-btn')
 const btnavancar = document.querySelector('.btn-avancar')
+
+
+
 playbtn.addEventListener('click', ()=>{
    // alert('funnn')
    if(playbtn.className.includes('pause')){
