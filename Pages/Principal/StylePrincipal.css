@@ -44,7 +44,7 @@ html::-webkit-scrollbar{
         
     }
     .pagina-principal{
-        display: none;
+        display: block;
     }
     .topo-perfil{
         display: flex;
@@ -391,7 +391,7 @@ html::-webkit-scrollbar{
         display: flex;
         margin-left: 5%;
     }
-    .btnplay a{
+    .btnplay button{
         margin-top: 5%;
         width: 95%;
         text-decoration: none;
@@ -448,7 +448,7 @@ html::-webkit-scrollbar{
         position: relative;
         top: 0;
         width: 100%;
-        display: block;
+        display: none;
     }
     .page-player .musica-atual .img-da-musica{
         position: relative;
@@ -550,15 +550,24 @@ html::-webkit-scrollbar{
         border-radius: 4px;
         cursor: pointer;
         background-color: #7e7e7e;
-        overflow-y: hidden;
+        overflow-X: hidden;
     }
     #progesso::-webkit-slider-thumb{
         -webkit-appearance: none;
         background: var(--p1-quaternaria);
-        width: 30px;
-        height: 30px;
+        width: 10px;
+        height: 20px;
         border-radius: 50%;
         box-shadow: -400px 0 0 400px var(--p1-quaternaria);
+    }
+    .tempo-corrido,
+    .duracao-musica{
+        font-size: 12px;
+    }
+    .duracao-musica{
+        position: absolute;
+        right: 0;
+        margin-right: 5%;
     }
     .player .controles{
         width: 100%;

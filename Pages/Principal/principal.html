@@ -159,11 +159,11 @@
               </svg>more</a>
         </div>
         <div class="btnplay">
-            <a href="">
+            <button>
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
                     <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
                   </svg>play
-            </a>
+            </button>
         </div>
         <div class="models">
         <div class="lista-musica">
@@ -184,7 +184,7 @@
 
     <div class="page-player">
         <div class="musica-atual">
-            <img src="Medias/PlayListEletronica/Imagens/faded.jpg" alt="" class="img-da-musica">
+            <img src="" alt="" class="img-da-musica">
             <div class="informacoes-musica">
                 <div class="back-notificacoes">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bell"
@@ -198,8 +198,8 @@
                         <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
                     </svg>
                 </div>
-                <h2 class="nome-da-musica">faded</h2>
-                <p class="artista">Alan walker</p>
+                <h2 class="nome-da-musica"></h2>
+                <p class="artista"></p>
                 <div class="back-curtida">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
@@ -224,11 +224,15 @@
         </div>
         <div class="player">
             <audio  class="musicaSom">
-                <source src="Medias/PlayListEletronica/Audios/AlamWalkerFaded.mp3" type="audio/mpeg">
+                <source src="" type="audio/mpeg">
             </audio>
-            <input type="range" value="0" name="" id="progesso" class="progresso">
+            <div class="slide-som">
+                <input type="range" value="0" name="" id="progesso" class="progresso">
+                <span class="tempo-corrido">00:00</span>
+                <span class="duracao-musica">00:00</span>
+            </div>    
             <div class="controles">
-                <div>
+                <div class="btn-voltar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-skip-start" viewBox="0 0 16 16">
                         <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.52-.302 1.233.043 1.233.696v7.384c0 .653-.713.998-1.233.696L5 8.752V12a.5.5 0 0 1-1 0V4zm7.5.633L5.696 8l5.804 3.367V4.633z"/>
                     </svg>
@@ -237,7 +241,7 @@
                     <span></span>
                     <span></span>
                 </div>
-                <div>
+                <div class="btn-avancar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-skip-end" viewBox="0 0 16 16">
                         <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.713 3.31 4 3.655 4 4.308v7.384c0 .653.713.998 1.233.696L11.5 8.752V12a.5.5 0 0 0 1 0V4zM5 4.633 10.804 8 5 11.367V4.633z"/>
                     </svg>
