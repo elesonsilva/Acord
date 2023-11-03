@@ -19,6 +19,7 @@ TopPlaylists.map((intem, index)=>{
         if(intem.id === 1){
             playlistEletronica()
             document.querySelector('.btnplay').addEventListener('click',()=>{
+                
                 playbtn.click()
                 document.querySelector('.lista-aberta').style.display = 'none'
                 document.querySelector('.page-player').style.display = 'block'
@@ -28,7 +29,7 @@ TopPlaylists.map((intem, index)=>{
 
                 let tempomusica = 0
                 let barraprogresso = document.querySelector('.progresso')
-                const tempocorrendo = document.getElementById('tempo')
+                const tempocorrendo = document.querySelector('.tempo-corrido')
                 const duracaomusica = document.querySelector('.duracao-musica') 
                 
                 const musicas = (i)=>{
@@ -40,11 +41,13 @@ TopPlaylists.map((intem, index)=>{
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
                     document.querySelector('.player .musicaSom ').src = lista.Audio
                     
-                   tempocorrendo.innerHTML ='00:00'
+                    tempocorrendo.innerHTML ='00:00'
+
                     setTimeout(()=>{
                         barraprogresso.max = musicaSom.duration
                         console.log(musicaSom.duration)
                         duracaomusica.innerHTML = formatoTempo(musicaSom.duration) 
+                        
                     }, 300)
 
                 }
@@ -52,8 +55,8 @@ TopPlaylists.map((intem, index)=>{
                 
                 const formatoTempo = (time)=>{
                     let min = Math.floor(time / 60)
-                    if(min < 10){ min = `0${min}`}
-                    let sec = Math.floor(time / 60)
+                    if(min < 10){ min = `0${min}`} 
+                    let sec = Math.floor(time %  60)
                     if(sec < 10){ sec = `0${sec}`}
                     return `${min}:${sec}` 
                 }
@@ -61,6 +64,9 @@ TopPlaylists.map((intem, index)=>{
                 setInterval(()=>{
                     barraprogresso.value = musicaSom.currentTime;  
                     tempocorrendo.innerHTML = formatoTempo(musicaSom.currentTime) 
+                    if(Math.floor(musicaSom.currentTime)== Math.floor(barraprogresso.max)){
+                        avancar.click()
+                    }
                 },500)
 
                 musicas(0) 
@@ -70,6 +76,10 @@ TopPlaylists.map((intem, index)=>{
                     musicaSom.currentTime = barraprogresso.value;
                 })
 
+                const playMusic = ()=>{
+                    musicaSom.play()
+                    playbtn.classList.remove('pause')
+                }
               
 
                 avancar.addEventListener('click', ()=>{
@@ -79,7 +89,8 @@ TopPlaylists.map((intem, index)=>{
                         tempomusica++
                     }
                     musicas(tempomusica)
-                    playbtn.click()
+                    
+                    playMusic()
                 })
                 voltar.addEventListener('click', ()=>{
                     if(tempomusica <=0){
@@ -88,8 +99,9 @@ TopPlaylists.map((intem, index)=>{
                         tempomusica--
                     }
                     musicas(tempomusica)
-                    playbtn.click()
+                    playMusic()
                 })
+                
                 
             })
             
@@ -236,14 +248,9 @@ function transicao(){
 
 
 
-let tempomusica = 0
-let barraprogresso = document.querySelector('.progresso')  
-const duracaomusica = document.querySelector('.duracao-musica') 
+
 const musicaSom = document.querySelector('.musicaSom')   
 let playbtn = document.querySelector('.play-btn')
-const btnavancar = document.querySelector('.btn-avancar')
-
-
 
 playbtn.addEventListener('click', ()=>{
    // alert('funnn')
@@ -255,8 +262,5 @@ playbtn.addEventListener('click', ()=>{
     playbtn.classList.toggle('pause')
 })
 
-/*barra de progresso
-setInterval(()=>{
-    barraprogresso.value = musicaSom.currentTime;
-},500)*/
+
 
