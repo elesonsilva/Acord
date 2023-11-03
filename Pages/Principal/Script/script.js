@@ -64,19 +64,178 @@ TopPlaylists.map((intem, index)=>{
         }
         if(intem.id === 2){
             playlistFestival()
-            
+            document.querySelector('.btnplay').addEventListener('click',()=>{
+                document.querySelector('.lista-aberta').style.display = 'none'
+                document.querySelector('.page-player').style.display = 'block'
+               
+                const musicas = (i)=>{
+                    let lista = Festival[i]
+                    idMusica = i
+                    barraprogresso.value = 0
+                    document.querySelector('.musica-atual .img-da-musica').src = lista.img
+                    document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
+                    document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
+                    document.querySelector('.player .musicaSom ').src = lista.Audio
+                    
+                    tempo.innerHTML ='00:00'
+
+                    setTimeout(()=>{
+                        barraprogresso.max = musica.duration
+                        console.log(musica.duration)
+                        duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                        
+                    }, 300)
+
+                }
+                
+                musicas(0) 
+
+                avancar.addEventListener('click', ()=>{
+                    if(idMusica >= Festival.length -1){ idMusica = 0}
+                    else{idMusica++}
+                    musicas(idMusica)
+                    playMusic()
+                })
+                voltar.addEventListener('click', ()=>{
+                    if(idMusica <=0){idMusica = Festival.length -1}
+                    else{idMusica--}
+                    musicas(idMusica)
+                    playMusic()
+                })
+            })
         }
         if(intem.id === 3){
             playlistRock()
-            
+            document.querySelector('.btnplay').addEventListener('click',()=>{
+
+                document.querySelector('.lista-aberta').style.display = 'none'
+                document.querySelector('.page-player').style.display = 'block'
+               
+                const musicas = (i)=>{
+                    let lista = Rock[i]
+                    idMusica = i
+                    barraprogresso.value = 0
+                    document.querySelector('.musica-atual .img-da-musica').src = lista.img
+                    document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
+                    document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
+                    document.querySelector('.player .musicaSom ').src = lista.Audio
+                    
+                    tempo.innerHTML ='00:00'
+
+                    setTimeout(()=>{
+                        barraprogresso.max = musica.duration
+                        console.log(musica.duration)
+                        duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                        
+                    }, 300)
+
+                }
+                
+                musicas(0) 
+
+                avancar.addEventListener('click', ()=>{
+                    if(idMusica >= Rock.length -1){ idMusica = 0}
+                    else{idMusica++}
+                    musicas(idMusica)
+                    playMusic()
+                })
+                voltar.addEventListener('click', ()=>{
+                    if(idMusica <=0){idMusica = Rock.length -1}
+                    else{idMusica--}
+                    musicas(idMusica)
+                    playMusic()
+                })
+            })
         }
         if(intem.id === 4){
             playlistAcustica()
-            
+            document.querySelector('.btnplay').addEventListener('click',()=>{
+
+
+
+                document.querySelector('.lista-aberta').style.display = 'none'
+                document.querySelector('.page-player').style.display = 'block'
+               
+                const musicas = (i)=>{
+                    let lista = Acustica[i]
+                    idMusica = i
+                    barraprogresso.value = 0
+                    document.querySelector('.musica-atual .img-da-musica').src = lista.img
+                    document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
+                    document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
+                    document.querySelector('.player .musicaSom ').src = lista.Audio
+                    
+                    tempo.innerHTML ='00:00'
+
+                    setTimeout(()=>{
+                        barraprogresso.max = musica.duration
+                        console.log(musica.duration)
+                        duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                        
+                    }, 300)
+
+                }
+                
+                musicas(0) 
+
+                avancar.addEventListener('click', ()=>{
+                    if(idMusica >= Acustica.length -1){ idMusica = 0}
+                    else{idMusica++}
+                    musicas(idMusica)
+                    playMusic()
+                })
+                voltar.addEventListener('click', ()=>{
+                    if(idMusica <=0){idMusica = Acustica.length -1}
+                    else{idMusica--}
+                    musicas(idMusica)
+                    playMusic()
+                })
+            })
         }
         if(intem.id === 5){
             playlistCover()
-            
+            document.querySelector('.btnplay').addEventListener('click',()=>{
+                
+
+                
+                document.querySelector('.lista-aberta').style.display = 'none'
+                document.querySelector('.page-player').style.display = 'block'
+               
+                const musicas = (i)=>{
+                    let lista = Cover[i]
+                    idMusica = i
+                    barraprogresso.value = 0
+                    document.querySelector('.musica-atual .img-da-musica').src = lista.img
+                    document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
+                    document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
+                    document.querySelector('.player .musicaSom ').src = lista.Audio
+                    
+                    tempo.innerHTML ='00:00'
+
+                    setTimeout(()=>{
+                        barraprogresso.max = musica.duration
+                        console.log(musica.duration)
+                        duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                        
+                    }, 300)
+
+                }
+                
+                musicas(0) 
+
+                avancar.addEventListener('click', ()=>{
+                    if(idMusica >= Cover.length -1){ idMusica = 0}
+                    else{idMusica++}
+                    musicas(idMusica)
+                    playMusic()
+                })
+                voltar.addEventListener('click', ()=>{
+                    if(idMusica <=0){idMusica = Cover.length -1}
+                    else{idMusica--}
+                    musicas(idMusica)
+                    playMusic()
+                })
+            })
         }
     })
 
@@ -214,6 +373,7 @@ const voltar = document.querySelector('.btn-voltar')
 const tempo = document.querySelector('.tempo-corrido')
 const duracaomusica = document.querySelector('.duracao-musica') 
 
+
 playbtn.addEventListener('click', ()=>{
    if(playbtn.className.includes('pause')){
     musica.play()
@@ -223,6 +383,7 @@ playbtn.addEventListener('click', ()=>{
     playbtn.classList.toggle('pause')
 })
 
+
 const formatoTempo = (time)=>{
     let min = Math.floor(time / 60)
     if(min < 10){ min = `0${min}`} 
@@ -231,7 +392,7 @@ const formatoTempo = (time)=>{
     return `${min}:${sec}` 
 }
 
-  //barra de progresso
+  
   setInterval(()=>{
     barraprogresso.value = musica.currentTime;  
     tempo.innerHTML = formatoTempo(musica.currentTime) 
