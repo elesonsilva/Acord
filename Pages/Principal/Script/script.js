@@ -254,6 +254,52 @@ TopAlbuns.map((intem, index)=>{
         document.querySelector('.lista-aberta .categoria .img-lista').src = intem.img
         document.querySelector('.lista-aberta .informacoes .titulo-lista').innerHTML = intem.tituloAlbum
         document.querySelector('.lista-aberta .informacoes .desc-lista').innerHTML = intem.descAlbum
+
+        if(intem.id === 1){
+            albumBrunoMars()
+            document.querySelector('.btnplay').addEventListener('click',()=>{
+                
+                
+                
+                
+                playTransicao()
+                const musicas = (i)=>{
+                    let lista = brunoMars[i]
+                    idMusica = i
+                    barraprogresso.value = 0
+                    document.querySelector('.musica-atual .img-da-musica').src = lista.img
+                    document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
+                    document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
+                    document.querySelector('.player .musicaSom ').src = lista.Audio
+                    
+                    tempo.innerHTML ='00:00'
+
+                    setTimeout(()=>{
+                        barraprogresso.max = musica.duration
+                        console.log(musica.duration)
+                        duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                        
+                    }, 300)
+
+                }
+                
+                musicas(0) 
+
+                avancar.addEventListener('click', ()=>{
+                    if(idMusica >= brunoMars.length -1){ idMusica = 0}
+                    else{idMusica++}
+                    musicas(idMusica)
+                    playMusic()
+                })
+                voltar.addEventListener('click', ()=>{
+                    if(idMusica <=0){idMusica = brunoMars.length -1}
+                    else{idMusica--}
+                    musicas(idMusica)
+                    playMusic()
+                })
+            })
+            
+        }
     })
 })
 
@@ -402,6 +448,29 @@ function playTransicao(){
                 document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = acustica.NomeDaMusica
                 document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = acustica.Artista
             musica = document.querySelector('.player .musicaSom ').src = acustica.Audio
+                  
+        })
+    })
+   }
+   function albumBrunoMars(){
+    brunoMars.map((bruno, index)=>{
+        let brunoItem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
+        document.querySelector('.lista-aberta').append(brunoItem)
+
+
+        brunoItem.querySelector('.lista-musica img').src = bruno.img
+        brunoItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = bruno.NomeDaMusica
+        brunoItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = bruno.Artista
+
+        brunoItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
+            e.preventDefault()
+            playTransicao()
+            barraprogresso.value = 0
+
+                document.querySelector('.musica-atual .img-da-musica').src = bruno.img
+                document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = bruno.NomeDaMusica
+                document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = bruno.Artista
+                document.querySelector('.player .musicaSom ').src = bruno.Audio
                   
         })
     })
