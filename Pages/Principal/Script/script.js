@@ -291,6 +291,9 @@ var swiper = new Swiper(".mySwiper", {
 document.querySelector('.lista-aberta .categoria .informacoes .bi').addEventListener('click',()=>{
     window.location.reload()
 })  
+document.querySelector('.informacoes-musica .back-voltar').addEventListener('click', ()=>{
+    window.location.reload()
+})
 
 
 
