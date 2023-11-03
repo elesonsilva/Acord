@@ -21,10 +21,9 @@ TopPlaylists.map((intem, index)=>{
             document.querySelector('.btnplay').addEventListener('click',()=>{
                 
                 
-                document.querySelector('.lista-aberta').style.display = 'none'
-                document.querySelector('.page-player').style.display = 'block'
-               
                 
+                
+                playTransicao()
                 const musicas = (i)=>{
                     let lista = Eletronica[i]
                     idMusica = i
@@ -65,9 +64,10 @@ TopPlaylists.map((intem, index)=>{
         if(intem.id === 2){
             playlistFestival()
             document.querySelector('.btnplay').addEventListener('click',()=>{
-                document.querySelector('.lista-aberta').style.display = 'none'
-                document.querySelector('.page-player').style.display = 'block'
                
+               
+               
+                playTransicao()
                 const musicas = (i)=>{
                     let lista = Festival[i]
                     idMusica = i
@@ -108,9 +108,9 @@ TopPlaylists.map((intem, index)=>{
             playlistRock()
             document.querySelector('.btnplay').addEventListener('click',()=>{
 
-                document.querySelector('.lista-aberta').style.display = 'none'
-                document.querySelector('.page-player').style.display = 'block'
-               
+                
+             
+                playTransicao()
                 const musicas = (i)=>{
                     let lista = Rock[i]
                     idMusica = i
@@ -152,10 +152,7 @@ TopPlaylists.map((intem, index)=>{
             document.querySelector('.btnplay').addEventListener('click',()=>{
 
 
-
-                document.querySelector('.lista-aberta').style.display = 'none'
-                document.querySelector('.page-player').style.display = 'block'
-               
+                 playTransicao()
                 const musicas = (i)=>{
                     let lista = Acustica[i]
                     idMusica = i
@@ -196,10 +193,8 @@ TopPlaylists.map((intem, index)=>{
             playlistCover()
             document.querySelector('.btnplay').addEventListener('click',()=>{
                 
-
                 
-                document.querySelector('.lista-aberta').style.display = 'none'
-                document.querySelector('.page-player').style.display = 'block'
+                playTransicao()
                
                 const musicas = (i)=>{
                     let lista = Cover[i]
@@ -302,6 +297,18 @@ document.querySelector('.lista-aberta .categoria .informacoes .bi').addEventList
 function transicao(){
     document.querySelector('.pagina-principal').style.display = 'none'
     document.querySelector('.lista-aberta').style.display = 'block'
+    document.querySelector('.Listas').style.display = 'none'
+    document.querySelector('.page-player').style.display = 'none'
+    
+}
+function playTransicao(){
+    document.querySelector('.lista-aberta').style.display = 'block'
+    document.querySelector('.categoria').style.display = 'none'
+    document.querySelector('.btn-goup-acoes').style.display = 'none'
+    document.querySelector('.btnplay').style.display = 'none'
+
+    document.querySelector('.page-player').style.display = 'block'
+    document.querySelector('.Listas').style.display = 'none'
 }
 
    function playlistEletronica(){
