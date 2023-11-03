@@ -20,89 +20,45 @@ TopPlaylists.map((intem, index)=>{
             playlistEletronica()
             document.querySelector('.btnplay').addEventListener('click',()=>{
                 
-                playbtn.click()
+                
                 document.querySelector('.lista-aberta').style.display = 'none'
                 document.querySelector('.page-player').style.display = 'block'
-
-                const avancar = document.querySelector('.btn-avancar')
-                const voltar = document.querySelector('.btn-voltar')
-
-                let tempomusica = 0
-                let barraprogresso = document.querySelector('.progresso')
-                const tempocorrendo = document.querySelector('.tempo-corrido')
-                const duracaomusica = document.querySelector('.duracao-musica') 
+               
                 
                 const musicas = (i)=>{
                     let lista = Eletronica[i]
-                    tempomusica = i
+                    idMusica = i
                     barraprogresso.value = 0
                     document.querySelector('.musica-atual .img-da-musica').src = lista.img
                     document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
                     document.querySelector('.player .musicaSom ').src = lista.Audio
                     
-                    tempocorrendo.innerHTML ='00:00'
+                    tempo.innerHTML ='00:00'
 
                     setTimeout(()=>{
-                        barraprogresso.max = musicaSom.duration
-                        console.log(musicaSom.duration)
-                        duracaomusica.innerHTML = formatoTempo(musicaSom.duration) 
+                        barraprogresso.max = musica.duration
+                        console.log(musica.duration)
+                        duracaomusica.innerHTML = formatoTempo(musica.duration) 
                         
                     }, 300)
 
                 }
                 
-                
-                const formatoTempo = (time)=>{
-                    let min = Math.floor(time / 60)
-                    if(min < 10){ min = `0${min}`} 
-                    let sec = Math.floor(time %  60)
-                    if(sec < 10){ sec = `0${sec}`}
-                    return `${min}:${sec}` 
-                }
-                //barra de progresso
-                setInterval(()=>{
-                    barraprogresso.value = musicaSom.currentTime;  
-                    tempocorrendo.innerHTML = formatoTempo(musicaSom.currentTime) 
-                    if(Math.floor(musicaSom.currentTime)== Math.floor(barraprogresso.max)){
-                        avancar.click()
-                    }
-                },500)
-
                 musicas(0) 
-               
-
-                barraprogresso.addEventListener('change', ()=>{
-                    musicaSom.currentTime = barraprogresso.value;
-                })
-
-                const playMusic = ()=>{
-                    musicaSom.play()
-                    playbtn.classList.remove('pause')
-                }
-              
 
                 avancar.addEventListener('click', ()=>{
-                    if(tempomusica >= Eletronica.length -1){
-                        tempomusica = 0
-                    }else{
-                        tempomusica++
-                    }
-                    musicas(tempomusica)
-                    
+                    if(idMusica >= Eletronica.length -1){ idMusica = 0}
+                    else{idMusica++}
+                    musicas(idMusica)
                     playMusic()
                 })
                 voltar.addEventListener('click', ()=>{
-                    if(tempomusica <=0){
-                        tempomusica = Eletronica.length -1
-                    }else{
-                        tempomusica--
-                    }
-                    musicas(tempomusica)
+                    if(idMusica <=0){idMusica = Eletronica.length -1}
+                    else{idMusica--}
+                    musicas(idMusica)
                     playMusic()
                 })
-                
-                
             })
             
         }
@@ -249,18 +205,47 @@ function transicao(){
 
 
 
-const musicaSom = document.querySelector('.musicaSom')   
-let playbtn = document.querySelector('.play-btn')
+let idMusica = 0
+let barraprogresso = document.querySelector('.progresso')
+const musica = document.querySelector('.musicaSom')   
+const playbtn = document.querySelector('.play-btn')
+const avancar = document.querySelector('.btn-avancar')
+const voltar = document.querySelector('.btn-voltar')
+const tempo = document.querySelector('.tempo-corrido')
+const duracaomusica = document.querySelector('.duracao-musica') 
 
 playbtn.addEventListener('click', ()=>{
-   // alert('funnn')
    if(playbtn.className.includes('pause')){
-    musicaSom.play()
+    musica.play()
    }else{
-    musicaSom.pause()
+    musica.pause()
    }
     playbtn.classList.toggle('pause')
 })
 
+const formatoTempo = (time)=>{
+    let min = Math.floor(time / 60)
+    if(min < 10){ min = `0${min}`} 
+    let sec = Math.floor(time %  60)
+    if(sec < 10){ sec = `0${sec}`}
+    return `${min}:${sec}` 
+}
 
+  //barra de progresso
+  setInterval(()=>{
+    barraprogresso.value = musica.currentTime;  
+    tempo.innerHTML = formatoTempo(musica.currentTime) 
+    if(Math.floor(musica.currentTime)== Math.floor(barraprogresso.max)){
+        avancar.click()
+    }
+    },500)
 
+    barraprogresso.addEventListener('change', ()=>{
+    musica.currentTime = barraprogresso.value;
+    })
+
+    const playMusic = ()=>{
+        musica.play()
+        playbtn.classList.remove('pause')
+    }
+    playbtn.click()
