@@ -51,7 +51,7 @@ let brunoMars = [
     },
     {
         id:8,
-        img:'Medias/Album Bruno Mars/Imagens/bruno-album.jpg',
+        img:'Medias/Album Bruno Mars/Imagens/bruno-mars-just-way-you-are.png',
         NomeDaMusica:'Just The Way You Are',
         Artista: 'Bruno Mars',
         Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Just The Way You Are Official Music Video.mp3'
