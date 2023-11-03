@@ -58,15 +58,15 @@ let brunoMars = [
     },
     {
         id:9,
-        img:'Medias/Album Bruno Mars/Imagens/bruno-album.jpg',
+        img:'Medias/Album Bruno Mars/Imagens/finesse.jpg',
         NomeDaMusica:'Finesse',
         Artista: 'Bruno Mars ',
         Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Finesse Remix feat Cardi B Official Music Video.mp3'
     },
     {
         id:10,
-        img:'Medias/Album Bruno Mars/Imagens/bruno-album.jpg',
-        NomeDaMusica:'Billionaire ',
+        img:'Medias/Album Bruno Mars/Imagens/bilionare.jpg',
+        NomeDaMusica:'Billionaire',
         Artista: 'Bruno Mars',
         Audio:'Medias/Album Bruno Mars/Audios/Travie McCoy Billionaire ft Bruno Mars OFFICIAL VIDEO.mp3'
     },
