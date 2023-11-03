@@ -323,6 +323,18 @@ function playTransicao(){
         eletronicaItem.querySelector('.lista-musica img').src = eletronica.img
         eletronicaItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = eletronica.NomeDaMusica
         eletronicaItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = eletronica.Artista
+
+        eletronicaItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
+            e.preventDefault()
+            playTransicao()
+            barraprogresso.value = 0
+
+                document.querySelector('.musica-atual .img-da-musica').src = eletronica.img
+                document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = eletronica.NomeDaMusica
+                document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = eletronica.Artista
+            musica = document.querySelector('.player .musicaSom ').src = eletronica.Audio
+                  
+        })
     })
    }
    function playlistFestival(){
@@ -334,6 +346,18 @@ function playTransicao(){
         festivalItem.querySelector('.lista-musica img').src = festival.img
         festivalItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = festival.NomeDaMusica
         festivalItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = festival.Artista
+
+        festivalItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
+            e.preventDefault()
+            playTransicao()
+            barraprogresso.value = 0
+
+                document.querySelector('.musica-atual .img-da-musica').src = festival.img
+                document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = festival.NomeDaMusica
+                document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = festival.Artista
+            musica = document.querySelector('.player .musicaSom ').src = festival.Audio
+                  
+        })
     })
    }
    function playlistRock(){
@@ -345,6 +369,18 @@ function playTransicao(){
         rockItem.querySelector('.lista-musica img').src = rock.img
         rockItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = rock.NomeDaMusica
         rockItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = rock.Artista
+
+        rockItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
+            e.preventDefault()
+            playTransicao()
+            barraprogresso.value = 0
+
+                document.querySelector('.musica-atual .img-da-musica').src = rock.img
+                document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = rock.NomeDaMusica
+                document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = rock.Artista
+            musica = document.querySelector('.player .musicaSom ').src = rock.Audio
+                  
+        })
     })
    }
    function playlistAcustica(){
@@ -356,6 +392,18 @@ function playTransicao(){
         acusticaItem.querySelector('.lista-musica img').src = acustica.img
         acusticaItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = acustica.NomeDaMusica
         acusticaItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = acustica.Artista
+
+        acusticaItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
+            e.preventDefault()
+            playTransicao()
+            barraprogresso.value = 0
+
+                document.querySelector('.musica-atual .img-da-musica').src = acustica.img
+                document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = acustica.NomeDaMusica
+                document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = acustica.Artista
+            musica = document.querySelector('.player .musicaSom ').src = acustica.Audio
+                  
+        })
     })
    }
    function playlistCover(){
@@ -367,6 +415,18 @@ function playTransicao(){
         coverItem.querySelector('.lista-musica img').src = cover.img
         coverItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = cover.NomeDaMusica
         coverItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = cover.Artista
+
+        coverItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
+            e.preventDefault()
+            playTransicao()
+            barraprogresso.value = 0
+
+                document.querySelector('.musica-atual .img-da-musica').src = cover.img
+                document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = cover.NomeDaMusica
+                document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = cover.Artista
+            musica = document.querySelector('.player .musicaSom ').src = cover.Audio
+                  
+        })
     })
    }
 
