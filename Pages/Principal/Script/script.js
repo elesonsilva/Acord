@@ -380,6 +380,13 @@ function playTransicao(){
                 document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = eletronica.NomeDaMusica
                 document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = eletronica.Artista
                 document.querySelector('.player .musicaSom ').src = eletronica.Audio
+
+                setTimeout(()=>{
+                    barraprogresso.max = musica.duration
+                    console.log(musica.duration)
+                    duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                    
+                }, 300)
                   
         })
     })
@@ -403,6 +410,13 @@ function playTransicao(){
                 document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = festival.NomeDaMusica
                 document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = festival.Artista
                 document.querySelector('.player .musicaSom ').src = festival.Audio
+
+                setTimeout(()=>{
+                    barraprogresso.max = musica.duration
+                    console.log(musica.duration)
+                    duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                    
+                }, 300)
                   
         })
     })
@@ -426,6 +440,13 @@ function playTransicao(){
                 document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = rock.NomeDaMusica
                 document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = rock.Artista
                 document.querySelector('.player .musicaSom ').src = rock.Audio
+
+                setTimeout(()=>{
+                    barraprogresso.max = musica.duration
+                    console.log(musica.duration)
+                    duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                    
+                }, 300)
                   
         })
     })
@@ -449,6 +470,13 @@ function playTransicao(){
                 document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = acustica.NomeDaMusica
                 document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = acustica.Artista
                 document.querySelector('.player .musicaSom ').src = acustica.Audio
+
+                setTimeout(()=>{
+                    barraprogresso.max = musica.duration
+                    console.log(musica.duration)
+                    duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                    
+                }, 300)
                   
         })
     })
@@ -472,7 +500,12 @@ function playTransicao(){
                 document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = cover.NomeDaMusica
                 document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = cover.Artista
                 document.querySelector('.player .musicaSom ').src = cover.Audio
-                  
+                setTimeout(()=>{
+                    barraprogresso.max = musica.duration
+                    console.log(musica.duration)
+                    duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                    
+                }, 300)
         })
     })
    }
@@ -491,12 +524,18 @@ function playTransicao(){
             e.preventDefault()
             playTransicao()
             barraprogresso.value = 0
+            document.querySelector('.musica-atual .img-da-musica').src = bruno.img
+            document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = bruno.NomeDaMusica
+            document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = bruno.Artista
+            document.querySelector('.player .musicaSom ').src = bruno.Audio
+                   
+            setTimeout(()=>{
+                barraprogresso.max = musica.duration
+                console.log(musica.duration)
+                duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                
+            }, 300)
             
-                document.querySelector('.musica-atual .img-da-musica').src = bruno.img
-                document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = bruno.NomeDaMusica
-                document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = bruno.Artista
-                document.querySelector('.player .musicaSom ').src = bruno.Audio
-                  
         })
     })
    }
