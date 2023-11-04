@@ -618,11 +618,18 @@ html::-webkit-scrollbar{
         border-radius: 0;
         clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
     }
-
+    .play-btn.pause{
+        animation: pulse 1.2s linear alternate-reverse infinite;
+    }
     
     .player .controles .btn-repetir{  
         color: var(--p1-quaternaria);
     }    
     
-
+    @keyframes pulse {
+        0%{ box-shadow: 0;}
+        50%{ box-shadow: 0 0 0 5px rgba(62, 66, 46, 0.623);}
+        100%{box-shadow: 0 0 0 5px rgba(167, 209, 41, 0.4);}
+        
+    }
 }
