@@ -350,6 +350,7 @@ function transicao(){
     document.querySelector('.page-player').style.display = 'none'
     
 }
+
 function playTransicao(){
     document.querySelector('.lista-aberta').style.display = 'block'
     document.querySelector('.categoria').style.display = 'none'
@@ -378,7 +379,7 @@ function playTransicao(){
                 document.querySelector('.musica-atual .img-da-musica').src = eletronica.img
                 document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = eletronica.NomeDaMusica
                 document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = eletronica.Artista
-            musica = document.querySelector('.player .musicaSom ').src = eletronica.Audio
+                document.querySelector('.player .musicaSom ').src = eletronica.Audio
                   
         })
     })
@@ -401,7 +402,7 @@ function playTransicao(){
                 document.querySelector('.musica-atual .img-da-musica').src = festival.img
                 document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = festival.NomeDaMusica
                 document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = festival.Artista
-            musica = document.querySelector('.player .musicaSom ').src = festival.Audio
+                document.querySelector('.player .musicaSom ').src = festival.Audio
                   
         })
     })
@@ -424,7 +425,7 @@ function playTransicao(){
                 document.querySelector('.musica-atual .img-da-musica').src = rock.img
                 document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = rock.NomeDaMusica
                 document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = rock.Artista
-            musica = document.querySelector('.player .musicaSom ').src = rock.Audio
+                document.querySelector('.player .musicaSom ').src = rock.Audio
                   
         })
     })
@@ -447,30 +448,7 @@ function playTransicao(){
                 document.querySelector('.musica-atual .img-da-musica').src = acustica.img
                 document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = acustica.NomeDaMusica
                 document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = acustica.Artista
-            musica = document.querySelector('.player .musicaSom ').src = acustica.Audio
-                  
-        })
-    })
-   }
-   function albumBrunoMars(){
-    brunoMars.map((bruno, index)=>{
-        let brunoItem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
-        document.querySelector('.lista-aberta').append(brunoItem)
-
-
-        brunoItem.querySelector('.lista-musica img').src = bruno.img
-        brunoItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = bruno.NomeDaMusica
-        brunoItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = bruno.Artista
-
-        brunoItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
-            e.preventDefault()
-            playTransicao()
-            barraprogresso.value = 0
-
-                document.querySelector('.musica-atual .img-da-musica').src = bruno.img
-                document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = bruno.NomeDaMusica
-                document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = bruno.Artista
-                document.querySelector('.player .musicaSom ').src = bruno.Audio
+                document.querySelector('.player .musicaSom ').src = acustica.Audio
                   
         })
     })
@@ -493,7 +471,31 @@ function playTransicao(){
                 document.querySelector('.musica-atual .img-da-musica').src = cover.img
                 document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = cover.NomeDaMusica
                 document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = cover.Artista
-            musica = document.querySelector('.player .musicaSom ').src = cover.Audio
+                document.querySelector('.player .musicaSom ').src = cover.Audio
+                  
+        })
+    })
+   }
+   
+   function albumBrunoMars(){
+    brunoMars.map((bruno, index)=>{
+        let brunoItem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
+        document.querySelector('.lista-aberta').append(brunoItem)
+
+
+        brunoItem.querySelector('.lista-musica img').src = bruno.img
+        brunoItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = bruno.NomeDaMusica
+        brunoItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = bruno.Artista
+
+        brunoItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
+            e.preventDefault()
+            playTransicao()
+            barraprogresso.value = 0
+            
+                document.querySelector('.musica-atual .img-da-musica').src = bruno.img
+                document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = bruno.NomeDaMusica
+                document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = bruno.Artista
+                document.querySelector('.player .musicaSom ').src = bruno.Audio
                   
         })
     })

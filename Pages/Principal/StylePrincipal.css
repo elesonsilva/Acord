@@ -45,6 +45,7 @@ html::-webkit-scrollbar{
     }
     .pagina-principal{
         display: block;
+       
     }
     .topo-perfil{
         display: flex;
@@ -613,6 +614,8 @@ html::-webkit-scrollbar{
         border-radius: 0;
         clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
     }
+
+    
     
     
 
