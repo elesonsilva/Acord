@@ -575,7 +575,11 @@ html::-webkit-scrollbar{
         width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
         
+    }
+    .player .controles .btn-embaralhar{  
+        color: var(--p1-quaternaria);
     }
     .player .controles div{
         margin: 15px;
@@ -616,7 +620,9 @@ html::-webkit-scrollbar{
     }
 
     
-    
+    .player .controles .btn-repetir{  
+        color: var(--p1-quaternaria);
+    }    
     
 
 }
