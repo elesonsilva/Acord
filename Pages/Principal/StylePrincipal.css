@@ -47,6 +47,11 @@ html::-webkit-scrollbar{
         display: block;
        
     }
+    .movePagePrincipal{
+        margin-left: 100%;
+        transition: 0.5s;
+        
+    }
     .topo-perfil{
         display: flex;
         align-items: center;
@@ -304,6 +309,8 @@ html::-webkit-scrollbar{
         top: 0;
         width: 100%;
         display: none;
+        opacity: 0;
+        animation: reveal 0.2s forwards;
     }
    
     .lista-aberta .categoria .img-lista{
@@ -631,5 +638,9 @@ html::-webkit-scrollbar{
         50%{ box-shadow: 0 0 0 5px rgba(62, 66, 46, 0.623);}
         100%{box-shadow: 0 0 0 5px rgba(167, 209, 41, 0.4);}
         
+    }
+    @keyframes reveal {
+        from{opacity: 0;}
+        to{opacity: 1;}
     }
 }

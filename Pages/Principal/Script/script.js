@@ -344,21 +344,38 @@ document.querySelector('.informacoes-musica .back-voltar').addEventListener('cli
 
 
 function transicao(){
+    var tela = window.matchMedia('screen and (min-width: 800px)')
+    if( tela.matches){
+        //VERSÃO DESKTOP
+    }else{
+        document.querySelector('.pagina-principal').style.display = 'none'
+       ScrollReveal().reveal('.lista-aberta ', {delay:0.2,duration: 100, origin:'left', interval:200, distance: '250px',reset:true})
+       document.querySelector('.lista-aberta').style.display = 'block'
+       
+       document.querySelector('.Listas').style.display = 'none'
+       document.querySelector('.page-player').style.display = 'none'
+    }
+    /*
     document.querySelector('.pagina-principal').style.display = 'none'
-    document.querySelector('.lista-aberta').style.display = 'block'
-    document.querySelector('.Listas').style.display = 'none'
-    document.querySelector('.page-player').style.display = 'none'
-    
+    */
 }
 
 function playTransicao(){
-    document.querySelector('.lista-aberta').style.display = 'block'
-    document.querySelector('.categoria').style.display = 'none'
-    document.querySelector('.btn-goup-acoes').style.display = 'none'
-    document.querySelector('.btnplay').style.display = 'none'
+    var tela = window.matchMedia('screen and (min-width: 800px)')
+    if (tela.matches){
+        
+    }else{
+        document.querySelector('.categoria').style.display = 'none'
+        document.querySelector('.btn-goup-acoes').style.display = 'none'
+        document.querySelector('.btnplay').style.display = 'none'
+        
+        document.querySelector('.lista-aberta').style.display = 'block'
+        document.querySelector('.page-player').style.display = 'block'
+        ScrollReveal().reveal('.page-player', {delay:0.2,duration: 100, origin:'rigth', interval:200, distance: '250px',reset:true})
+        
+        document.querySelector('.Listas').style.display = 'none'
+    }
 
-    document.querySelector('.page-player').style.display = 'block'
-    document.querySelector('.Listas').style.display = 'none'
 }
 
    function playlistEletronica(){
