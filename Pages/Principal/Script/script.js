@@ -336,9 +336,13 @@ var swiper = new Swiper(".mySwiper", {
 
 document.querySelector('.lista-aberta .categoria .informacoes .bi').addEventListener('click',()=>{
     window.location.reload()
+    document.querySelector('.pagina-principal').animate([{right:'-100%'},{right:'0'}],{duration:100,fill:'forwards'})
+
 })  
 document.querySelector('.informacoes-musica .back-voltar').addEventListener('click', ()=>{
     window.location.reload()
+    document.querySelector('.pagina-principal').animate([{right:'-100%'},{right:'0'}],{duration:100,fill:'forwards'})
+
 })
 
 
@@ -349,15 +353,12 @@ function transicao(){
         //VERSÃO DESKTOP
     }else{
         document.querySelector('.pagina-principal').style.display = 'none'
-       ScrollReveal().reveal('.lista-aberta ', {delay:0.2,duration: 100, origin:'left', interval:200, distance: '250px',reset:true})
-       document.querySelector('.lista-aberta').style.display = 'block'
+        document.querySelector('.lista-aberta').style.display = 'block'
        
        document.querySelector('.Listas').style.display = 'none'
        document.querySelector('.page-player').style.display = 'none'
     }
-    /*
-    document.querySelector('.pagina-principal').style.display = 'none'
-    */
+    
 }
 
 function playTransicao(){
@@ -365,15 +366,17 @@ function playTransicao(){
     if (tela.matches){
         
     }else{
+        var telaplay =  document.querySelector('.page-player') 
         document.querySelector('.categoria').style.display = 'none'
         document.querySelector('.btn-goup-acoes').style.display = 'none'
         document.querySelector('.btnplay').style.display = 'none'
+        document.querySelector('.Listas').style.display = 'none'
         
         document.querySelector('.lista-aberta').style.display = 'block'
         document.querySelector('.page-player').style.display = 'block'
-        ScrollReveal().reveal('.page-player', {delay:0.2,duration: 100, origin:'rigth', interval:200, distance: '250px',reset:true})
         
-        document.querySelector('.Listas').style.display = 'none'
+        telaplay.animate([{right:'-100%'},{right:'0'}],{duration:100,fill:'forwards'})
+        
     }
 
 }
@@ -607,3 +610,7 @@ const formatoTempo = (time)=>{
         playbtn.classList.remove('pause')
     }
     playbtn.click()
+
+    ScrollReveal().reveal('.swiper-slide',  { origin:'bottom', duration:300, distance: '40px',reset:false, interval: 50})
+    ScrollReveal().reveal('.pagina-principal',  { origin:'bottom', duration:200, distance: '40px',reset:false})
+   
