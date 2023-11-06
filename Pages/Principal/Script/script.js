@@ -610,7 +610,3 @@ const formatoTempo = (time)=>{
         playbtn.classList.remove('pause')
     }
     playbtn.click()
-
-    ScrollReveal().reveal('.swiper-slide',  { origin:'bottom', duration:300, distance: '40px',reset:false, interval: 50})
-    ScrollReveal().reveal('.pagina-principal',  { origin:'bottom', duration:200, distance: '40px',reset:false})
-   
