@@ -336,12 +336,10 @@ var swiper = new Swiper(".mySwiper", {
 
 document.querySelector('.lista-aberta .categoria .informacoes .bi').addEventListener('click',()=>{
     window.location.reload()
-    document.querySelector('.pagina-principal').animate([{right:'-100%'},{right:'0'}],{duration:100,fill:'forwards'})
 
 })  
 document.querySelector('.informacoes-musica .back-voltar').addEventListener('click', ()=>{
     window.location.reload()
-    document.querySelector('.pagina-principal').animate([{right:'-100%'},{right:'0'}],{duration:100,fill:'forwards'})
 
 })
 
