@@ -564,8 +564,8 @@ function playTransicao(){
 
 function ultimasouvidas(){
     brunoMars.map((br, index)=>{
-        let historico = document.querySelector('.mix-favoritos .mix-card-favoritos').cloneNode(true)
-        document.querySelector('.mix-favoritos').append(historico)
+        let historico = document.querySelector('.mix-card-favoritos').cloneNode(true)
+        document.querySelector('..mix-card-favoritos').append(historico)
 
         historico.querySelector('.mix-favoritos img').src = br.img
         historico.querySelector('.mix-favoritos h4').innerHTML = br.NomeDaMusica
