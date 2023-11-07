@@ -323,6 +323,7 @@ TopMusica.map((intem, index)=>{
     })
 })
 
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -532,11 +533,14 @@ function playTransicao(){
     brunoMars.map((bruno, index)=>{
         let brunoItem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
         document.querySelector('.lista-aberta').append(brunoItem)
+        
 
 
         brunoItem.querySelector('.lista-musica img').src = bruno.img
         brunoItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = bruno.NomeDaMusica
         brunoItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = bruno.Artista
+
+        
 
         brunoItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
             e.preventDefault()
@@ -558,7 +562,15 @@ function playTransicao(){
     })
    }
 
+function ultimasouvidas(){
+    brunoMars.map((br, index)=>{
+        let historico = document.querySelector('.mix-favoritos .mix-card-favoritos').cloneNode(true)
+        document.querySelector('.mix-favoritos').append(historico)
 
+        historico.querySelector('.mix-favoritos img').src = br.img
+        historico.querySelector('.mix-favoritos h4').innerHTML = br.NomeDaMusica
+    })
+}
 
 
 
