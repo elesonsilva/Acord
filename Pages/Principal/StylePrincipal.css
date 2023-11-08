@@ -227,7 +227,7 @@ html::-webkit-scrollbar{
 
     .swiper {
         width: 90%;
-        height: 180px;
+        height: 140px;
         margin-top: 10px;
       }
   
@@ -642,6 +642,7 @@ html::-webkit-scrollbar{
         grid-template-columns: repeat(2,8fr);
         gap: 10px;
         margin-left: 5%;
+        
     }
     .mix-favoritos .mix-card-favoritos{
         display: flex;
@@ -654,15 +655,56 @@ html::-webkit-scrollbar{
         justify-content: center;
     }
     .mix-favoritos .mix-card-favoritos img{
-        width: 30%;
+        width: 40%;
         height: 100%;
         background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
     }
     .mix-card-favoritos h4{
         font-size: 14px;
         margin: 15px 5px;
         font-weight: 600;
         line-height: 15px;
+    }
+    .banner{
+        position: relative;
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-left: 5%;
+        margin-top: 90%;
+        margin-bottom: 20%;
+    }
+    .banner img{
+        position: relative;
+        width: 100%;
+        height: 180px;
+        border-radius: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .banner .conteudo-vi{
+       position: absolute;
+       display: flex;
+       margin-left: 5%;
+       height: 120px;
+       width: 100%;
+       background-image: linear-gradient(to top, var(--p1-primaria), transparent);
+    }
+    .conteudo-vi h3{
+        position: absolute;
+        left: 5%;
+        bottom: 20%;
+        font-size: 25px;
+    }
+    .conteudo-vi p{
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        
     }
     @keyframes pulse {
         0%{ box-shadow: 0;}
