@@ -347,9 +347,15 @@ document.querySelector('.informacoes-musica .back-voltar').addEventListener('cli
 let btnactive = document.querySelector('.btn-group-opcoes .bi-music-note-list')
 btnactive.addEventListener('click', ()=>{
     let listaDeMusicas = document.querySelector('.lista-aberta')
-    
-    btnactive.classList.add('active')
-    listaDeMusicas.style.display = 'none'
+    if(listaDeMusicas.style.display == 'none'){
+        btnactive.classList.add('active')
+        listaDeMusicas.style.display = 'block'
+
+    }else{
+        btnactive.classList.remove('active')
+        listaDeMusicas.style.display = 'none'
+
+    }
 })
 
 
