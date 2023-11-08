@@ -40,7 +40,7 @@ let TopAlbuns =[
     {
         id:2,
         img:'Imagens-tela-principal/anavitoria-albun.jpg',
-        tituloPlayList:'AnaVitória',
+        tituloPlayList:'Ana Vitória',
         descAlbum: 'O tempo é agora'
     },
     {
