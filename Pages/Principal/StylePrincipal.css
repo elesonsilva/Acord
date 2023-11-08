@@ -576,6 +576,9 @@ html::-webkit-scrollbar{
         width: 35%;
         margin-left: 5%;
     }
+    .active{
+        color: var(--p1-quaternaria);
+    }
     .player{
         width: 90%;
         margin-left: 5%;
