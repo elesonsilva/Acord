@@ -94,7 +94,34 @@ let TopMusica =[
         artista: 'Bruno Mars'
     }
 ]
-
+let ArtistasFav =[
+    {
+        id:1,
+        none: 'Bruno Mars',
+        img:'Imagens-tela-principal/bruno-mars.jpg'
+    },
+    {
+        id:2,
+        none: 'Guns N Roses',
+        img:'Imagens-tela-principal/guns.png'
+    },
+    {
+        id:3,
+        none: 'Luísa Sonza',
+        img:'Imagens-tela-principal/luisa.png'
+    },
+    {
+        id:4,
+        none: 'Coldplay',
+        img:'Imagens-tela-principal/cold.jpg'
+    },
+    {
+        id:5,
+        none: 'Metallica',
+        img:'Imagens-tela-principal/metallica.png'
+    },
+]
 JSON.stringify(TopPlaylists);
 JSON.stringify(TopAlbuns);
 JSON.stringify(TopMusica);
+JSON.stringify(ArtistasFav);

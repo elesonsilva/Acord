@@ -571,6 +571,13 @@ function playTransicao(){
         historico.querySelector('.mix-favoritos h4').innerHTML = br.NomeDaMusica
     })
 
+    ArtistasFav.map((favArtist, index)=>{
+        let art = document.querySelector('.card-artista-fav .swiper-slide').cloneNode(true)
+        document.querySelector('.card-artista-fav').append(art)
+
+        art.querySelector('.swiper-slide .img-artista-fav').src = favArtist.img
+        art.querySelector('.swiper-slide .artista-nome').innerHTML = favArtist.none
+    })
 
 
 let idMusica = 0

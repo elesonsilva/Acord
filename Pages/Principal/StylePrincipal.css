@@ -217,7 +217,17 @@ html::-webkit-scrollbar{
         font-size: 16px;
         
     }
-
+    .text-artista-fav {
+        position: relative;
+        display: flex;
+        width: 90%;
+        left: 5%;
+        margin-top: 5%;
+    }
+    .text-artista-fav h3{
+        color: white;
+        font-size: 20px;
+    }
     
     .models{
         display: none;
@@ -247,10 +257,22 @@ html::-webkit-scrollbar{
         background-size: cover;
         border-radius: 25px;
       }
+      .swiper-slide .img-artista-fav {
+        display: block;
+        width: 100px;
+        height: 110px;
+        background-size: cover;
+        border-radius: 100%;
+      }
       .swiper-slide .playlist-titulo , 
       .album-titulo , 
       .musica-titulo{
         width: 100%;
+        font-size: 14px;
+    }
+    .swiper-slide .artista-nome{
+        width: 100%;
+        color: white;
         font-size: 14px;
     }
     .swiper-slide .desc-playlist, 
@@ -679,7 +701,7 @@ html::-webkit-scrollbar{
         align-items: flex-end;
         margin-left: 5%;
         margin-top: 95%;
-        margin-bottom: 25%;
+        
     }
     .banner img{
         position: relative;
