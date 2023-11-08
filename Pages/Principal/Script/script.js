@@ -324,12 +324,7 @@ TopMusica.map((intem, index)=>{
 })
 
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    freeMode: false,
-    
-  });
+
 
   
 
@@ -639,3 +634,10 @@ const formatoTempo = (time)=>{
         playbtn.classList.remove('pause')
     }
     playbtn.click()
+    
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: false,
+        
+      });
