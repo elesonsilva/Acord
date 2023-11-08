@@ -342,17 +342,30 @@ document.querySelector('.informacoes-musica .back-voltar').addEventListener('cli
 let btnactive = document.querySelector('.btn-group-opcoes .bi-music-note-list')
 btnactive.addEventListener('click', ()=>{
     let listaDeMusicas = document.querySelector('.lista-aberta')
+    let imgMusica = document.querySelector('.page-player .musica-atual .img-da-musica')
+    let backinfomusica = document.querySelector('.informacoes-musica')
     if(listaDeMusicas.style.display == 'none'){
         btnactive.classList.add('active')
         listaDeMusicas.style.display = 'block'
+        imgMusica.classList.remove('img-full-window')
+        backinfomusica.classList.remove('info-full-window')
 
     }else{
         btnactive.classList.remove('active')
         listaDeMusicas.style.display = 'none'
-
+        imgMusica.classList.add('img-full-window')
+        backinfomusica.classList.add('info-full-window')
     }
 })
-
+function ativaLista(){
+    let imgMusica = document.querySelector('.page-player .musica-atual .img-da-musica')
+     let backinfomusica = document.querySelector('.informacoes-musica')
+               
+        imgMusica.classList.add('img-full-window')
+        backinfomusica.classList.add('info-full-window')
+        document.querySelector('.lista-aberta').style.display = 'none'
+        btnactive.classList.remove('active')
+}
 
 function transicao(){
     var tela = window.matchMedia('screen and (min-width: 800px)')
@@ -370,6 +383,7 @@ function transicao(){
 
 function playTransicao(){
     var tela = window.matchMedia('screen and (min-width: 800px)')
+    let btnactive = document.querySelector('.btn-group-opcoes .bi-music-note-list')
     if (tela.matches){
         
     }else{
@@ -379,10 +393,13 @@ function playTransicao(){
         document.querySelector('.btnplay').style.display = 'none'
         document.querySelector('.Listas').style.display = 'none'
         
+
         document.querySelector('.lista-aberta').style.display = 'block'
         document.querySelector('.page-player').style.display = 'block'
         
         telaplay.animate([{right:'-100%'},{right:'0'}],{duration:100,fill:'forwards'})
+
+        btnactive.classList.add('active')
         
     }
 
@@ -401,6 +418,7 @@ function playTransicao(){
         eletronicaItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
             e.preventDefault()
             playTransicao()
+            ativaLista()
             barraprogresso.value = 0
 
                 document.querySelector('.musica-atual .img-da-musica').src = eletronica.img
@@ -414,7 +432,7 @@ function playTransicao(){
                     duracaomusica.innerHTML = formatoTempo(musica.duration) 
                     
                 }, 300)
-                  
+                
         })
     })
    }
@@ -431,6 +449,7 @@ function playTransicao(){
         festivalItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
             e.preventDefault()
             playTransicao()
+            ativaLista()
             barraprogresso.value = 0
 
                 document.querySelector('.musica-atual .img-da-musica').src = festival.img
@@ -461,6 +480,7 @@ function playTransicao(){
         rockItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
             e.preventDefault()
             playTransicao()
+            ativaLista()
             barraprogresso.value = 0
 
                 document.querySelector('.musica-atual .img-da-musica').src = rock.img
@@ -491,6 +511,7 @@ function playTransicao(){
         acusticaItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
             e.preventDefault()
             playTransicao()
+            ativaLista()
             barraprogresso.value = 0
 
                 document.querySelector('.musica-atual .img-da-musica').src = acustica.img
@@ -521,6 +542,7 @@ function playTransicao(){
         coverItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
             e.preventDefault()
             playTransicao()
+            ativaLista()
             barraprogresso.value = 0
 
                 document.querySelector('.musica-atual .img-da-musica').src = cover.img
@@ -553,6 +575,7 @@ function playTransicao(){
         brunoItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
             e.preventDefault()
             playTransicao()
+            ativaLista()
             barraprogresso.value = 0
             document.querySelector('.musica-atual .img-da-musica').src = bruno.img
             document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = bruno.NomeDaMusica
@@ -634,7 +657,7 @@ const formatoTempo = (time)=>{
         playbtn.classList.remove('pause')
     }
     playbtn.click()
-    
+
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 30,
