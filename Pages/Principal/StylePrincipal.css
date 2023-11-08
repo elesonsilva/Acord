@@ -419,28 +419,31 @@ html::-webkit-scrollbar{
     }
     .lista-aberta .lista-musica{
         width: 90%;
-        height: 80px;
-        margin-top: 10%;
+        height: 40px;
+        margin-top: 5%;
         margin-left: 5%;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
        
     }
     .lista-musica .img-musica{
-        width: 80px;
-        height: 80px;
-        border-radius: 15px;
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
         
     }
     .lista-musica .informacoes-musica{
-        margin-right: 20%;
+        position: absolute;
+        left: 25%;
+        width: 50%;
         margin-top: 5%;
         line-height: 15px;
     }
     .informacoes-musica h3{
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 5px;
+        text-align: left;
     }
     .informacoes-musica p{
         font-size: 12px;
@@ -450,8 +453,9 @@ html::-webkit-scrollbar{
     .lista-musica .bi{
         color: white;
         margin-top: 50%;
-        
-        
+    }
+    .space{
+        margin-top: 20%;    
     }
     .page-player{
         position: relative;
@@ -674,8 +678,8 @@ html::-webkit-scrollbar{
         justify-content: flex-end;
         align-items: flex-end;
         margin-left: 5%;
-        margin-top: 90%;
-        margin-bottom: 20%;
+        margin-top: 95%;
+        margin-bottom: 25%;
     }
     .banner img{
         position: relative;
@@ -705,6 +709,11 @@ html::-webkit-scrollbar{
         left: 5%;
         bottom: 5%;
         
+    }
+    .conteudo-vi .bi-play-circle-fill{
+        position: absolute;
+        right: 5%;
+        bottom: 10%;
     }
     @keyframes pulse {
         0%{ box-shadow: 0;}
