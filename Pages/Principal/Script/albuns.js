@@ -71,3 +71,12 @@ let brunoMars = [
         Audio:'Medias/Album Bruno Mars/Audios/Travie McCoy Billionaire ft Bruno Mars OFFICIAL VIDEO.mp3'
     },
 ]
+let coldplay = [
+    {
+        id:1,
+        img:'Medias/Album Bruno Mars/Imagens/bruno-album.jpg',
+        NomeDaMusica:'24K Magic',
+        Artista: 'Bruno Mars',
+        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  24K Magic Official Music Video.mp3'
+    },
+]
