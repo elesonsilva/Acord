@@ -300,6 +300,51 @@ TopAlbuns.map((intem, index)=>{
             })
             
         }
+        if(intem.id === 2){
+            albumcoldplay()
+            document.querySelector('.btnplay').addEventListener('click',()=>{
+                
+                
+                
+                
+                playTransicao()
+                const musicas = (i)=>{
+                    let lista = coldplay[i]
+                    idMusica = i
+                    barraprogresso.value = 0
+                    document.querySelector('.musica-atual .img-da-musica').src = lista.img
+                    document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
+                    document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
+                    document.querySelector('.player .musicaSom ').src = lista.Audio
+                    
+                    tempo.innerHTML ='00:00'
+
+                    setTimeout(()=>{
+                        barraprogresso.max = musica.duration
+                        console.log(musica.duration)
+                        duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                        
+                    }, 300)
+
+                }
+                
+                musicas(0) 
+
+                avancar.addEventListener('click', ()=>{
+                    if(idMusica >= coldplay.length -1){ idMusica = 0}
+                    else{idMusica++}
+                    musicas(idMusica)
+                    playMusic()
+                })
+                voltar.addEventListener('click', ()=>{
+                    if(idMusica <=0){idMusica = coldplay.length -1}
+                    else{idMusica--}
+                    musicas(idMusica)
+                    playMusic()
+                })
+            })
+            
+        }
     })
 })
 
@@ -310,16 +355,16 @@ TopMusica.map((intem, index)=>{
 
     document.querySelector('.card-musica').append(musicaItem)
     musicaItem.querySelector('.swiper-slide img').src = intem.img
-    musicaItem.querySelector('.swiper-slide .musica-titulo').innerHTML = intem.tituloMUsica
-    musicaItem.querySelector('.swiper-slide .nome-artista').innerHTML = intem.artista
+    musicaItem.querySelector('.swiper-slide .musica-titulo').innerHTML = intem.NomeDaMusica
+    musicaItem.querySelector('.swiper-slide .nome-artista').innerHTML = intem.Artista
 
     musicaItem.querySelector('.swiper-slide img').addEventListener('click', (e)=>{
         e.preventDefault()
         transicao()
 
         document.querySelector('.lista-aberta .categoria .img-lista').src = intem.img
-        document.querySelector('.lista-aberta .informacoes .titulo-lista').innerHTML = intem.tituloMUsica
-        document.querySelector('.lista-aberta .informacoes .desc-lista').innerHTML = intem.artista
+        document.querySelector('.lista-aberta .informacoes .titulo-lista').innerHTML = intem.NomeDaMusica
+        document.querySelector('.lista-aberta .informacoes .desc-lista').innerHTML = intem.Artista
     })
 })
 
@@ -581,6 +626,39 @@ function playTransicao(){
             document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = bruno.NomeDaMusica
             document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = bruno.Artista
             document.querySelector('.player .musicaSom ').src = bruno.Audio
+                   
+            setTimeout(()=>{
+                barraprogresso.max = musica.duration
+                console.log(musica.duration)
+                duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                
+            }, 300)
+            
+        })
+    })
+   }
+   function albumcoldplay(){
+    coldplay.map((cold, index)=>{
+        let coldplayItem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
+        document.querySelector('.lista-aberta').append(coldplayItem)
+        
+
+
+        coldplayItem.querySelector('.lista-musica img').src = cold.img
+        coldplayItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = cold.NomeDaMusica
+        coldplayItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = cold.Artista
+
+        
+
+        coldplayItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
+            e.preventDefault()
+            playTransicao()
+            ativaLista()
+            barraprogresso.value = 0
+            document.querySelector('.musica-atual .img-da-musica').src = cold.img
+            document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = cold.NomeDaMusica
+            document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = cold.Artista
+            document.querySelector('.player .musicaSom ').src = cold.Audio
                    
             setTimeout(()=>{
                 barraprogresso.max = musica.duration
