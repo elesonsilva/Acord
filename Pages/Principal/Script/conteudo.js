@@ -51,9 +51,9 @@ let TopAlbuns =[
     },
     {
         id:4,
-        img:'Imagens-tela-principal/ivete-album.jpg',
-        tituloAlbum:'Ivete Sangalo',
-        descAlbum: 'O mundo vai'
+        img:'Imagens-tela-principal/worship.png',
+        tituloAlbum:'worship',
+        descAlbum: 'Louvor e adoração'
     },
     {
         id:5,

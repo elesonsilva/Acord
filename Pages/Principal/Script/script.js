@@ -345,6 +345,96 @@ TopAlbuns.map((intem, index)=>{
             })
             
         }
+        if(intem.id === 3){
+            albumanavitoria()
+            document.querySelector('.btnplay').addEventListener('click',()=>{
+                
+                
+                
+                
+                playTransicao()
+                const musicas = (i)=>{
+                    let lista = anavitoria[i]
+                    idMusica = i
+                    barraprogresso.value = 0
+                    document.querySelector('.musica-atual .img-da-musica').src = lista.img
+                    document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
+                    document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
+                    document.querySelector('.player .musicaSom ').src = lista.Audio
+                    
+                    tempo.innerHTML ='00:00'
+
+                    setTimeout(()=>{
+                        barraprogresso.max = musica.duration
+                        console.log(musica.duration)
+                        duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                        
+                    }, 300)
+
+                }
+                
+                musicas(0) 
+
+                avancar.addEventListener('click', ()=>{
+                    if(idMusica >= anavitoria.length -1){ idMusica = 0}
+                    else{idMusica++}
+                    musicas(idMusica)
+                    playMusic()
+                })
+                voltar.addEventListener('click', ()=>{
+                    if(idMusica <=0){idMusica = anavitoria.length -1}
+                    else{idMusica--}
+                    musicas(idMusica)
+                    playMusic()
+                })
+            })
+            
+        }
+        if(intem.id === 4){
+            albumWorship()
+            document.querySelector('.btnplay').addEventListener('click',()=>{
+                
+                
+                
+                
+                playTransicao()
+                const musicas = (i)=>{
+                    let lista = whorship[i]
+                    idMusica = i
+                    barraprogresso.value = 0
+                    document.querySelector('.musica-atual .img-da-musica').src = lista.img
+                    document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
+                    document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
+                    document.querySelector('.player .musicaSom ').src = lista.Audio
+                    
+                    tempo.innerHTML ='00:00'
+
+                    setTimeout(()=>{
+                        barraprogresso.max = musica.duration
+                        console.log(musica.duration)
+                        duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                        
+                    }, 300)
+
+                }
+                
+                musicas(0) 
+
+                avancar.addEventListener('click', ()=>{
+                    if(idMusica >= whorship.length -1){ idMusica = 0}
+                    else{idMusica++}
+                    musicas(idMusica)
+                    playMusic()
+                })
+                voltar.addEventListener('click', ()=>{
+                    if(idMusica <=0){idMusica = whorship.length -1}
+                    else{idMusica--}
+                    musicas(idMusica)
+                    playMusic()
+                })
+            })
+            
+        }
     })
 })
 
@@ -659,6 +749,72 @@ function playTransicao(){
             document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = cold.NomeDaMusica
             document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = cold.Artista
             document.querySelector('.player .musicaSom ').src = cold.Audio
+                   
+            setTimeout(()=>{
+                barraprogresso.max = musica.duration
+                console.log(musica.duration)
+                duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                
+            }, 300)
+            
+        })
+    })
+   }
+   function albumanavitoria(){
+    anavitoria.map((ana, index)=>{
+        let anavitoriaItem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
+        document.querySelector('.lista-aberta').append(anavitoriaItem)
+        
+
+
+        anavitoriaItem.querySelector('.lista-musica img').src = ana.img
+        anavitoriaItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = ana.NomeDaMusica
+        anavitoriaItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = ana.Artista
+
+        
+
+        anavitoriaItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
+            e.preventDefault()
+            playTransicao()
+            ativaLista()
+            barraprogresso.value = 0
+            document.querySelector('.musica-atual .img-da-musica').src = ana.img
+            document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = ana.NomeDaMusica
+            document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = ana.Artista
+            document.querySelector('.player .musicaSom ').src = ana.Audio
+                   
+            setTimeout(()=>{
+                barraprogresso.max = musica.duration
+                console.log(musica.duration)
+                duracaomusica.innerHTML = formatoTempo(musica.duration) 
+                
+            }, 300)
+            
+        })
+    })
+   }
+   function albumWorship(){
+    whorship.map((whorship, index)=>{
+        let WorshipItem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
+        document.querySelector('.lista-aberta').append(WorshipItem)
+        
+
+
+        WorshipItem.querySelector('.lista-musica img').src = whorship.img
+        WorshipItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = whorship.NomeDaMusica
+        WorshipItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = whorship.Artista
+
+        
+
+        WorshipItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
+            e.preventDefault()
+            playTransicao()
+            ativaLista()
+            barraprogresso.value = 0
+            document.querySelector('.musica-atual .img-da-musica').src = whorship.img
+            document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = whorship.NomeDaMusica
+            document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = whorship.Artista
+            document.querySelector('.player .musicaSom ').src = whorship.Audio
                    
             setTimeout(()=>{
                 barraprogresso.max = musica.duration
