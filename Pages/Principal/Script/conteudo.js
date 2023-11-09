@@ -39,15 +39,15 @@ let TopAlbuns =[
     },
     {
         id:2,
-        img:'Imagens-tela-principal/anavitoria-albun.jpg',
-        tituloPlayList:'Ana Vitoria',
-        descAlbum: 'O tempo é agora'
-    },
-    {
-        id:3,
         img:'Imagens-tela-principal/coldplay-album.jpg',
         tituloAlbum:'Coldplay',
         descAlbum: 'A Rush of Blood to the Head'
+    },
+    {
+        id:3,
+        img:'Imagens-tela-principal/anavitoria-albun.jpg',
+        tituloAlbum:'Ana Vitória',
+        descAlbum: 'O tempo é agora'
     },
     {
         id:4,
