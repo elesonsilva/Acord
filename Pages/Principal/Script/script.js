@@ -161,7 +161,7 @@ TopPlaylists.map((intem, index)=>{
                     document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
                     document.querySelector('.player .musicaSom ').src = lista.Audio
-                    
+                    document.querySelector('.letra p').innerHTML = lista.letra
                     tempo.innerHTML ='00:00'
 
                     setTimeout(()=>{
