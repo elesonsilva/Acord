@@ -161,7 +161,7 @@ TopPlaylists.map((intem, index)=>{
                     document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
                     document.querySelector('.player .musicaSom ').src = lista.Audio
-                    document.querySelector('.letra p').src = lista.letra
+                    document.querySelector('.letra').src = lista.letra
                     tempo.innerHTML ='00:00'
 
                     setTimeout(()=>{
@@ -853,8 +853,6 @@ const avancar = document.querySelector('.btn-avancar')
 const voltar = document.querySelector('.btn-voltar')
 const tempo = document.querySelector('.tempo-corrido')
 const duracaomusica = document.querySelector('.duracao-musica') 
-
-
 
 
 playbtn.addEventListener('click', ()=>{
