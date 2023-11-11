@@ -149,19 +149,22 @@ TopPlaylists.map((intem, index)=>{
         }
         if(intem.id === 4){
             playlistAcustica()
-            document.querySelector('.btnplay').addEventListener('click',()=>{
+            document.querySelector('.btnplay').addEventListener('click',async ()=>{
 
 
                  playTransicao()
+                
                 const musicas = (i)=>{
                     let lista = Acustica[i]
                     idMusica = i
+                    letra = lista.letra
+                    player = lista.Audio
                     barraprogresso.value = 0
                     document.querySelector('.musica-atual .img-da-musica').src = lista.img
                     document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
-                    document.querySelector('.player .musicaSom ').src = lista.Audio
-                    document.querySelector('.letra').src = lista.letra
+                    //document.querySelector('.player .musicaSom ').src = lista.Audio
+                    //document.querySelector('.letra').src = lista.letra
                     tempo.innerHTML ='00:00'
 
                     setTimeout(()=>{
@@ -187,6 +190,27 @@ TopPlaylists.map((intem, index)=>{
                     musicas(idMusica)
                     playMusic()
                 })
+                const dom = {
+                    lyric: document.querySelector(".lyric"),
+                    player: document.querySelector('.player .musicaSom')
+                };
+            
+                // carregar arquivo lrc
+                const res = await fetch(letra);
+                const lrc = await res.text();
+            
+                const lyrics = parseLyric(lrc);
+            
+                
+            
+                dom.player.ontimeupdate = () => {
+                    const time = dom.player.currentTime;
+                    const index = syncLyric(lyrics, time);
+            
+                    if (index == null) return;
+            
+                    dom.lyric.innerHTML = lyrics[index].text;
+                };
             })
         }
         if(intem.id === 5){
@@ -891,6 +915,67 @@ const formatoTempo = (time)=>{
         playbtn.classList.remove('pause')
     }
     playbtn.click()
+
+    
+function parseLyric(lrc) {
+    // igual ao código anterior
+    // corresponderá a "[00:00.00] ooooh sim!"
+    // nota: eu uso grupo de captura nomeado
+    const regex = /^\[(?<time>\d{2}:\d{2}(.\d{2})?)\](?<text>.*)/;
+
+    // dividir a string lrc em linhas individuais
+    const lines = lrc.split("\n");
+
+    const output = [];
+
+    lines.forEach(line => {
+        const match = line.match(regex);
+
+        // se não corresponder, retorne.
+        if (match == null) return;
+
+        const { time, text } = match.groups;
+
+        output.push({
+            time: parseTime(time),
+            text: text.trim()
+        });
+    });
+
+    // analisar tempo formatado
+    // "03:24,73" => 204,73 (tempo total em segundos)
+    function parseTime(time) {
+        const minsec = time.split(":");
+
+        const min = parseInt(minsec[0]) * 60;
+        const sec = parseFloat(minsec[1]);
+
+        return min + sec;
+    }
+
+    return output;
+}
+
+function syncLyric(lyrics, time) {
+    // igual ao código anterior
+    const scores = [];
+
+    lyrics.forEach(lyric => {
+        // obtenha a lacuna ou distância ou chamamos isso de pontuação
+        const score = time - lyric.time;
+
+        // só aceita pontuação com valores positivos
+        if (score >= 0) scores.push(score);
+    });
+
+    if (scores.length == 0) return null;
+
+    // obter o menor valor das pontuações
+    const closest = Math.min(...scores);
+
+    // return the index of closest lyric
+    return scores.indexOf(closest);
+}
 
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,

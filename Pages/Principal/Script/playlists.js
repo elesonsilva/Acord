@@ -140,7 +140,7 @@ let Acustica =[
         NomeDaMusica:'Homem-Aranha',
         Artista: 'Jorge Vercillo',
         Audio:'Medias/PlayListAcustica/Audios/JorgeVercilloHomemAranha.mp3',
-        letra :'Medias/PlayListAcustica/Audios/homem aranha.lrc'
+        letra :'Medias/PlayListAcustica/Audios/homemaranha.lrc'
     },
     {
         id:2,
