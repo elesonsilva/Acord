@@ -756,6 +756,7 @@ html::-webkit-scrollbar{
         right: 5%;
         bottom: 10%;
     }
+    
     @keyframes pulse {
         0%{ box-shadow: 0;}
         50%{ box-shadow: 0 0 0 5px rgba(62, 66, 46, 0.623);}
