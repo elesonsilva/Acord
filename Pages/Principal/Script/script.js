@@ -921,11 +921,9 @@ function parseLyric(lrc) {
     const lines = lrc.split("\n");
 
     const output = [];
-
+    
     lines.forEach(line => {
         const match = line.match(regex);
-
-        
 
         if (match == null) return;
         const { time, text } = match.groups;
