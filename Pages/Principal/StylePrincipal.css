@@ -758,9 +758,10 @@ html::-webkit-scrollbar{
     }
     .lyric {
         position: relative;
-        width: 90%;
+        width: 95%;
         height: 50vh;
         margin-left: 5%;
+        font-size: 25px;
         overflow: auto;
         scroll-behavior: smooth;
     }
