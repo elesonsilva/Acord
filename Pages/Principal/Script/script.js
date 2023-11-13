@@ -925,6 +925,10 @@ function parseLyric(lrc) {
     lines.forEach(line => {
         const match = line.match(regex);
 
+        const $line = document.createElement("div");
+            $line.className = "lyric__line";
+            $line.innerHTML = line.words ? "" : line.text;
+
         if (match == null) return;
         const { time, text } = match.groups;
 
