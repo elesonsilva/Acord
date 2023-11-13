@@ -169,7 +169,6 @@ TopPlaylists.map((intem, index)=>{
 
                     setTimeout(()=>{
                         barraprogresso.max = musica.duration
-                        console.log(musica.duration)
                         duracaomusica.innerHTML = formatoTempo(musica.duration) 
                         
                     }, 300)
@@ -200,8 +199,6 @@ TopPlaylists.map((intem, index)=>{
                 const lrc = await res.text();
             
                 const lyrics = parseLyric(lrc);
-            
-                
             
                 dom.player.ontimeupdate = () => {
                     const time = dom.player.currentTime;
@@ -916,11 +913,8 @@ const formatoTempo = (time)=>{
     }
     playbtn.click()
 
-    
+
 function parseLyric(lrc) {
-    // igual ao código anterior
-    // corresponderá a "[00:00.00] ooooh sim!"
-    // nota: eu uso grupo de captura nomeado
     const regex = /^\[(?<time>\d{2}:\d{2}(.\d{2})?)\](?<text>.*)/;
 
     // dividir a string lrc em linhas individuais
@@ -931,9 +925,7 @@ function parseLyric(lrc) {
     lines.forEach(line => {
         const match = line.match(regex);
 
-        // se não corresponder, retorne.
         if (match == null) return;
-
         const { time, text } = match.groups;
 
         output.push({
@@ -942,11 +934,9 @@ function parseLyric(lrc) {
         });
     });
 
-    // analisar tempo formatado
-    // "03:24,73" => 204,73 (tempo total em segundos)
+
     function parseTime(time) {
         const minsec = time.split(":");
-
         const min = parseInt(minsec[0]) * 60;
         const sec = parseFloat(minsec[1]);
 
@@ -957,29 +947,28 @@ function parseLyric(lrc) {
 }
 
 function syncLyric(lyrics, time) {
-    // igual ao código anterior
     const scores = [];
 
     lyrics.forEach(lyric => {
-        // obtenha a lacuna ou distância ou chamamos isso de pontuação
         const score = time - lyric.time;
-
-        // só aceita pontuação com valores positivos
         if (score >= 0) scores.push(score);
     });
 
     if (scores.length == 0) return null;
-
-    // obter o menor valor das pontuações
     const closest = Math.min(...scores);
-
-    // return the index of closest lyric
     return scores.indexOf(closest);
 }
 
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        freeMode: false,
+
+ var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: false,
         
-      });
+  });
+
+
+
+
+
+      
