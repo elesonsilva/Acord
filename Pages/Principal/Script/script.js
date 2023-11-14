@@ -1019,9 +1019,10 @@ function syncLyric(lyrics, time) {
 
   function displayLyrics() {
     lyricsContainer.innerHTML = lyricsArray.map((entry, index) => {
-      return `<div class="${index === 0 ? '' : 'unplayed'}">${entry.text}</div>`;
+      return `<div class="${index === 0 ? 'highlighted' : 'unplayed'}">${entry.text}</div>`;
     }).join('');
   }
+
 
   musica.addEventListener('timeupdate', function () {
     const currentTime = audio.currentTime;
@@ -1047,15 +1048,10 @@ function syncLyric(lyrics, time) {
   function highlightLyric(lineNumber) {
     const lines = lyricsContainer.getElementsByTagName('div');
     for (let i = 0; i < lines.length; i++) {
-      if (i === lineNumber) {
-        lines[i].classList.remove('unplayed');
-        lines[i].innerHTML = lyricsArray[i].text;
-      } else {
-        lines[i].classList.add('unplayed');
-        lines[i].innerHTML = lyricsArray[i].text;
-      }
-    }
-  }
+      lines[i].classList.remove('highlighted');
+      lines[i].classList.toggle('unplayed', i !== lineNumber);
+      lines[i].innerHTML = i === lineNumber ? `<strong class="highlighted">${lyricsArray[i].text}</strong>` : lyricsArray[i].text;
+    }}
 
   function scrollToLyric(lineNumber) {
     const lines = lyricsContainer.getElementsByTagName('div');

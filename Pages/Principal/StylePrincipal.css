@@ -759,11 +759,13 @@ html::-webkit-scrollbar{
     .lyric {
         white-space: pre-line;
         overflow-y: auto;
-        max-height: 300px; /* Altura máxima do contêiner antes do scroll aparecer */
+        max-height: 200px; /* Altura máxima do contêiner antes do scroll aparecer */
+        font-size: 25px;
+        
       }
   
-      strong {
-        color: var(--p1-quaternaria);
+      .highlighted {
+        color: var(--p1-quaternaria); /* Adiciona cor azul para a linha tocada */
       }
       .unplayed {
         opacity: 0.5; /* Adiciona opacidade para as linhas não tocadas */
