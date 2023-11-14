@@ -1025,7 +1025,7 @@ function syncLyric(lyrics, time) {
 
 
   musica.addEventListener('timeupdate', function () {
-    const currentTime = audio.currentTime;
+    const currentTime = musica.currentTime;
 
     // Exemplo de sincronização com a letra da música
     for (let i = 0; i < lyricsArray.length; i++) {
