@@ -195,16 +195,16 @@ TopPlaylists.map((intem, index)=>{
 
 
                  // Carregar a letra da música de um arquivo LRC
-  fetch(lrcPath)
-  .then(response => response.text())
-  .then(data => {
-    lyricsArray = parseLRC(data);
-    displayLyrics();
-  })
-  .catch(error => console.error('Erro ao carregar a letra:', error));
+                    fetch(lrcPath)
+                    .then(response => response.text())
+                    .then(data => {
+                        lyricsArray = parseLRC(data);
+                        displayLyrics();
+                    })
+                    .catch(error => console.error('Erro ao carregar a letra:', error));
 
-// Configurar o áudio
-audio.src = audioPath;
+                    // Configurar o áudio
+                    audio.src = audioPath;
                 /*
 
                 const dom = {
