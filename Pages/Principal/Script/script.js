@@ -31,7 +31,7 @@ TopPlaylists.map((intem, index)=>{
                     document.querySelector('.musica-atual .img-da-musica').src = lista.img
                     document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
-                    document.querySelector('.player .musicaSom ').src = lista.Audio
+                    document.querySelector('.player .musicaSom ').src = lista.musica
                     
                     tempo.innerHTML ='00:00'
 
@@ -75,7 +75,7 @@ TopPlaylists.map((intem, index)=>{
                     document.querySelector('.musica-atual .img-da-musica').src = lista.img
                     document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
-                    document.querySelector('.player .musicaSom ').src = lista.Audio
+                    document.querySelector('.player .musicaSom ').src = lista.musica
                     
                     tempo.innerHTML ='00:00'
 
@@ -157,8 +157,8 @@ TopPlaylists.map((intem, index)=>{
                 const musicas = (i)=>{
                     let lista = Acustica[i]
                     idMusica = i
-                    letra = lista.letra
-                    player = lista.Audio
+                    audioPath = lista.Audio
+                    lrcPath = lista.letra
                     barraprogresso.value = 0
                     document.querySelector('.musica-atual .img-da-musica').src = lista.img
                     document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
@@ -189,9 +189,28 @@ TopPlaylists.map((intem, index)=>{
                     musicas(idMusica)
                     playMusic()
                 })
+
+                 audio = document.querySelector('.player .musicaSom');
+                 lyricsContainer = document.querySelector('.lyric');
+
+
+                 // Carregar a letra da música de um arquivo LRC
+  fetch(lrcPath)
+  .then(response => response.text())
+  .then(data => {
+    lyricsArray = parseLRC(data);
+    displayLyrics();
+  })
+  .catch(error => console.error('Erro ao carregar a letra:', error));
+
+// Configurar o áudio
+audio.src = audioPath;
+                /*
+
                 const dom = {
                     lyric: document.querySelector(".lyric"),
                     player: document.querySelector('.player .musicaSom')
+                    
                 };
             
                 // carregar arquivo lrc
@@ -199,7 +218,7 @@ TopPlaylists.map((intem, index)=>{
                 const lrc = await res.text();
             
                 const lyrics = parseLyric(lrc);
-            
+             
                 dom.player.ontimeupdate = () => {
                     const time = dom.player.currentTime;
                     const index = syncLyric(lyrics, time);
@@ -207,7 +226,8 @@ TopPlaylists.map((intem, index)=>{
                     if (index == null) return;
             
                     dom.lyric.innerHTML = lyrics[index].text;
-                };
+                    
+                };*/
             })
         }
         if(intem.id === 5){
@@ -913,7 +933,7 @@ const formatoTempo = (time)=>{
     }
     playbtn.click()
 
-
+/*
 function parseLyric(lrc) {
     const regex = /^\[(?<time>\d{2}:\d{2}(.\d{2})?)\](?<text>.*)/;
 
@@ -946,6 +966,8 @@ function parseLyric(lrc) {
     return output;
 }
 
+
+
 function syncLyric(lyrics, time) {
     const scores = [];
 
@@ -958,7 +980,7 @@ function syncLyric(lyrics, time) {
     const closest = Math.min(...scores);
     return scores.indexOf(closest);
 }
-
+*/
 
  var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
@@ -971,4 +993,71 @@ function syncLyric(lyrics, time) {
 
 
 
-      
+
+
+
+
+  //chat gpt
+  
+  let lyricsArray = [];
+
+  
+
+  
+
+  function parseLRC(data) {
+    return data.split('\n')
+      .map(line => {
+        const match = line.match(/\[(\d+:\d+\.\d+)\](.*)/);
+        if (match) {
+          return { time: match[1], text: match[2] };
+        }
+        return null;
+      })
+      .filter(entry => entry !== null);
+  }
+
+  function displayLyrics() {
+    lyricsContainer.innerHTML = lyricsArray.map((entry, index) => {
+      return `<div class="${index === 0 ? '' : 'unplayed'}">${entry.text}</div>`;
+    }).join('');
+  }
+
+  musica.addEventListener('timeupdate', function () {
+    const currentTime = audio.currentTime;
+
+    // Exemplo de sincronização com a letra da música
+    for (let i = 0; i < lyricsArray.length; i++) {
+      const startTime = parseTime(lyricsArray[i].time);
+      const endTime = i < lyricsArray.length - 1 ? parseTime(lyricsArray[i + 1].time) : Number.MAX_SAFE_INTEGER;
+
+      if (currentTime >= startTime && currentTime < endTime) {
+        highlightLyric(i);
+        scrollToLyric(i);
+        break;
+      }
+    }
+  });
+
+  function parseTime(timeString) {
+    const [minutes, seconds] = timeString.split(':').map(parseFloat);
+    return minutes * 60 + seconds;
+  }
+
+  function highlightLyric(lineNumber) {
+    const lines = lyricsContainer.getElementsByTagName('div');
+    for (let i = 0; i < lines.length; i++) {
+      if (i === lineNumber) {
+        lines[i].classList.remove('unplayed');
+        lines[i].innerHTML = lyricsArray[i].text;
+      } else {
+        lines[i].classList.add('unplayed');
+        lines[i].innerHTML = lyricsArray[i].text;
+      }
+    }
+  }
+
+  function scrollToLyric(lineNumber) {
+    const lines = lyricsContainer.getElementsByTagName('div');
+    lines[lineNumber].scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
