@@ -898,14 +898,32 @@ const voltar = document.querySelector('.btn-voltar')
 const tempo = document.querySelector('.tempo-corrido')
 const duracaomusica = document.querySelector('.duracao-musica') 
 
+/*
+playbtn.addEventListener('click', ()=>{
+    if(playbtn.className.includes('pause')){
+     musica.play()
+    }else{
+     musica.pause()
+    }
+     playbtn.classList.toggle('pause')
+}*/
 
 playbtn.addEventListener('click', ()=>{
    if(playbtn.className.includes('pause')){
-    musica.play()
-   }else{
-    musica.pause()
-   }
-    playbtn.classList.toggle('pause')
+    if (musica.readyState >= 2) { // Verifica se o elemento de áudio está carregado (readyState 2 ou maior)
+        musica.play();
+    } else {
+        // Adicione um ouvinte de evento para esperar até que o áudio esteja carregado
+        musica.addEventListener('canplay', function playHandler() {
+            musica.play();
+            // Remova o ouvinte após a reprodução para evitar chamadas duplicadas
+            musica.removeEventListener('canplay', playHandler);
+        });
+    }
+} else {
+    musica.pause();
+}
+playbtn.classList.toggle('pause');
 })
 
 
