@@ -164,6 +164,7 @@ TopPlaylists.map((intem, index)=>{
                     document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
                     audio = document.querySelector('.player .musicaSom');
+                    lyricsContainer = document.querySelector('.lyric');
                     tempo.innerHTML ='00:00'
 
                     setTimeout(()=>{
@@ -203,7 +204,7 @@ TopPlaylists.map((intem, index)=>{
                 })
 
                 
-                 lyricsContainer = document.querySelector('.lyric');
+                
 
 
                 
