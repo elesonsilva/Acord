@@ -165,7 +165,7 @@ let Acustica =[
         NomeDaMusica:'Final Feliz',
         Artista: 'Jorge Vercillo',
         Audio:'Medias/PlayListAcustica/Audios/JorgeVercilloFinalFeliz.mp3',
-        letra:'Medias/PlayListAcustica/Lyrics/monalisa.lrc'
+        letra:'Medias/PlayListAcustica/Lyrics/JorgeVercilloFinalFeliz.lrc'
     },
     
 ]
