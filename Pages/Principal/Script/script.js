@@ -163,8 +163,7 @@ TopPlaylists.map((intem, index)=>{
                     document.querySelector('.musica-atual .img-da-musica').src = lista.img
                     document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
-                    //document.querySelector('.player .musicaSom ').src = lista.Audio
-                    //document.querySelector('.letra').src = lista.letra
+                    audio = document.querySelector('.player .musicaSom');
                     tempo.innerHTML ='00:00'
 
                     setTimeout(()=>{
@@ -173,6 +172,19 @@ TopPlaylists.map((intem, index)=>{
                         
                     }, 300)
 
+                     // Carregar a letra da música de um arquivo LRC
+                     fetch(lrcPath)
+                     .then(response => response.text())
+                     .then(data => {
+                         lyricsArray = parseLRC(data);
+                         displayLyrics();
+                     })
+                     .catch(error => console.error('Erro ao carregar a letra:', error));
+                     
+                    
+                     
+                      // Configurar o áudio
+                      audio.src = audioPath;
                 }
                 
                 musicas(0) 
@@ -190,21 +202,12 @@ TopPlaylists.map((intem, index)=>{
                     playMusic()
                 })
 
-                 audio = document.querySelector('.player .musicaSom');
+                
                  lyricsContainer = document.querySelector('.lyric');
 
 
-                 // Carregar a letra da música de um arquivo LRC
-                    fetch(lrcPath)
-                    .then(response => response.text())
-                    .then(data => {
-                        lyricsArray = parseLRC(data);
-                        displayLyrics();
-                    })
-                    .catch(error => console.error('Erro ao carregar a letra:', error));
-
-                    // Configurar o áudio
-                    audio.src = audioPath;
+                
+                   
                 /*
 
                 const dom = {
@@ -997,13 +1000,9 @@ function syncLyric(lyrics, time) {
 
 
 
-  //chat gpt
   
+
   let lyricsArray = [];
-
-  
-
-  
 
   function parseLRC(data) {
     return data.split('\n')
