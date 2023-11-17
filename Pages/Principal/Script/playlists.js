@@ -4,7 +4,8 @@ let Eletronica =[
         img:'Medias/PlayListEletronica/Imagens/faded.jpg',
         NomeDaMusica:'Faded',
         Artista: 'Alam Walker',
-        Audio:'Medias/PlayListEletronica/Audios/AlamWalkerFaded.mp3'
+        Audio:'Medias/PlayListEletronica/Audios/AlamWalkerFaded.mp3',
+        letra:'Medias/PlayListEletronica/Lyrics/AlamWalkerFaded.lrc'
         
     },
     {
@@ -12,40 +13,40 @@ let Eletronica =[
         img:'Medias/PlayListEletronica/Imagens/wakemeup.jpg',
         NomeDaMusica:'Wake Me Up',
         Artista: 'Avicii',
-        Audio:'Medias/PlayListEletronica/Audios/Avicii-WakeMe-Up.mp3'
-
+        Audio:'Medias/PlayListEletronica/Audios/Avicii-WakeMe-Up.mp3',
+        letra:'Medias/PlayListEletronica/Lyrics/Avicii-WakeMe-Up.lrc'
     },
     {
         id:3,
         img:'Medias/PlayListEletronica/Imagens/Summer.jpg',
         NomeDaMusica:'Summer',
         Artista: 'Calvin Harris',
-        Audio:'Medias/PlayListEletronica/Audios/Calvin-Harris-Summer.mp3'
-
+        Audio:'Medias/PlayListEletronica/Audios/Calvin-Harris-Summer.mp3',
+        letra:'Medias/PlayListEletronica/Lyrics/Calvin-Harris-Summer.lrc'
     },
     {
         id:4,
         img:'Medias/PlayListEletronica/Imagens/Titanium.jpg',
         NomeDaMusica:'Titanium',
         Artista: 'David Guetta',
-        Audio:'Medias/PlayListEletronica/Audios/David-Guetta-Titanium.mp3'
-
+        Audio:'Medias/PlayListEletronica/Audios/David-Guetta-Titanium.mp3',
+        letra:'Medias/PlayListEletronica/Lyrics/David-Guetta-Titanium.lrc'
     },
     {
         id:5,
         img:'Medias/PlayListEletronica/Imagens/Aromchupa.jpg',
         NomeDaMusica:'Im an Albatraoz',
         Artista: 'AronChupa e Little Sis Nora',
-        Audio:'Medias/PlayListEletronica/Audios/AronChupa.mp3'
-
+        Audio:'Medias/PlayListEletronica/Audios/AronChupa.mp3',
+        letra:'Medias/PlayListEletronica/Lyrics/AronChupa.lrc'
     },
     {
         id:6,
         img:'Medias/PlayListEletronica/Imagens/Showtek.jpg',
         NomeDaMusica:'Bad',
         Artista: 'David Guetta e Showtek',
-        Audio:'Medias/PlayListEletronica/Audios/DavidGuetta-ShowtekBadftVassy.mp3'
-
+        Audio:'Medias/PlayListEletronica/Audios/DavidGuetta-ShowtekBadftVassy.mp3',
+        letra:'Medias/PlayListEletronica/Lyrics/DavidGuetta-ShowtekBadftVassy.lrc'
     }
 ]
 let Festival =[
