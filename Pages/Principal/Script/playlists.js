@@ -176,7 +176,7 @@ let Cover =[
         NomeDaMusica:'Nosso quadro Ana Castela',
         Artista: 'Bia Marques cover',
         Audio:'Medias/PlayListCover/Audios/NossoquadroAnaCastelaBiaMarquescover.mp3',
-        letra:'Pages/Principal/Medias/PlayListCover/Lyrics/NossoquadroAnaCastelaBiaMarquescover.lrc'
+        letra:'Medias/PlayListCover/Lyrics/NossoquadroAnaCastelaBiaMarquescover.lrc'
     },
     {
         id:2,
@@ -184,7 +184,7 @@ let Cover =[
         NomeDaMusica:'Amarelo, azul e branco| Anavitória e Rita Lee',
         Artista: 'Amarina',
         Audio:'Medias/PlayListCover/Audios/AMARELOAZULEBRANCOAnavitóriaCoverdeAMARINA.mp3',
-        letra:'Pages/Principal/Medias/PlayListCover/Lyrics/AMARELOAZULEBRANCOAnavitóriaCoverdeAMARINA.lrc'
+        letra:'Medias/PlayListCover/Lyrics/AMARELOAZULEBRANCOAnavitóriaCoverdeAMARINA.lrc'
     },
     {
         id:3,
@@ -192,7 +192,7 @@ let Cover =[
         NomeDaMusica:'MASHUP FORRÓ',
         Artista: 'Amarina',
         Audio:'Medias/PlayListCover/Audios/MASHUPFORRÓCoverdeAMARINA.mp3',
-        letra:'Pages/Principal/Medias/PlayListCover/Lyrics/MASHUPFORRÓCoverdeAMARINA.lrc'
+        letra:'Medias/PlayListCover/Lyrics/MASHUPFORRÓCoverdeAMARINA.lrc'
     },
     {
         id:4,
@@ -200,7 +200,7 @@ let Cover =[
         NomeDaMusica:'ANUNCIAÇÃO | Alceu Valença',
         Artista: 'Amarina',
         Audio:'Medias/PlayListCover/Audios/ANUNCIAÇÃOAlceuValençaCoverdeAMARINA.mp3',
-        letra:'Pages/Principal/Medias/PlayListCover/Lyrics/ANUNCIAÇÃOAlceuValençaCoverdeAMARINA.lrc'
+        letra:'Medias/PlayListCover/Lyrics/ANUNCIAÇÃOAlceuValençaCoverdeAMARINA.lrc'
     },
     {
         id:5,
@@ -208,7 +208,7 @@ let Cover =[
         NomeDaMusica:'SAMURAI | Djavan',
         Artista: 'Amarina',
         Audio:'Medias/PlayListCover/Audios/SAMURAIDjavanCoverdeAMARINA.mp3',
-        letra:'Pages/Principal/Medias/PlayListCover/Lyrics/SAMURAIDjavanCoverdeAMARINA.lrc'
+        letra:'Medias/PlayListCover/Lyrics/SAMURAIDjavanCoverdeAMARINA.lrc'
     },
     {
         id:6,
@@ -216,7 +216,7 @@ let Cover =[
         NomeDaMusica:'Cartão Black',
         Artista: 'Bia Marques cover',
         Audio:'Medias/PlayListCover/Audios/CartãoBlackBiaMarquescover.mp3',
-        letra:'Pages/Principal/Medias/PlayListCover/Lyrics/CartãoBlackBiaMarquescover.lrc'
+        letra:'Medias/PlayListCover/Lyrics/CartãoBlackBiaMarquescover.lrc'
     },
     {
         id:7,
@@ -224,7 +224,7 @@ let Cover =[
         NomeDaMusica:'Se for amor | João Gomes',
         Artista: 'Bia Marques cover',
         Audio:'Medias/PlayListCover/Audios/seforamorbiamarques.mp3',
-        letra:'Pages/Principal/Medias/PlayListCover/Lyrics/seforamorbiamarques.lrc'
+        letra:'Medias/PlayListCover/Lyrics/seforamorbiamarques.lrc'
     },
     {
         id:8,
@@ -232,7 +232,7 @@ let Cover =[
         NomeDaMusica:'Eu tenho medo | Zé Vaqueiro',
         Artista: 'Bia Marques cover',
         Audio:'Medias/PlayListCover/Audios/EutenhomedoZéVaqueiroBiaMarquescover.mp3',
-        letra:'Pages/Principal/Medias/PlayListCover/Lyrics/EutenhomedoZéVaqueiroBiaMarquescover.lrc'
+        letra:'Medias/PlayListCover/Lyrics/EutenhomedoZéVaqueiroBiaMarquescover.lrc'
     },
     {
         id:9,
@@ -240,7 +240,7 @@ let Cover =[
         NomeDaMusica:'MALANDRAGEM | Cássia Eller',
         Artista: 'Amarina',
         Audio:'Medias/PlayListCover/Audios/malandragemAmarina.mp3',
-        letra:'Pages/Principal/Medias/PlayListCover/Lyrics/malandragemAmarina.lrc'
+        letra:'Medias/PlayListCover/Lyrics/malandragemAmarina.lrc'
     },
     {
         id:10,
@@ -248,7 +248,7 @@ let Cover =[
         NomeDaMusica:'Surreal ',
         Artista: 'Bia Marques cover',
         Audio:'Medias/PlayListCover/Audios/SurrealversãoBiaMarques.mp3',
-        letra:'Pages/Principal/Medias/PlayListCover/Lyrics/SurrealversãoBiaMarques.lrc'
+        letra:'Medias/PlayListCover/Lyrics/SurrealversãoBiaMarques.lrc'
     },
     
     {
@@ -257,7 +257,7 @@ let Cover =[
         NomeDaMusica:'MONALISA | Jorge Vercillo',
         Artista: 'Amarina',
         Audio:'Medias/PlayListCover/Audios/MONALISAJorgeVercilloCoverdeAMARINA.mp3',
-        letra:'Pages/Principal/Medias/PlayListCover/Lyrics/MONALISAJorgeVercilloCoverdeAMARINA.lrc'
+        letra:'Medias/PlayListCover/Lyrics/MONALISAJorgeVercilloCoverdeAMARINA.lrc'
     },
 ]
 JSON.stringify(Eletronica)
