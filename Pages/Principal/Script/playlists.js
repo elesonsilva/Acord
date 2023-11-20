@@ -55,14 +55,15 @@ let Festival =[
         img:'Medias/PlayListFestival/Imagens/Brimelliott.jpg',
         NomeDaMusica:'Terrified',
         Artista: 'Brynn Elliott',
-        Audio:'Medias/PlayListFestival/Audios/BrynnElliottTerrified.mp3'
+        Audio:'Medias/PlayListFestival/Audios/BrynnElliottTerrified.mp3',
     },
     {
         id:2,
         img:'Medias/PlayListFestival/Imagens/uptownFunk.jpg',
         NomeDaMusica:'Uptown Funk',
         Artista: 'Mark Ronson ft. Bruno Mars',
-        Audio:'Medias/PlayListFestival/Audios/UptownFunk.mp3'
+        Audio:'Medias/PlayListFestival/Audios/UptownFunk.mp3',
+        letra:'Medias/PlayListFestival/Lyrics/UptownFunk.lrc'
 
     },
     {
@@ -70,7 +71,8 @@ let Festival =[
         img:'Medias/PlayListFestival/Imagens/Beyonce_-_Halo.png',
         NomeDaMusica:'Halo',
         Artista: 'Beyoncé',
-        Audio:'Medias/PlayListFestival/Audios/BeyoncéHalo.mp3'
+        Audio:'Medias/PlayListFestival/Audios/BeyoncéHalo.mp3',
+        letra:'Medias/PlayListFestival/Lyrics/BeyoncéHalo.lrc'
 
     },
     
@@ -81,56 +83,64 @@ let Rock =[
         img:'Medias/PlayListRock/Imagens/drsim.jpg',
         NomeDaMusica:'May the Force Be With You',
         Artista: 'Dr. Sin',
-        Audio:'Medias/PlayListRock/Audio/DrSinMaytheforcebewithyou.mp3'
+        Audio:'Medias/PlayListRock/Audio/DrSinMaytheforcebewithyou.mp3',
+        letra:'Medias/PlayListRock/Lyrics/DrSinMaytheforcebewithyou.lrc'
     },
     {
         id:2,
         img:'Medias/PlayListRock/Imagens/scorpions.jpg',
         NomeDaMusica:'Still Loving You',
         Artista: 'Scorpions',
-        Audio:'Medias/PlayListRock/Audio/ScorpionsStillLovingYou.mp3'
+        Audio:'Medias/PlayListRock/Audio/ScorpionsStillLovingYou.mp3',
+        letra:'Medias/PlayListRock/Lyrics/ScorpionsStillLovingYou.lrc'
     },
     {
         id:3,
         img:'Medias/PlayListRock/Imagens/whinofchange.jpg',
         NomeDaMusica:'Wind of Change',
         Artista: 'Scorpions',
-        Audio:'Medias/PlayListRock/Audio/ScorpionsWindOfChange.mp3'
+        Audio:'Medias/PlayListRock/Audio/ScorpionsWindOfChange.mp3',
+        letra:'Medias/PlayListRock/Lyrics/ScorpionsWindOfChange.lrc'
     },
     {
         id:4,
         img:'Medias/PlayListRock/Imagens/whinofchange.jpg',
         NomeDaMusica:'Send Me an Angel',
         Artista: 'Scorpions',
-        Audio:'Medias/PlayListRock/Audio/ScorpionsSendMeAnAngel.mp3'
+        Audio:'Medias/PlayListRock/Audio/ScorpionsSendMeAnAngel.mp3',
+        letra:'Medias/PlayListRock/Lyrics/ScorpionsSendMeAnAngel.lrc'
     },
     {
         id:5,
         img:'Medias/PlayListRock/Imagens/acoustica.jpg',
         NomeDaMusica:'Always Somewhere',
         Artista: 'Scorpions',
-        Audio:'Medias/PlayListRock/Audio/ScorpionsAlwaysSomewhere.mp3'
+        Audio:'Medias/PlayListRock/Audio/ScorpionsAlwaysSomewhere.mp3',
+        letra:'Medias/PlayListRock/Lyrics/ScorpionsAlwaysSomewhere.lrc'
     },
     {
         id:6,
         img:'Medias/PlayListRock/Imagens/direstraits.jpg',
         NomeDaMusica:'Sultans of Swing',
         Artista: 'Dire Straits',
-        Audio:'Medias/PlayListRock/Audio/DireStraitsSultansOfSwing.mp3'
+        Audio:'Medias/PlayListRock/Audio/DireStraitsSultansOfSwing.mp3',
+        letra:'Medias/PlayListRock/Lyrics/DireStraitsSultansOfSwing.lrc'
     },
     {
         id:7,
         img:'Medias/PlayListRock/Imagens/guns.jpg',
         NomeDaMusica:'Sweet Child O Mine',
         Artista: 'Guns N Roses',
-        Audio:'Medias/PlayListRock/Audio/GunsNRosesSweetChildOMineOfficial.mp3'
+        Audio:'Medias/PlayListRock/Audio/GunsNRosesSweetChildOMineOfficial.mp3',
+        letra:'Medias/PlayListRock/Lyrics/GunsNRosesSweetChildOMineOfficial.lrc'
     },
     {
         id:8,
         img:'Medias/PlayListRock/Imagens/Metallica.jpg',
         NomeDaMusica:'Nothing Else Matters',
         Artista: 'Metallica',
-        Audio:'Medias/PlayListRock/Audio/MetallicaNothingElseMatters.mp3'
+        Audio:'Medias/PlayListRock/Audio/MetallicaNothingElseMatters.mp3',
+        letra:'Medias/PlayListRock/Lyrics/MetallicaNothingElseMatters.lrc'
     },
     
 ]
