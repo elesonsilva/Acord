@@ -4,49 +4,56 @@ let brunoMars = [
         img:'Medias/Album Bruno Mars/Imagens/bruno-album.jpg',
         NomeDaMusica:'24K Magic',
         Artista: 'Bruno Mars',
-        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  24K Magic Official Music Video.mp3'
+        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  24K Magic Official Music Video.mp3',
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  24K Magic Official Music Video.lrc'
     },
     {
         id:2,
         img:'Medias/Album Bruno Mars/Imagens/locked.jpg',
         NomeDaMusica:'Locked Out Of Heaven',
         Artista: 'Bruno Mars',
-        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Locked Out Of Heaven Official Music Video.mp3'
+        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Locked Out Of Heaven Official Music Video.mp3',
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  Locked Out Of Heaven Official Music Video.lrc'
     },
     {
         id:3,
         img:'Medias/Album Bruno Mars/Imagens/thats.jpg',
         NomeDaMusica:'Thats What I Like',
         Artista: 'Bruno Mars',
-        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Thats What I Like Official Music Video.mp3'
+        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Thats What I Like Official Music Video.mp3',
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  Thats What I Like Official Music Video.lrc'
     },
     {
         id:4,
         img:'Medias/Album Bruno Mars/Imagens/lazysongs.jpg',
         NomeDaMusica:'The Lazy Song',
         Artista: 'Bruno Mars',
-        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  The Lazy Song Official Music Video.mp3'
+        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  The Lazy Song Official Music Video.mp3',
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  The Lazy Song Official Music Video.lrc'
     },
     {
         id:5,
         img:'Medias/Album Bruno Mars/Imagens/treasure.jpg',
         NomeDaMusica:'Treasure',
         Artista: 'Bruno Mars',
-        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Treasure Official Music Video.mp3'
+        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Treasure Official Music Video.mp3',
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  Treasure Official Music Video.lrc'
     },
     {
         id:6,
         img:'Medias/Album Bruno Mars/Imagens/leavedooropem.jpg',
         NomeDaMusica:'Leave the Door Open',
         Artista: 'Bruno Mars Anderson Paak',
-        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars Anderson Paak Silk Sonic  Leave the Door Open Official Video.mp3'
+        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars Anderson Paak Silk Sonic  Leave the Door Open Official Video.mp3',
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars Anderson Paak Silk Sonic  Leave the Door Open Official Video.lrc'
     },
     {
         id:7,
         img:'Medias/PlayListFestival/Imagens/uptownFunk.jpg',
         NomeDaMusica:'Uptown Funk',
         Artista: 'Mark Ronson ft. Bruno Mars',
-        Audio:'Medias/PlayListFestival/Audios/UptownFunk.mp3'
+        Audio:'Medias/PlayListFestival/Audios/UptownFunk.mp3',
+        letra:'Medias/PlayListFestival/Lyrics/UptownFunk.lrc'
 
     },
     {
@@ -54,21 +61,24 @@ let brunoMars = [
         img:'Medias/Album Bruno Mars/Imagens/bruno-mars-just-way-you-are.png',
         NomeDaMusica:'Just The Way You Are',
         Artista: 'Bruno Mars',
-        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Just The Way You Are Official Music Video.mp3'
+        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Just The Way You Are Official Music Video.mp3',
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  Just The Way You Are Official Music Video.lrc'
     },
     {
         id:9,
         img:'Medias/Album Bruno Mars/Imagens/finesse.jpg',
         NomeDaMusica:'Finesse',
         Artista: 'Bruno Mars ',
-        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Finesse Remix feat Cardi B Official Music Video.mp3'
+        Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Finesse Remix feat Cardi B Official Music Video.mp3',
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  Finesse Remix feat Cardi B Official Music Video.lrc'
     },
     {
         id:10,
         img:'Medias/Album Bruno Mars/Imagens/bilionare.jpg',
         NomeDaMusica:'Billionaire',
         Artista: 'Bruno Mars',
-        Audio:'Medias/Album Bruno Mars/Audios/Travie McCoy Billionaire ft Bruno Mars OFFICIAL VIDEO.mp3'
+        Audio:'Medias/Album Bruno Mars/Audios/Travie McCoy Billionaire ft Bruno Mars OFFICIAL VIDEO.mp3',
+        letra:'Medias/Album Bruno Mars/Lyrics/Travie McCoy Billionaire ft Bruno Mars OFFICIAL VIDEO.lrc'
     },
 ]
 let coldplay = [
