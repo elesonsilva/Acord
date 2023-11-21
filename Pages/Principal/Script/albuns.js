@@ -87,49 +87,56 @@ let coldplay = [
         img:'Medias/Album Coldplay/imagens/Viva La Vida.jpg',
         NomeDaMusica:'Viva La Vida',
         Artista: 'Coldplay',
-        Audio:'Medias/Album Coldplay/Audios/Coldplay  Viva La Vida Official Video.mp3'
+        Audio:'Medias/Album Coldplay/Audios/Coldplay  Viva La Vida Official Video.mp3',
+        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Viva La Vida Official Video.lrc'
     },
     {
         id:2,
         img:'Medias/Album Coldplay/imagens/Adventure.jpg',
         NomeDaMusica:'Adventure Of A Lifetime',
         Artista: 'Coldplay',
-        Audio:'Medias/Album Coldplay/Audios/Coldplay  Adventure Of A Lifetime Official Video.mp3'
+        Audio:'Medias/Album Coldplay/Audios/Coldplay  Adventure Of A Lifetime Official Video.mp3',
+        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Adventure Of A Lifetime Official Video.lrc'
     },
     {
         id:3,
         img:'Medias/Album Coldplay/imagens/paradise.jpg',
         NomeDaMusica:'Paradise',
         Artista: 'Coldplay',
-        Audio:'Medias/Album Coldplay/Audios/Coldplay  Paradise Official Video.mp3'
+        Audio:'Medias/Album Coldplay/Audios/Coldplay  Paradise Official Video.mp3',
+        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Paradise Official Video.lrc'
     },
     {
         id:4,
         img:'Medias/Album Coldplay/imagens/The Scientist.jpg',
         NomeDaMusica:'The Scientist',
         Artista: 'Coldplay',
-        Audio:'Medias/Album Coldplay/Audios/Coldplay  The Scientist Official 4K Video.mp3'
+        Audio:'Medias/Album Coldplay/Audios/Coldplay  The Scientist Official 4K Video.mp3',
+        letra:'Medias/Album Coldplay/Lyrics/Coldplay  The Scientist Official 4K Video.lrc'
     },
     {
         id:5,
         img:'Medias/Album Coldplay/imagens/closck.jpg',
         NomeDaMusica:'Clocks',
         Artista: 'Coldplay',
-        Audio:'Medias/Album Coldplay/Audios/Coldplay  Clocks Official Video.mp3'
+        Audio:'Medias/Album Coldplay/Audios/Coldplay  Clocks Official Video.mp3',
+        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Clocks Official Video.lrc'
     },
     {
         id:6,
         img:'Medias/Album Coldplay/imagens/Yellow.jpg',
         NomeDaMusica:'Yellow',
         Artista: 'Coldplay',
-        Audio:'Medias/Album Coldplay/Audios/Coldplay  Yellow Official Video.mp3'
+        Audio:'Medias/Album Coldplay/Audios/Coldplay  Yellow Official Video.mp3',
+        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Yellow Official Vide.lrc'
     },
     {
         id:7,
         img:'Medias/Album Coldplay/imagens/Something Just Like.jpg',
         NomeDaMusica:'Something Just Like',
         Artista: 'Coldplay',
-        Audio:'Medias/Album Coldplay/Audios/Coldplay  Something Just Like This Lyric.mp3'
+        Audio:'Medias/Album Coldplay/Audios/Coldplay  Something Just Like This Lyric.mp3',
+        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Something Just Like This Lyric.lrc'
     },
 ]
 
