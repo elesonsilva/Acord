@@ -642,11 +642,7 @@ btnactive.addEventListener('click', ()=>{
     }
 })
 function ativaLista(){
-    let imgMusica = document.querySelector('.page-player .musica-atual .img-da-musica')
-     let backinfomusica = document.querySelector('.informacoes-musica')
-               
-        imgMusica.classList.add('img-full-window')
-        backinfomusica.classList.add('info-full-window')
+    
         document.querySelector('.lista-aberta').style.display = 'none'
         btnactive.classList.remove('active')
 }
