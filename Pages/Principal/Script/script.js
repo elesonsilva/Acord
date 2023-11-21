@@ -624,6 +624,7 @@ document.querySelector('.informacoes-musica .back-voltar').addEventListener('cli
 })
 
 let btnactive = document.querySelector('.btn-group-opcoes .bi-music-note-list')
+var letraMusicas = document.querySelector('.lyric')
 btnactive.addEventListener('click', ()=>{
     let listaDeMusicas = document.querySelector('.lista-aberta')
     let imgMusica = document.querySelector('.page-player .musica-atual .img-da-musica')
@@ -631,20 +632,27 @@ btnactive.addEventListener('click', ()=>{
     if(listaDeMusicas.style.display == 'none'){
         btnactive.classList.add('active')
         listaDeMusicas.style.display = 'block'
+        letraMusicas.style.display = 'none'
         imgMusica.classList.remove('img-full-window')
         backinfomusica.classList.remove('info-full-window')
 
     }else{
         btnactive.classList.remove('active')
         listaDeMusicas.style.display = 'none'
+        letraMusicas.style.display = 'block'
         imgMusica.classList.add('img-full-window')
         backinfomusica.classList.add('info-full-window')
     }
 })
 function ativaLista(){
-    
+    let imgMusica = document.querySelector('.page-player .musica-atual .img-da-musica')
+     let backinfomusica = document.querySelector('.informacoes-musica')
+               
+        imgMusica.classList.add('img-full-window')
+        backinfomusica.classList.add('info-full-window')
         document.querySelector('.lista-aberta').style.display = 'none'
         btnactive.classList.remove('active')
+        letraMusicas.style.display = 'block'
 }
 
 function transicao(){
@@ -652,6 +660,7 @@ function transicao(){
     if( tela.matches){
         //VERSÃO DESKTOP
     }else{
+        letraMusicas.style.display = 'none'
         document.querySelector('.pagina-principal').style.display = 'none'
         document.querySelector('.lista-aberta').style.display = 'block'
        
@@ -667,7 +676,7 @@ function playTransicao(){
     if (tela.matches){
         
     }else{
-       
+        var telaplay =  document.querySelector('.page-player') 
         document.querySelector('.categoria').style.display = 'none'
         document.querySelector('.btn-goup-acoes').style.display = 'none'
         document.querySelector('.btnplay').style.display = 'none'
@@ -677,7 +686,7 @@ function playTransicao(){
         document.querySelector('.lista-aberta').style.display = 'block'
         document.querySelector('.page-player').style.display = 'block'
         
-        
+        telaplay.animate([{right:'-100%'},{right:'0'}],{duration:100,fill:'forwards'})
 
         btnactive.classList.add('active')
         
