@@ -760,13 +760,14 @@ html::-webkit-scrollbar{
         position: absolute;
         top: 12%;
         width: 90%;
+        margin-left: 5%;
         text-align: center;
         white-space: pre-line;
         overflow-y: hidden;
         overflow-x: hidden;
-        max-height: 300px; /* Altura máxima do contêiner antes do scroll aparecer */
+        max-height: 260px; /* Altura máxima do contêiner antes do scroll aparecer */
         font-size: 25px;
-        animation: reveal 0.2s ease-in-out forwards;
+        animation: revealTow 0.5s ease-in-out forwards;
         /*background-image: linear-gradient(to top , #00000091, #0000005e);*/
         background-color: transparent;
         z-index: 1;
@@ -794,6 +795,16 @@ html::-webkit-scrollbar{
         to{
             opacity: 1;
             width: 100%;
+        }
+    }
+    @keyframes revealTow {
+        from{
+            opacity: 0;
+            height: 0;
+        }
+        to{
+            opacity: 1;
+            height: 100%;
         }
     }
 }
