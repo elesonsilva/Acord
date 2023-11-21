@@ -172,69 +172,80 @@ let whorship = [
         img:'Medias/Album Worship/imagens/lugar.jpg',
         NomeDaMusica:'Lugar Secreto',
         Artista: 'Gabriela Rocha',
-        Audio:'Medias/Album Worship/Audios/LUGAR SECRETO  CLIPE OFICIAL  EP CÉU  GABRIELA ROCHA.mp3'
+        Audio:'Medias/Album Worship/Audios/LUGAR SECRETO  CLIPE OFICIAL  EP CÉU  GABRIELA ROCHA.mp3',
+        letra:'Medias/Album Worship/Lyrics/LUGAR SECRETO  CLIPE OFICIAL  EP CÉU  GABRIELA ROCHA.lrc'
     },
     {
         id:2,
         img:'Medias/Album Worship/imagens/rujaoLe.jpg',
         NomeDaMusica:'Ruja o Leão',
         Artista: 'Talita Catanzaro',
-        Audio:'Medias/Album Worship/Audios/RUJA O LEÃO Ao Vivo  Talita Catanzaro  fhop music.mp3'
+        Audio:'Medias/Album Worship/Audios/RUJA O LEÃO Ao Vivo  Talita Catanzaro  fhop music.mp3',
+        letra:'Medias/Album Worship/Lyrics/RUJA O LEÃO Ao Vivo  Talita Catanzaro  fhop music.lrc'
     },
     {
         id:3,
         img:'Medias/Album Worship/imagens/uma-nova-história.gif',
         NomeDaMusica:'Uma Nova Historia',
         Artista: 'Fernandinho',
-        Audio:'Medias/Album Worship/Audios/UMA NOVA HISTÓRIA  FERNANDINHO CLIPE OFICIAL.mp3'
+        Audio:'Medias/Album Worship/Audios/UMA NOVA HISTÓRIA  FERNANDINHO CLIPE OFICIAL.mp3',
+        letra:'Medias/Album Worship/Lyrics/UMA NOVA HISTÓRIA  FERNANDINHO CLIPE OFICIAL.lrc'
     },
     {
         id:4,
-        img:'Medias/Album Worship/imagens/isadora.jpg',
+        img:'Medias/Album Worship/imagens/isadora.png',
         NomeDaMusica:'Tua Alegria',
         Artista: 'Isadora Pompeo',
-        Audio:'Medias/Album Worship/Audios/Isadora Pompeo e Rebeca Carvalho  Tua Alegria Ao Vivo.mp3'
+        Audio:'Medias/Album Worship/Audios/Isadora Pompeo e Rebeca Carvalho  Tua Alegria Ao Vivo.mp3',
+        letra:'Medias/Album Worship/Lyrics/Isadora Pompeo e Rebeca Carvalho  Tua Alegria Ao Vivo.lrc'
+
     },
     {
         id:5,
         img:'Medias/Album Worship/imagens/casasua.jpg',
         NomeDaMusica:'A Casa É Sua',
         Artista: 'Casa Worship',
-        Audio:'Medias/Album Worship/Audios/A Casa É Sua  CASA WORSHIP Clipe Oficial.mp3'
+        Audio:'Medias/Album Worship/Audios/A Casa É Sua  CASA WORSHIP Clipe Oficial.mp3',
+        letra:'Medias/Album Worship/Lyrics/A Casa É Sua  CASA WORSHIP Clipe Oficial.lrc'
     },
     {
         id:6,
         img:'Medias/Album Worship/imagens/ousadoamor.jpg',
         NomeDaMusica:'Ousado Amor',
         Artista: 'Isaias Saad',
-        Audio:'Medias/Album Worship/Audios/Ousado Amor Clipe Oficial  Isaias Saad.mp3'
+        Audio:'Medias/Album Worship/Audios/Ousado Amor Clipe Oficial  Isaias Saad.mp3',
+        letra:'Medias/Album Worship/Lyrics/Ousado Amor Clipe Oficial  Isaias Saad.lrc'
     },
     {
         id:7,
         img:'Medias/Album Worship/imagens/todavia.jpg',
         NomeDaMusica:'Todavia Me Alegrarei',
         Artista: 'Sarah Beatriz',
-        Audio:'Medias/Album Worship/Audios/Sarah Beatriz  Todavia Me Alegrarei Ao Vivo.mp3'
+        Audio:'Medias/Album Worship/Audios/Sarah Beatriz  Todavia Me Alegrarei Ao Vivo.mp3',
+        letra:'Medias/Album Worship/Lyrics/Sarah Beatriz  Todavia Me Alegrarei Ao Vivo.lrc'
     },
     {
         id:8,
         img:'Medias/Album Worship/imagens/vemmebuscra.png',
         NomeDaMusica:'Vem me Buscar',
         Artista: 'Jefferson e Suellen',
-        Audio:'Medias/Album Worship/Audios/Vem Me Buscar.mp3'
+        Audio:'Medias/Album Worship/Audios/Vem Me Buscar.mp3',
+        letra:'Medias/Album Worship/Lyrics/Vem Me Buscar.lrc'
     },
     {
         id:9,
         img:'Medias/Album Worship/imagens/uma-nova-história.gif',
         NomeDaMusica:'Seu Sangue',
         Artista: 'Fernandinho',
-        Audio:'Medias/Album Worship/Audios/Fernandinho  SEU SANGUE CD Uma Nova História.mp3'
+        Audio:'Medias/Album Worship/Audios/Fernandinho  SEU SANGUE CD Uma Nova História.mp3',
+        letra:'Medias/Album Worship/Lyrics/Fernandinho  SEU SANGUE CD Uma Nova História.lrc'
     },
     {
         id:10,
         img:'Medias/Album Worship/imagens/uma-nova-história.gif',
         NomeDaMusica:'Eu Vou Subir a Montanha',
         Artista: 'Fernandinho',
-        Audio:'Medias/Album Worship/Audios/Fernandinho  EU VOU SUBIR A MONTANHA CD Uma Nova História.mp3'
+        Audio:'Medias/Album Worship/Audios/Fernandinho  EU VOU SUBIR A MONTANHA CD Uma Nova História.mp3',
+        letra:'Medias/Album Worship/Lyrics/Fernandinho  EU VOU SUBIR A MONTANHA CD Uma Nova História.lrc'
     },
 ]
