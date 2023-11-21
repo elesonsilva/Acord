@@ -146,21 +146,24 @@ let anavitoria = [
         img:'Medias/Album AnaVitoria/imagens/anavitoria-vitor-kley.jpg',
         NomeDaMusica:'Pupila',
         Artista: 'Ana Vitória',
-        Audio:'Medias/Album AnaVitoria/Audios/ANAVITÓRIA Vitor Kley  Pupila.mp3'
+        Audio:'Medias/Album AnaVitoria/Audios/ANAVITÓRIA Vitor Kley  Pupila.mp3',
+        letra:'Medias/Album AnaVitoria/Lyrics/ANAVITÓRIA Vitor Kley  Pupila.lrc'
     },
     {
         id:2,
         img:'Medias/Album AnaVitoria/imagens/fica.jpg',
         NomeDaMusica:'Fica',
         Artista: 'Ana Vitória',
-        Audio:'Medias/Album AnaVitoria/Audios/ANAVITÓRIA  Fica ft Matheus  Kauan.mp3'
+        Audio:'Medias/Album AnaVitoria/Audios/ANAVITÓRIA  Fica ft Matheus  Kauan.mp3',
+        letra:'Medias/Album AnaVitoria/Lyrics/ANAVITÓRIA  Fica ft Matheus  Kauan.lrc'
     },
     {
         id:3,
         img:'Medias/Album AnaVitoria/imagens/ana.jpg',
         NomeDaMusica:'Trevo',
         Artista: 'Ana Vitória',
-        Audio:'Medias/Album AnaVitoria/Audios/ANAVITÓRIA  Trevo Vevo Presents.mp3'
+        Audio:'Medias/Album AnaVitoria/Audios/ANAVITÓRIA  Trevo Vevo Presents.mp3',
+        letra:'Medias/Album AnaVitoria/Lyrics/ANAVITÓRIA  Trevo Vevo Presents.lrc'
     },
 ]
 let whorship = [

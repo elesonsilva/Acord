@@ -478,12 +478,14 @@ TopAlbuns.map((intem, index)=>{
                 const musicas = (i)=>{
                     let lista = anavitoria[i]
                     idMusica = i
+                    audioPath = lista.Audio
+                    lrcPath = lista.letra
                     barraprogresso.value = 0
                     document.querySelector('.musica-atual .img-da-musica').src = lista.img
                     document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
-                    document.querySelector('.player .musicaSom ').src = lista.Audio
-                    
+                    audio = document.querySelector('.player .musicaSom');
+                    lyricsContainer = document.querySelector('.lyric');
                     tempo.innerHTML ='00:00'
 
                     setTimeout(()=>{
@@ -492,6 +494,18 @@ TopAlbuns.map((intem, index)=>{
                         duracaomusica.innerHTML = formatoTempo(musica.duration) 
                         
                     }, 300)
+                     // Carregar a letra da música de um arquivo LRC
+                     fetch(lrcPath)
+                     .then(response => response.text())
+                     .then(data => {
+                         lyricsArray = parseLRC(data);
+                         displayLyrics();
+                     })
+                     .catch(error => console.error('Erro ao carregar a letra:', error));
+                     
+                      // Configurar o áudio
+                      audio.src = audioPath;
+ 
 
                 }
                 
@@ -523,12 +537,14 @@ TopAlbuns.map((intem, index)=>{
                 const musicas = (i)=>{
                     let lista = whorship[i]
                     idMusica = i
+                    audioPath = lista.Audio
+                    lrcPath = lista.letra
                     barraprogresso.value = 0
                     document.querySelector('.musica-atual .img-da-musica').src = lista.img
                     document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
-                    document.querySelector('.player .musicaSom ').src = lista.Audio
-                    
+                    audio = document.querySelector('.player .musicaSom');
+                    lyricsContainer = document.querySelector('.lyric');
                     tempo.innerHTML ='00:00'
 
                     setTimeout(()=>{
@@ -537,6 +553,17 @@ TopAlbuns.map((intem, index)=>{
                         duracaomusica.innerHTML = formatoTempo(musica.duration) 
                         
                     }, 300)
+                    // Carregar a letra da música de um arquivo LRC
+                    fetch(lrcPath)
+                    .then(response => response.text())
+                    .then(data => {
+                        lyricsArray = parseLRC(data);
+                        displayLyrics();
+                    })
+                    .catch(error => console.error('Erro ao carregar a letra:', error));
+                    
+                     // Configurar o áudio
+                     audio.src = audioPath;
 
                 }
                 
