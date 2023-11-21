@@ -764,10 +764,11 @@ html::-webkit-scrollbar{
         white-space: pre-line;
         overflow-y: hidden;
         overflow-x: hidden;
-        max-height: 200px; /* Altura máxima do contêiner antes do scroll aparecer */
+        max-height: 300px; /* Altura máxima do contêiner antes do scroll aparecer */
         font-size: 25px;
         animation: reveal 0.2s ease-in-out forwards;
-        background-image: linear-gradient(to top , #00000091, #0000005e);
+        /*background-image: linear-gradient(to top , #00000091, #0000005e);*/
+        background-color: transparent;
         z-index: 1;
       }
   
