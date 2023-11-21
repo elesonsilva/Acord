@@ -671,7 +671,7 @@ function playTransicao(){
     if (tela.matches){
         
     }else{
-        var telaplay =  document.querySelector('.page-player') 
+       
         document.querySelector('.categoria').style.display = 'none'
         document.querySelector('.btn-goup-acoes').style.display = 'none'
         document.querySelector('.btnplay').style.display = 'none'
@@ -681,7 +681,7 @@ function playTransicao(){
         document.querySelector('.lista-aberta').style.display = 'block'
         document.querySelector('.page-player').style.display = 'block'
         
-        telaplay.animate([{right:'-100%'},{right:'0'}],{duration:100,fill:'forwards'})
+        
 
         btnactive.classList.add('active')
         
