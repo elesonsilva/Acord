@@ -1157,25 +1157,21 @@ function syncLyric(lyrics, time) {
       .filter(entry => entry !== null);
   }
 
-  function parseChordPro(data, includeLyrics) {
+  function parseChordPro(data) {
     const sections = data.split('{soc}');
     if (sections.length > 1) {
-      const lines = sections[1].split('{eoc}')[0].split('\n');
-      return lines.map(line => {
-        if (includeLyrics) {
-          const match = line.match(/(\S.*)/); // Match em qualquer caractere não branco
-          return match ? match[1] : '';
-        } else {
+      return sections[1].split('{eoc}')[0]
+        .split('\n')
+        .map(line => {
           const chordMatches = line.match(/\[([^\]]+)\]/g);
           if (chordMatches) {
             chordMatches.forEach(chord => {
-              const spaceCount = chord.length - 2; // Descontando os colchetes
-              line = line.replace(chord, `<span class="chord">${' '.repeat(spaceCount)}${chord.slice(1, -1)}</span>`);
+              const chordText = chord.slice(1, -1);
+              line = line.replace(chord, `<span class="chord">${chordText}</span>`);
             });
           }
           return line;
-        }
-      });
+        });
     } else {
       return [];
     }

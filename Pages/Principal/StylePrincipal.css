@@ -781,13 +781,17 @@ html::-webkit-scrollbar{
       }
 
       .chord {
+        position: relative;
+        top: -1.0em; /* Ajuste vertical para posicionar a cifra acima da palavra */
         font-weight: bold;
-        color: green;
+        color: var(--p1-quaternaria); /* Cor verde para as cifras */
       }
       #chords {
         white-space: pre-line;
-        max-height: 350px; /* Altura máxima da área de cifras */
+        height: 580px; /* Altura máxima da área de cifras */
+        line-height: 50px;
         font-size: 25px;
+       
       }
     
     

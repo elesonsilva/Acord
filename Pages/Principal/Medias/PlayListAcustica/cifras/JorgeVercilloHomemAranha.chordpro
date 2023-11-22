@@ -1,11 +1,15 @@
-{title: Exemplo com Cifras}
-{artist: Artista Desconhecido}
+{title: Nome da Música}
+{artist: Nome do Artista}
 
 [C]Este é um [Am]exemplo [F]com cifras[G].
 
 {soc}
-[Am]          [G]        [C]
-Aqui está uma linha com cifras
-[F]    [G]          [C]
-linha para exemplo prático.
+[Am]Aqui está uma [G]linha com [C]cifras
+[F]Outra linha [G]para exemplo [C]prático.
+
+[C]Este é um [Am]exemplo [F]com cifras[G].
+
+refrão:
+[Am]Aqui está uma [G]linha com [C]cifras
+[F]Outra linha [G]para exemplo [C]prático.
 {eoc}
