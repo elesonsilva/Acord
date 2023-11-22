@@ -151,7 +151,8 @@ let Acustica =[
         NomeDaMusica:'Homem-Aranha',
         Artista: 'Jorge Vercillo',
         Audio:'Medias/PlayListAcustica/Audios/JorgeVercilloHomemAranha.mp3',
-        letra:'Medias/PlayListAcustica/Lyrics/JorgeVercilloHomemAranha.lrc'
+        letra:'Medias/PlayListAcustica/Lyrics/JorgeVercilloHomemAranha.lrc',
+        cifra:'Medias/PlayListAcustica/cifras/JorgeVercilloHomemAranha.chordpro'
     },
     {
         id:2,

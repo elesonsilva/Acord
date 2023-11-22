@@ -779,6 +779,16 @@ html::-webkit-scrollbar{
       .unplayed {
         opacity: 0.5; /* Adiciona opacidade para as linhas não tocadas */
       }
+
+      .chord {
+        font-weight: bold;
+        color: green;
+      }
+      #chords {
+        white-space: pre-line;
+        max-height: 350px; /* Altura máxima da área de cifras */
+        font-size: 25px;
+      }
     
     
     @keyframes pulse {

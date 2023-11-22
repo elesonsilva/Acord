@@ -199,12 +199,14 @@ TopPlaylists.map((intem, index)=>{
                     idMusica = i
                     audioPath = lista.Audio
                     lrcPath = lista.letra
+                    chordPath =lista.cifra
                     barraprogresso.value = 0
                     document.querySelector('.musica-atual .img-da-musica').src = lista.img
                     document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
                     audio = document.querySelector('.player .musicaSom');
                     lyricsContainer = document.querySelector('.lyric');
+                    chordsContainer = document.querySelector('#chords')
                     tempo.innerHTML ='00:00'
 
                     setTimeout(()=>{
@@ -224,6 +226,16 @@ TopPlaylists.map((intem, index)=>{
                      
                       // Configurar o áudio
                       audio.src = audioPath;
+
+                      
+                      fetch(chordPath)
+                        .then(response => response.text())
+                        .then(data => {
+                            chordsArray = parseChordPro(data);
+                            displayChords();
+                        })
+                        .catch(error => console.error('Erro ao carregar as cifras:', error));
+                                        
                 }
                 
                 musicas(0) 
@@ -1131,6 +1143,7 @@ function syncLyric(lyrics, time) {
   
 
   let lyricsArray = [];
+  let chordsArray  = [];
 
   function parseLRC(data) {
     return data.split('\n')
@@ -1144,12 +1157,42 @@ function syncLyric(lyrics, time) {
       .filter(entry => entry !== null);
   }
 
+  function parseChordPro(data, includeLyrics) {
+    const sections = data.split('{soc}');
+    if (sections.length > 1) {
+      const lines = sections[1].split('{eoc}')[0].split('\n');
+      return lines.map(line => {
+        if (includeLyrics) {
+          const match = line.match(/(\S.*)/); // Match em qualquer caractere não branco
+          return match ? match[1] : '';
+        } else {
+          const chordMatches = line.match(/\[([^\]]+)\]/g);
+          if (chordMatches) {
+            chordMatches.forEach(chord => {
+              const spaceCount = chord.length - 2; // Descontando os colchetes
+              line = line.replace(chord, `<span class="chord">${' '.repeat(spaceCount)}${chord.slice(1, -1)}</span>`);
+            });
+          }
+          return line;
+        }
+      });
+    } else {
+      return [];
+    }
+  }
+
+
   function displayLyrics() {
     lyricsContainer.innerHTML = lyricsArray.map((entry, index) => {
       return `<div class="${index === 0 ? 'highlighted' : 'unplayed'}">${entry.text}</div>`;
     }).join('');
   }
 
+  function displayChords() {
+    chordsContainer.innerHTML = chordsArray.map((entry, index) => {
+      return `<div class="${index === 0 ? '' : 'unplayed'}">${entry}</div>`;
+    }).join('');
+  }
 
   musica.addEventListener('timeupdate', function () {
     const currentTime = musica.currentTime;
@@ -1165,7 +1208,11 @@ function syncLyric(lyrics, time) {
         break;
       }
     }
+
   });
+
+
+
 
   function parseTime(timeString) {
     const [minutes, seconds] = timeString.split(':').map(parseFloat);
