@@ -1163,15 +1163,16 @@ function syncLyric(lyrics, time) {
       return sections[1].split('{eoc}')[0]
         .split('\n')
         .map(line => {
-          const chordMatches = line.match(/\[([^\]]+)\]/g);
-          if (chordMatches) {
-            chordMatches.forEach(chord => {
-              const chordText = chord.slice(1, -1);
-              line = line.replace(chord, `<span class="chord">${chordText}</span>`);
-            });
+          const match = line.match(/\(\((\d+:\d+\.\d+)\)\)(.*)/);
+          if (match) {
+            const time = match[1];
+            const content = match[2];
+
+            return { time, content };
           }
-          return line;
-        });
+          return null;
+        })
+        .filter(entry => entry !== null);
     } else {
       return [];
     }
@@ -1186,7 +1187,8 @@ function syncLyric(lyrics, time) {
 
   function displayChords() {
     chordsContainer.innerHTML = chordsArray.map((entry, index) => {
-      return `<div class="${index === 0 ? '' : 'unplayed'}">${entry}</div>`;
+      const formattedContent = entry.content.replace(/\[([^\]]+)\]/g, '<span class="chord">$1</span>');
+      return `<div class="${index === 0 ? '' : 'unplayed'}">${formattedContent}</div>`;
     }).join('');
   }
 
@@ -1204,6 +1206,17 @@ function syncLyric(lyrics, time) {
         break;
       }
     }
+    // Exemplo de sincronização com as cifras
+    for (let i = 0; i < chordsArray.length; i++) {
+        const startTime = parseTime(chordsArray[i].time);
+        const endTime = i < chordsArray.length - 1 ? parseTime(chordsArray[i + 1].time) : Number.MAX_SAFE_INTEGER;
+  
+        if (currentTime >= startTime && currentTime < endTime) {
+          highlightChord(i);
+          scrollToChord(i);
+          break;
+        }
+      }
 
   });
 
@@ -1226,4 +1239,20 @@ function syncLyric(lyrics, time) {
   function scrollToLyric(lineNumber) {
     const lines = lyricsContainer.getElementsByTagName('div');
     lines[lineNumber].scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  function highlightChord(lineNumber) {
+    const chords = chordsContainer.getElementsByTagName('div');
+    for (let i = 0; i < chords.length; i++) {
+      chords[i].classList.toggle('unplayed', i !== lineNumber);
+      const chordContent = chordsArray[i].content.replace(/\[([^\]]+)\]/g, '<span class="chord">$1</span>');
+      chords[i].innerHTML = chordContent;
+    }
+  }
+
+
+
+  function scrollToChord(lineNumber) {
+    const chords = chordsContainer.getElementsByTagName('div');
+    chords[lineNumber].scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
