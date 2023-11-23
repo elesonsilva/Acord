@@ -788,8 +788,9 @@ html::-webkit-scrollbar{
       }
       #chords {
         white-space: pre-line;
-        height: 580px; /* Altura máxima da área de cifras */
+        max-height: 200px; /* Altura máxima da área de cifras */
         line-height: 50px;
+        overflow-y: scroll; /* Adiciona barra de rolagem vertical */
         font-size: 25px;
        
       }
