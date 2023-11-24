@@ -786,13 +786,22 @@ html::-webkit-scrollbar{
         font-weight: bold;
         color: var(--p1-quaternaria); /* Cor verde para as cifras */
       }
-      #chords {
+      .chords {
+        position: absolute;
+        top: 12%;
+        width: 90%;
+        margin-left: 5%;
         white-space: pre-line;
-        max-height: 200px; /* Altura máxima da área de cifras */
+        max-height: 260px; /* Altura máxima da área de cifras */
         line-height: 50px;
-        overflow-y: scroll; /* Adiciona barra de rolagem vertical */
-        font-size: 25px;
-       
+        overflow-y: hidden; /* Adiciona barra de rolagem vertical */
+        overflow-x: hidden; /* Adiciona barra de rolagem vertical */
+        font-size: 20px;
+        animation: revealTow 0.5s ease-in-out forwards;
+        /*background-image: linear-gradient(to top , #00000091, #0000005e);*/
+        background-color: transparent;
+        z-index: 1;
+        display: none;
       }
     
     

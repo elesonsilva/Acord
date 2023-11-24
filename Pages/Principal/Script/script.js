@@ -206,7 +206,7 @@ TopPlaylists.map((intem, index)=>{
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
                     audio = document.querySelector('.player .musicaSom');
                     lyricsContainer = document.querySelector('.lyric');
-                    chordsContainer = document.querySelector('#chords')
+                    chordsContainer = document.querySelector('.chords')
                     tempo.innerHTML ='00:00'
 
                     setTimeout(()=>{
@@ -636,7 +636,9 @@ document.querySelector('.informacoes-musica .back-voltar').addEventListener('cli
 })
 
 let btnactive = document.querySelector('.btn-group-opcoes .bi-music-note-list')
+let btnCifra = document.querySelector('.btn-group-opcoes .bi-three-dots')
 var letraMusicas = document.querySelector('.lyric')
+var cifra = document.querySelector('.chords')
 btnactive.addEventListener('click', ()=>{
     let listaDeMusicas = document.querySelector('.lista-aberta')
     let imgMusica = document.querySelector('.page-player .musica-atual .img-da-musica')
@@ -652,9 +654,32 @@ btnactive.addEventListener('click', ()=>{
         btnactive.classList.remove('active')
         listaDeMusicas.style.display = 'none'
         letraMusicas.style.display = 'block'
+        cifra.style.display = 'none'
         imgMusica.classList.add('img-full-window')
         backinfomusica.classList.add('info-full-window')
     }
+})
+btnCifra.addEventListener('click', ()=>{
+    let listaDeMusicas = document.querySelector('.lista-aberta')
+    let imgMusica = document.querySelector('.page-player .musica-atual .img-da-musica')
+    let backinfomusica = document.querySelector('.informacoes-musica')
+    if(listaDeMusicas.style.display == 'none'){
+        btnCifra.classList.remove('active')
+        listaDeMusicas.style.display = 'block'
+        letraMusicas.style.display = 'none'
+        cifra.style.display = 'none'
+        imgMusica.classList.remove('img-full-window')
+        backinfomusica.classList.remove('info-full-window')
+
+    }else{
+        btnCifra.classList.add('active')
+        listaDeMusicas.style.display = 'none'
+        letraMusicas.style.display = 'none'
+        cifra.style.display = 'block'
+        imgMusica.classList.add('img-full-window')
+        backinfomusica.classList.add('info-full-window')
+    }
+
 })
 function ativaLista(){
     let imgMusica = document.querySelector('.page-player .musica-atual .img-da-musica')
