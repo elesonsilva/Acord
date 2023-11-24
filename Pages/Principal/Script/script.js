@@ -636,7 +636,7 @@ document.querySelector('.informacoes-musica .back-voltar').addEventListener('cli
 })
 
 let btnactive = document.querySelector('.btn-group-opcoes .bi-music-note-list')
-let btnCifra = document.querySelector('.btn-group-opcoes .bi-three-dots')
+let btnCifra = document.querySelector('.btn-group-opcoes .bi-file-earmark-music-fill')
 var letraMusicas = document.querySelector('.lyric')
 var cifra = document.querySelector('.chords')
 btnactive.addEventListener('click', ()=>{
