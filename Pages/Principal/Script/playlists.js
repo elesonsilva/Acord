@@ -160,7 +160,8 @@ let Acustica =[
         NomeDaMusica:'Monalisa ',
         Artista: 'Jorge Vercillo',
         Audio:'Medias/PlayListAcustica/Audios/JorgeVercilloMonalisa.mp3',
-        letra:'Medias/PlayListAcustica/Lyrics/JorgeVercilloMonalisa.lrc'
+        letra:'Medias/PlayListAcustica/Lyrics/JorgeVercilloMonalisa.lrc',
+        cifra:'Medias/PlayListAcustica/cifras/JorgeVercilloMonalisa.chordpro'
     },
     {
         id:3,
@@ -168,7 +169,8 @@ let Acustica =[
         NomeDaMusica:'Que Nem Maré ',
         Artista: 'Jorge Vercillo',
         Audio:'Medias/PlayListAcustica/Audios/JorgeVercilloQueNemMaré.mp3',
-        letra:'Medias/PlayListAcustica/Lyrics/JorgeVercilloQueNemMaré.lrc'
+        letra:'Medias/PlayListAcustica/Lyrics/JorgeVercilloQueNemMaré.lrc',
+        cifra:'Medias/PlayListAcustica/cifras/JorgeVercilloQueNemMaré.chordpro'
         
     },
     {
