@@ -270,7 +270,8 @@ let Cover =[
         NomeDaMusica:'Surreal ',
         Artista: 'Bia Marques cover',
         Audio:'Medias/PlayListCover/Audios/SurrealversãoBiaMarques.mp3',
-        letra:'Medias/PlayListCover/Lyrics/SurrealversãoBiaMarques.lrc'
+        letra:'Medias/PlayListCover/Lyrics/SurrealversãoBiaMarques.lrc',
+        cifra:'Medias/PlayListCover/cifras/SurrealversãoBiaMarques.chordpro'
     },
     
     {
