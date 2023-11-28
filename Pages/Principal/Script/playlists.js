@@ -217,7 +217,8 @@ let Cover =[
         NomeDaMusica:'ANUNCIAÇÃO | Alceu Valença',
         Artista: 'Amarina',
         Audio:'Medias/PlayListCover/Audios/ANUNCIAÇÃOAlceuValençaCoverdeAMARINA.mp3',
-        letra:'Medias/PlayListCover/Lyrics/ANUNCIAÇÃOAlceuValençaCoverdeAMARINA.lrc'
+        letra:'Medias/PlayListCover/Lyrics/ANUNCIAÇÃOAlceuValençaCoverdeAMARINA.lrc',
+        cifra:'Medias/PlayListCover/cifras/ANUNCIAÇÃOAlceuValençaCoverdeAMARINA.chordpro'
     },
     {
         id:5,
@@ -233,7 +234,8 @@ let Cover =[
         NomeDaMusica:'Cartão Black',
         Artista: 'Bia Marques cover',
         Audio:'Medias/PlayListCover/Audios/CartãoBlackBiaMarquescover.mp3',
-        letra:'Medias/PlayListCover/Lyrics/CartãoBlackBiaMarquescover.lrc'
+        letra:'Medias/PlayListCover/Lyrics/CartãoBlackBiaMarquescover.lrc',
+        cifra:'Medias/PlayListCover/cifras/CartãoBlackBiaMarquescover.chordpro'
     },
     {
         id:7,
@@ -241,7 +243,8 @@ let Cover =[
         NomeDaMusica:'Se for amor | João Gomes',
         Artista: 'Bia Marques cover',
         Audio:'Medias/PlayListCover/Audios/seforamorbiamarques.mp3',
-        letra:'Medias/PlayListCover/Lyrics/seforamorbiamarques.lrc'
+        letra:'Medias/PlayListCover/Lyrics/seforamorbiamarques.lrc',
+        cifra:'Medias/PlayListCover/cifras/seforamorbiamarques.chordpro'
     },
     {
         id:8,
@@ -249,7 +252,8 @@ let Cover =[
         NomeDaMusica:'Eu tenho medo | Zé Vaqueiro',
         Artista: 'Bia Marques cover',
         Audio:'Medias/PlayListCover/Audios/EutenhomedoZéVaqueiroBiaMarquescover.mp3',
-        letra:'Medias/PlayListCover/Lyrics/EutenhomedoZéVaqueiroBiaMarquescover.lrc'
+        letra:'Medias/PlayListCover/Lyrics/EutenhomedoZéVaqueiroBiaMarquescover.lrc',
+        cifra:'Medias/PlayListCover/cifras/EutenhomedoZéVaqueiroBiaMarquescover.chordpro'
     },
     {
         id:9,
@@ -257,7 +261,8 @@ let Cover =[
         NomeDaMusica:'MALANDRAGEM | Cássia Eller',
         Artista: 'Amarina',
         Audio:'Medias/PlayListCover/Audios/malandragemAmarina.mp3',
-        letra:'Medias/PlayListCover/Lyrics/malandragemAmarina.lrc'
+        letra:'Medias/PlayListCover/Lyrics/malandragemAmarina.lrc',
+        cifra:'Medias/PlayListCover/cifras/malandragemAmarina.chordpro'
     },
     {
         id:10,
