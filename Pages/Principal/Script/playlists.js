@@ -191,7 +191,8 @@ let Cover =[
         NomeDaMusica:'Nosso quadro Ana Castela',
         Artista: 'Bia Marques cover',
         Audio:'Medias/PlayListCover/Audios/NossoquadroAnaCastelaBiaMarquescover.mp3',
-        letra:'Medias/PlayListCover/Lyrics/NossoquadroAnaCastelaBiaMarquescover.lrc'
+        letra:'Medias/PlayListCover/Lyrics/NossoquadroAnaCastelaBiaMarquescover.lrc',
+        cifra:'Medias/PlayListCover/cifras/NossoquadroAnaCastelaBiaMarquescover.chordpro'
     },
     {
         id:2,
@@ -199,7 +200,8 @@ let Cover =[
         NomeDaMusica:'Amarelo, azul e branco| Anavitória e Rita Lee',
         Artista: 'Amarina',
         Audio:'Medias/PlayListCover/Audios/AMARELOAZULEBRANCOAnavitóriaCoverdeAMARINA.mp3',
-        letra:'Medias/PlayListCover/Lyrics/AMARELOAZULEBRANCOAnavitóriaCoverdeAMARINA.lrc'
+        letra:'Medias/PlayListCover/Lyrics/AMARELOAZULEBRANCOAnavitóriaCoverdeAMARINA.lrc',
+        cifra:'Medias/PlayListCover/cifras/AMARELOAZULEBRANCOAnavitóriaCoverdeAMARINA.chordpro'
     },
     {
         id:3,
