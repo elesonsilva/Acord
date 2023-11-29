@@ -137,7 +137,8 @@ let Rock =[
         NomeDaMusica:'Sweet Child O Mine',
         Artista: 'Guns N Roses',
         Audio:'Medias/PlayListRock/Audio/GunsNRosesSweetChildOMineOfficial.mp3',
-        letra:'Medias/PlayListRock/Lyrics/GunsNRosesSweetChildOMineOfficial.lrc'
+        letra:'Medias/PlayListRock/Lyrics/GunsNRosesSweetChildOMineOfficial.lrc',
+        cifra:'Medias/PlayListRock/cifras/GunsNRosesSweetChildOMineOfficial.chordpro'
     },
     {
         id:8,
