@@ -101,7 +101,8 @@ let Rock =[
         NomeDaMusica:'Wind of Change',
         Artista: 'Scorpions',
         Audio:'Medias/PlayListRock/Audio/ScorpionsWindOfChange.mp3',
-        letra:'Medias/PlayListRock/Lyrics/ScorpionsWindOfChange.lrc'
+        letra:'Medias/PlayListRock/Lyrics/ScorpionsWindOfChange.lrc',
+        cifra:'Medias/PlayListRock/cifras/ScorpionsWindOfChange.chordpro'
     },
     {
         id:4,
@@ -109,7 +110,8 @@ let Rock =[
         NomeDaMusica:'Send Me an Angel',
         Artista: 'Scorpions',
         Audio:'Medias/PlayListRock/Audio/ScorpionsSendMeAnAngel.mp3',
-        letra:'Medias/PlayListRock/Lyrics/ScorpionsSendMeAnAngel.lrc'
+        letra:'Medias/PlayListRock/Lyrics/ScorpionsSendMeAnAngel.lrc',
+        cifra:'Medias/PlayListRock/cifras/ScorpionsSendMeAnAngel.chordpro'
     },
     {
         id:5,
@@ -117,7 +119,8 @@ let Rock =[
         NomeDaMusica:'Always Somewhere',
         Artista: 'Scorpions',
         Audio:'Medias/PlayListRock/Audio/ScorpionsAlwaysSomewhere.mp3',
-        letra:'Medias/PlayListRock/Lyrics/ScorpionsAlwaysSomewhere.lrc'
+        letra:'Medias/PlayListRock/Lyrics/ScorpionsAlwaysSomewhere.lrc',
+        cifra:'Medias/PlayListRock/cifras/ScorpionsAlwaysSomewhere.chordpro'
     },
     {
         id:6,
