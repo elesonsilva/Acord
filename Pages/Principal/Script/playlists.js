@@ -280,7 +280,8 @@ let Cover =[
         NomeDaMusica:'MONALISA | Jorge Vercillo',
         Artista: 'Amarina',
         Audio:'Medias/PlayListCover/Audios/MONALISAJorgeVercilloCoverdeAMARINA.mp3',
-        letra:'Medias/PlayListCover/Lyrics/MONALISAJorgeVercilloCoverdeAMARINA.lrc'
+        letra:'Medias/PlayListCover/Lyrics/MONALISAJorgeVercilloCoverdeAMARINA.lrc',
+        cifra:'Medias/PlayListCover/cifras/MONALISAJorgeVercilloCoverdeAMARINA.chordpro'
     },
 ]
 JSON.stringify(Eletronica)
