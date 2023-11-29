@@ -129,7 +129,7 @@ let Rock =[
         Artista: 'Dire Straits',
         Audio:'Medias/PlayListRock/Audio/DireStraitsSultansOfSwing.mp3',
         letra:'Medias/PlayListRock/Lyrics/DireStraitsSultansOfSwing.lrc',
-        cifra:'Medias/PlayListRock/cifras/ScorpionsAlwaysSomewhere.chordpro'
+        cifra:'Medias/PlayListRock/cifras/DireStraitsSultansOfSwing.chordpro'
     },
     {
         id:7,
