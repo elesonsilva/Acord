@@ -146,7 +146,8 @@ let Rock =[
         NomeDaMusica:'Nothing Else Matters',
         Artista: 'Metallica',
         Audio:'Medias/PlayListRock/Audio/MetallicaNothingElseMatters.mp3',
-        letra:'Medias/PlayListRock/Lyrics/MetallicaNothingElseMatters.lrc'
+        letra:'Medias/PlayListRock/Lyrics/MetallicaNothingElseMatters.lrc',
+        cifra:'Medias/PlayListRock/cifras/MetallicaNothingElseMatters.chordpro'
     },
     
 ]
