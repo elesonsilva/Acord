@@ -84,7 +84,7 @@ let Rock =[
         NomeDaMusica:'May the Force Be With You',
         Artista: 'Dr. Sin',
         Audio:'Medias/PlayListRock/Audio/DrSinMaytheforcebewithyou.mp3',
-        letra:'Medias/PlayListRock/Lyrics/DrSinMaytheforcebewithyou.lrc'
+        letra:'Medias/PlayListRock/Lyrics/DrSinMaytheforcebewithyou.lrc',
     },
     {
         id:2,
@@ -92,7 +92,8 @@ let Rock =[
         NomeDaMusica:'Still Loving You',
         Artista: 'Scorpions',
         Audio:'Medias/PlayListRock/Audio/ScorpionsStillLovingYou.mp3',
-        letra:'Medias/PlayListRock/Lyrics/ScorpionsStillLovingYou.lrc'
+        letra:'Medias/PlayListRock/Lyrics/ScorpionsStillLovingYou.lrc',
+        cifra:'Medias/PlayListRock/cifras/ScorpionsStillLovingYou.chordpro'
     },
     {
         id:3,
