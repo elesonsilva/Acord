@@ -397,12 +397,14 @@ TopAlbuns.map((intem, index)=>{
                     idMusica = i
                     audioPath = lista.Audio
                     lrcPath = lista.letra
+                    chordPath =lista.cifra
                     barraprogresso.value = 0
                     document.querySelector('.musica-atual .img-da-musica').src = lista.img
                     document.querySelector('.musica-atual .informacoes-musica .nome-da-musica').innerHTML = lista.NomeDaMusica
                     document.querySelector('.musica-atual .informacoes-musica .artista').innerHTML = lista.Artista
                     audio = document.querySelector('.player .musicaSom');
                     lyricsContainer = document.querySelector('.lyric');
+                    chordsContainer = document.querySelector('.chords')
                     tempo.innerHTML ='00:00'
 
                     setTimeout(()=>{
@@ -422,6 +424,14 @@ TopAlbuns.map((intem, index)=>{
                      
                       // Configurar o áudio
                       audio.src = audioPath;
+                      fetch(chordPath)
+                     .then(response => response.text())
+                     .then(data => {
+                         chordsArray = parseChordPro(data);
+                         displayChords();
+                     })
+                     .catch(error => console.error('Erro ao carregar as cifras:', error));
+                     
 
                 }
                 
