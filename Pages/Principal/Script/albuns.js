@@ -5,7 +5,8 @@ let brunoMars = [
         NomeDaMusica:'24K Magic',
         Artista: 'Bruno Mars',
         Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  24K Magic Official Music Video.mp3',
-        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  24K Magic Official Music Video.lrc'
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  24K Magic Official Music Video.lrc',
+        cifra:'Medias/Album Bruno Mars/cifras/Bruno Mars  24K Magic Official Music Video.chordpro'
     },
     {
         id:2,
@@ -13,7 +14,8 @@ let brunoMars = [
         NomeDaMusica:'Locked Out Of Heaven',
         Artista: 'Bruno Mars',
         Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Locked Out Of Heaven Official Music Video.mp3',
-        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  Locked Out Of Heaven Official Music Video.lrc'
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  Locked Out Of Heaven Official Music Video.lrc',
+        cifra:'Medias/Album Bruno Mars/cifras/Bruno Mars  Locked Out Of Heaven Official Music Video.chordpro'
     },
     {
         id:3,
@@ -21,7 +23,8 @@ let brunoMars = [
         NomeDaMusica:'Thats What I Like',
         Artista: 'Bruno Mars',
         Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Thats What I Like Official Music Video.mp3',
-        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  Thats What I Like Official Music Video.lrc'
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  Thats What I Like Official Music Video.lrc',
+        cifra:'Medias/Album Bruno Mars/cifras/Bruno Mars  Thats What I Like Official Music Video.chordpro'
     },
     {
         id:4,
@@ -29,7 +32,8 @@ let brunoMars = [
         NomeDaMusica:'The Lazy Song',
         Artista: 'Bruno Mars',
         Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  The Lazy Song Official Music Video.mp3',
-        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  The Lazy Song Official Music Video.lrc'
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  The Lazy Song Official Music Video.lrc',
+        cifra:'Medias/Album Bruno Mars/cifras/Bruno Mars  The Lazy Song Official Music Video.chordpro'
     },
     {
         id:5,
@@ -37,7 +41,8 @@ let brunoMars = [
         NomeDaMusica:'Treasure',
         Artista: 'Bruno Mars',
         Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Treasure Official Music Video.mp3',
-        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  Treasure Official Music Video.lrc'
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  Treasure Official Music Video.lrc',
+        cifra:'Medias/Album Bruno Mars/cifras/Bruno Mars  Treasure Official Music Video.chordpro'
     },
     {
         id:6,
@@ -45,7 +50,8 @@ let brunoMars = [
         NomeDaMusica:'Leave the Door Open',
         Artista: 'Bruno Mars Anderson Paak',
         Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars Anderson Paak Silk Sonic  Leave the Door Open Official Video.mp3',
-        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars Anderson Paak Silk Sonic  Leave the Door Open Official Video.lrc'
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars Anderson Paak Silk Sonic  Leave the Door Open Official Video.lrc',
+        cifra:'Medias/Album Bruno Mars/cifras/Bruno Mars Anderson Paak Silk Sonic  Leave the Door Open Official Video.chordpro'
     },
     {
         id:7,
@@ -53,7 +59,8 @@ let brunoMars = [
         NomeDaMusica:'Uptown Funk',
         Artista: 'Mark Ronson ft. Bruno Mars',
         Audio:'Medias/PlayListFestival/Audios/UptownFunk.mp3',
-        letra:'Medias/PlayListFestival/Lyrics/UptownFunk.lrc'
+        letra:'Medias/PlayListFestival/Lyrics/UptownFunk.lrc',
+        cifra:'Medias/Album Bruno Mars/cifras/UptownFunk.chordpro'
 
     },
     {
@@ -62,7 +69,8 @@ let brunoMars = [
         NomeDaMusica:'Just The Way You Are',
         Artista: 'Bruno Mars',
         Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Just The Way You Are Official Music Video.mp3',
-        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  Just The Way You Are Official Music Video.lrc'
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  Just The Way You Are Official Music Video.lrc',
+        cifra:'Medias/Album Bruno Mars/cifras/Bruno Mars  Just The Way You Are Official Music Video.chordpro'
     },
     {
         id:9,
@@ -70,7 +78,8 @@ let brunoMars = [
         NomeDaMusica:'Finesse',
         Artista: 'Bruno Mars ',
         Audio:'Medias/Album Bruno Mars/Audios/Bruno Mars  Finesse Remix feat Cardi B Official Music Video.mp3',
-        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  Finesse Remix feat Cardi B Official Music Video.lrc'
+        letra:'Medias/Album Bruno Mars/Lyrics/Bruno Mars  Finesse Remix feat Cardi B Official Music Video.lrc',
+        cifra:'Medias/Album Bruno Mars/cifras/Bruno Mars  Finesse Remix feat Cardi B Official Music Video.chordpro'
     },
     {
         id:10,
@@ -78,7 +87,8 @@ let brunoMars = [
         NomeDaMusica:'Billionaire',
         Artista: 'Bruno Mars',
         Audio:'Medias/Album Bruno Mars/Audios/Travie McCoy Billionaire ft Bruno Mars OFFICIAL VIDEO.mp3',
-        letra:'Medias/Album Bruno Mars/Lyrics/Travie McCoy Billionaire ft Bruno Mars OFFICIAL VIDEO.lrc'
+        letra:'Medias/Album Bruno Mars/Lyrics/Travie McCoy Billionaire ft Bruno Mars OFFICIAL VIDEO.lrc',
+        cifra:'Medias/Album Bruno Mars/cifras/Travie McCoy Billionaire ft Bruno Mars OFFICIAL VIDEO.chordpro'
     },
 ]
 let coldplay = [
