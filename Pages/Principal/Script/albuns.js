@@ -98,7 +98,8 @@ let coldplay = [
         NomeDaMusica:'Viva La Vida',
         Artista: 'Coldplay',
         Audio:'Medias/Album Coldplay/Audios/Coldplay  Viva La Vida Official Video.mp3',
-        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Viva La Vida Official Video.lrc'
+        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Viva La Vida Official Video.lrc',
+        cifra:'Medias/Album Coldplay/cifras/Coldplay  Viva La Vida Official Video.chordpro'
     },
     {
         id:2,
@@ -106,7 +107,8 @@ let coldplay = [
         NomeDaMusica:'Adventure Of A Lifetime',
         Artista: 'Coldplay',
         Audio:'Medias/Album Coldplay/Audios/Coldplay  Adventure Of A Lifetime Official Video.mp3',
-        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Adventure Of A Lifetime Official Video.lrc'
+        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Adventure Of A Lifetime Official Video.lrc',
+        cifra:'Medias/Album Coldplay/cifras/Coldplay  Adventure Of A Lifetime Official Video.chordpro'
     },
     {
         id:3,
@@ -114,7 +116,8 @@ let coldplay = [
         NomeDaMusica:'Paradise',
         Artista: 'Coldplay',
         Audio:'Medias/Album Coldplay/Audios/Coldplay  Paradise Official Video.mp3',
-        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Paradise Official Video.lrc'
+        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Paradise Official Video.lrc',
+        cifra:'Medias/Album Coldplay/cifras/Coldplay  Paradise Official Video.chordpro'
     },
     {
         id:4,
@@ -122,7 +125,8 @@ let coldplay = [
         NomeDaMusica:'The Scientist',
         Artista: 'Coldplay',
         Audio:'Medias/Album Coldplay/Audios/Coldplay  The Scientist Official 4K Video.mp3',
-        letra:'Medias/Album Coldplay/Lyrics/Coldplay  The Scientist Official 4K Video.lrc'
+        letra:'Medias/Album Coldplay/Lyrics/Coldplay  The Scientist Official 4K Video.lrc',
+        cifra:'Medias/Album Coldplay/cifras/Coldplay  The Scientist Official 4K Video.chordpro'
     },
     {
         id:5,
@@ -130,7 +134,8 @@ let coldplay = [
         NomeDaMusica:'Clocks',
         Artista: 'Coldplay',
         Audio:'Medias/Album Coldplay/Audios/Coldplay  Clocks Official Video.mp3',
-        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Clocks Official Video.lrc'
+        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Clocks Official Video.lrc',
+        cifra:'Medias/Album Coldplay/cifras/Coldplay  Clocks Official Video.chordpro'
     },
     {
         id:6,
@@ -138,7 +143,8 @@ let coldplay = [
         NomeDaMusica:'Yellow',
         Artista: 'Coldplay',
         Audio:'Medias/Album Coldplay/Audios/Coldplay  Yellow Official Video.mp3',
-        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Yellow Official Vide.lrc'
+        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Yellow Official Vide.lrc',
+        cifra:'Medias/Album Coldplay/cifras/Coldplay  Yellow Official Vide.chordpro'
     },
     {
         id:7,
@@ -146,7 +152,8 @@ let coldplay = [
         NomeDaMusica:'Something Just Like',
         Artista: 'Coldplay',
         Audio:'Medias/Album Coldplay/Audios/Coldplay  Something Just Like This Lyric.mp3',
-        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Something Just Like This Lyric.lrc'
+        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Something Just Like This Lyric.lrc',
+        cifra:'Medias/Album Coldplay/cifras/Coldplay  Something Just Like This Lyric.chordpro'
     },
 ]
 
@@ -157,7 +164,8 @@ let anavitoria = [
         NomeDaMusica:'Pupila',
         Artista: 'Ana Vitória',
         Audio:'Medias/Album AnaVitoria/Audios/ANAVITÓRIA Vitor Kley  Pupila.mp3',
-        letra:'Medias/Album AnaVitoria/Lyrics/ANAVITÓRIA Vitor Kley  Pupila.lrc'
+        letra:'Medias/Album AnaVitoria/Lyrics/ANAVITÓRIA Vitor Kley  Pupila.lrc',
+        cifra:'Medias/Album AnaVitoria/cifras/ANAVITÓRIA Vitor Kley  Pupila.chordpro'
     },
     {
         id:2,
@@ -165,7 +173,8 @@ let anavitoria = [
         NomeDaMusica:'Fica',
         Artista: 'Ana Vitória',
         Audio:'Medias/Album AnaVitoria/Audios/ANAVITÓRIA  Fica ft Matheus  Kauan.mp3',
-        letra:'Medias/Album AnaVitoria/Lyrics/ANAVITÓRIA  Fica ft Matheus  Kauan.lrc'
+        letra:'Medias/Album AnaVitoria/Lyrics/ANAVITÓRIA  Fica ft Matheus  Kauan.lrc',
+        cifra:'Medias/Album AnaVitoria/cifras/ANAVITÓRIA  Fica ft Matheus  Kauan.chordpro'
     },
     {
         id:3,
@@ -173,7 +182,8 @@ let anavitoria = [
         NomeDaMusica:'Trevo',
         Artista: 'Ana Vitória',
         Audio:'Medias/Album AnaVitoria/Audios/ANAVITÓRIA  Trevo Vevo Presents.mp3',
-        letra:'Medias/Album AnaVitoria/Lyrics/ANAVITÓRIA  Trevo Vevo Presents.lrc'
+        letra:'Medias/Album AnaVitoria/Lyrics/ANAVITÓRIA  Trevo Vevo Presents.lrc',
+        cifra:'Medias/Album AnaVitoria/cifras/ANAVITÓRIA  Trevo Vevo Presents.chordpro'
     },
 ]
 let whorship = [
@@ -183,7 +193,8 @@ let whorship = [
         NomeDaMusica:'Lugar Secreto',
         Artista: 'Gabriela Rocha',
         Audio:'Medias/Album Worship/Audios/LUGAR SECRETO  CLIPE OFICIAL  EP CÉU  GABRIELA ROCHA.mp3',
-        letra:'Medias/Album Worship/Lyrics/LUGAR SECRETO  CLIPE OFICIAL  EP CÉU  GABRIELA ROCHA.lrc'
+        letra:'Medias/Album Worship/Lyrics/LUGAR SECRETO  CLIPE OFICIAL  EP CÉU  GABRIELA ROCHA.lrc',
+        cifra:'Medias/Album Worship/cifras/LUGAR SECRETO  CLIPE OFICIAL  EP CÉU  GABRIELA ROCHA.chordpro'
     },
     {
         id:2,
@@ -191,7 +202,8 @@ let whorship = [
         NomeDaMusica:'Ruja o Leão',
         Artista: 'Talita Catanzaro',
         Audio:'Medias/Album Worship/Audios/RUJA O LEÃO Ao Vivo  Talita Catanzaro  fhop music.mp3',
-        letra:'Medias/Album Worship/Lyrics/RUJA O LEÃO Ao Vivo  Talita Catanzaro  fhop music.lrc'
+        letra:'Medias/Album Worship/Lyrics/RUJA O LEÃO Ao Vivo  Talita Catanzaro  fhop music.lrc',
+        cifra:'Medias/Album Worship/cifras/RUJA O LEÃO Ao Vivo  Talita Catanzaro  fhop music.chordpro'
     },
     {
         id:3,
@@ -199,7 +211,8 @@ let whorship = [
         NomeDaMusica:'Uma Nova Historia',
         Artista: 'Fernandinho',
         Audio:'Medias/Album Worship/Audios/UMA NOVA HISTÓRIA  FERNANDINHO CLIPE OFICIAL.mp3',
-        letra:'Medias/Album Worship/Lyrics/UMA NOVA HISTÓRIA  FERNANDINHO CLIPE OFICIAL.lrc'
+        letra:'Medias/Album Worship/Lyrics/UMA NOVA HISTÓRIA  FERNANDINHO CLIPE OFICIAL.lrc',
+        cifra:'Medias/Album Worship/cifras/UMA NOVA HISTÓRIA  FERNANDINHO CLIPE OFICIAL.chordpro'
     },
     {
         id:4,
@@ -207,7 +220,8 @@ let whorship = [
         NomeDaMusica:'Tua Alegria',
         Artista: 'Isadora Pompeo',
         Audio:'Medias/Album Worship/Audios/Isadora Pompeo e Rebeca Carvalho  Tua Alegria Ao Vivo.mp3',
-        letra:'Medias/Album Worship/Lyrics/Isadora Pompeo e Rebeca Carvalho  Tua Alegria Ao Vivo.lrc'
+        letra:'Medias/Album Worship/Lyrics/Isadora Pompeo e Rebeca Carvalho  Tua Alegria Ao Vivo.lrc',
+        cifra:'Medias/Album Worship/cifras/Isadora Pompeo e Rebeca Carvalho  Tua Alegria Ao Vivo.chordpro'
 
     },
     {
@@ -216,7 +230,9 @@ let whorship = [
         NomeDaMusica:'A Casa É Sua',
         Artista: 'Casa Worship',
         Audio:'Medias/Album Worship/Audios/A Casa É Sua  CASA WORSHIP Clipe Oficial.mp3',
-        letra:'Medias/Album Worship/Lyrics/A Casa É Sua  CASA WORSHIP Clipe Oficial.lrc'
+        letra:'Medias/Album Worship/Lyrics/A Casa É Sua  CASA WORSHIP Clipe Oficial.lrc',
+        cifra:'Medias/Album Worship/cifras/A Casa É Sua  CASA WORSHIP Clipe Oficial.chordpro'
+
     },
     {
         id:6,
@@ -224,7 +240,9 @@ let whorship = [
         NomeDaMusica:'Ousado Amor',
         Artista: 'Isaias Saad',
         Audio:'Medias/Album Worship/Audios/Ousado Amor Clipe Oficial  Isaias Saad.mp3',
-        letra:'Medias/Album Worship/Lyrics/Ousado Amor Clipe Oficial  Isaias Saad.lrc'
+        letra:'Medias/Album Worship/Lyrics/Ousado Amor Clipe Oficial  Isaias Saad.lrc',
+        cifra:'Medias/Album Worship/cifras/Ousado Amor Clipe Oficial  Isaias Saad.chordpro'
+
     },
     {
         id:7,
@@ -232,7 +250,9 @@ let whorship = [
         NomeDaMusica:'Todavia Me Alegrarei',
         Artista: 'Sarah Beatriz',
         Audio:'Medias/Album Worship/Audios/Sarah Beatriz  Todavia Me Alegrarei Ao Vivo.mp3',
-        letra:'Medias/Album Worship/Lyrics/Sarah Beatriz  Todavia Me Alegrarei Ao Vivo.lrc'
+        letra:'Medias/Album Worship/Lyrics/Sarah Beatriz  Todavia Me Alegrarei Ao Vivo.lrc',
+        cifra:'Medias/Album Worship/cifras/Sarah Beatriz  Todavia Me Alegrarei Ao Vivo.chordpro'
+
     },
     {
         id:8,
@@ -240,7 +260,9 @@ let whorship = [
         NomeDaMusica:'Vem me Buscar',
         Artista: 'Jefferson e Suellen',
         Audio:'Medias/Album Worship/Audios/Vem Me Buscar.mp3',
-        letra:'Medias/Album Worship/Lyrics/Vem Me Buscar.lrc'
+        letra:'Medias/Album Worship/Lyrics/Vem Me Buscar.lrc',
+        cifra:'Medias/Album Worship/cifras/Vem Me Buscar.chordpro'
+
     },
     {
         id:9,
@@ -248,7 +270,9 @@ let whorship = [
         NomeDaMusica:'Seu Sangue',
         Artista: 'Fernandinho',
         Audio:'Medias/Album Worship/Audios/Fernandinho  SEU SANGUE CD Uma Nova História.mp3',
-        letra:'Medias/Album Worship/Lyrics/Fernandinho  SEU SANGUE CD Uma Nova História.lrc'
+        letra:'Medias/Album Worship/Lyrics/Fernandinho  SEU SANGUE CD Uma Nova História.lrc',
+        cifra:'Medias/Album Worship/cifras/Fernandinho  SEU SANGUE CD Uma Nova História.chordpro'
+
     },
     {
         id:10,
@@ -256,6 +280,8 @@ let whorship = [
         NomeDaMusica:'Eu Vou Subir a Montanha',
         Artista: 'Fernandinho',
         Audio:'Medias/Album Worship/Audios/Fernandinho  EU VOU SUBIR A MONTANHA CD Uma Nova História.mp3',
-        letra:'Medias/Album Worship/Lyrics/Fernandinho  EU VOU SUBIR A MONTANHA CD Uma Nova História.lrc'
+        letra:'Medias/Album Worship/Lyrics/Fernandinho  EU VOU SUBIR A MONTANHA CD Uma Nova História.lrc',
+        cifra:'Medias/Album Worship/cifras/Fernandinho  EU VOU SUBIR A MONTANHA CD Uma Nova História.chordpro'
+
     },
 ]
