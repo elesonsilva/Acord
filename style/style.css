@@ -124,9 +124,11 @@ html::-webkit-scrollbar{
 @media screen and (max-width: 600px) {
     .tela-login{
         position: relative;
-        display: inline-block;
+        display: flex;
         width: 100%;
+        align-items: center;
         text-align: center;
+        flex-direction: column;
         background-image: none;
     }
     .tela-login .logo{
@@ -137,43 +139,41 @@ html::-webkit-scrollbar{
         background-size: cover;
         position: relative;
         color: whitesmoke;
-        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     .tela-login .logo img{
-        position: absolute;
-        text-align: center;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, 50%);
+        margin-top: 20%;
     }
     .tela-login .logo h2{
-        position: absolute;
+       
         width: 100%;
-        bottom: 0;
         padding: auto;
         text-align: center;
-        left: 50%;
-        transform: translate(-50%, -50%);
         font-size: 20px;
         font-weight: 700;
         letter-spacing: 2px;
-        margin-bottom: 50px;
+        margin-top: 5%;
     }
     .tela-login .logo p{
-        position: absolute;
+        
         width: 90%;
         bottom: 0;
         font-size: 12px;
         text-align: center;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        
         color: #a3a3a3;
     }
-
+    
 
     .tela-login .login-btns{
         height: 55vh;
         background-color: var(--p1-primaria);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
     }
     
     .tela-login .login-btns button{
@@ -193,22 +193,17 @@ html::-webkit-scrollbar{
         font-size: 14px;
     }
     .tela-login .login-btns .btn{
-        display: grid;
+        
         width: 90%;
         text-decoration: none;
         border: 1px solid white;
         padding: 10px 10px;
         border-radius: 10px;
         color: white;
-        margin: auto ;
-        margin-top: 25px;
+        margin: 10px;
         text-align: center;
     }
-    .tela-login .login-btns .btn .bi{
-        position: absolute;
-        margin-left: 10%;
-        
-    }
+    
     .tela-login .login-btns p{
         margin-top: 20px;
         color: #a3a3a3;
