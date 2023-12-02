@@ -36,7 +36,7 @@ html::-webkit-scrollbar{
     
 }
 
-/*
+@media screen and (min-width: 800px){
 .tela-login{
     position: relative; 
     display: flex;
@@ -120,7 +120,8 @@ html::-webkit-scrollbar{
 .tela-login .login-btns a{
     text-decoration: none;
     color: white;
-}*/
+}
+}
 @media screen and (max-width: 600px) {
     .tela-login{
         position: relative;
