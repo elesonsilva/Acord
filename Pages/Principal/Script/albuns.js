@@ -143,8 +143,8 @@ let coldplay = [
         NomeDaMusica:'Yellow',
         Artista: 'Coldplay',
         Audio:'Medias/Album Coldplay/Audios/Coldplay  Yellow Official Video.mp3',
-        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Yellow Official Vide.lrc',
-        cifra:'Medias/Album Coldplay/cifras/Coldplay  Yellow Official Vide.chordpro'
+        letra:'Medias/Album Coldplay/Lyrics/Coldplay  Yellow Official Video.lrc',
+        cifra:'Medias/Album Coldplay/cifras/Coldplay  Yellow Official Video.chordpro'
     },
     {
         id:7,
