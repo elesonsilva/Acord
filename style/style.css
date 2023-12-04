@@ -36,7 +36,8 @@ html::-webkit-scrollbar{
     
 }
 
-@media screen and (min-width: 600px){
+
+@media screen and (min-width: 1000px){
 .tela-login{
     position: relative; 
     display: flex;
@@ -95,7 +96,7 @@ html::-webkit-scrollbar{
     width: 60%;
     text-decoration: none;
     border: 1px solid white;
-    padding: 10px 10px;
+    padding: 10px  30px 10px 40px;
     border-radius: 10px;
     color: white;
     margin: auto ;
@@ -111,8 +112,9 @@ html::-webkit-scrollbar{
 }
 .tela-login .login-btns .btn .bi{
     position: absolute;
-    margin-left: 5%;
-    
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 5%;
 }
 .tela-login .login-btns p{
     margin-top: 30px;
@@ -126,6 +128,96 @@ html::-webkit-scrollbar{
 .login-btns a:hover{
     color: var(--p1-ternaria);
 }
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .tela-login{
+        position: relative; 
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../imagens/back02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: flex-end;
+        
+    }
+    .tela-login .logo{
+       position: relative;
+       display: flex;
+       width: 40%;
+       height: 50vh;
+       text-align: center;
+       background-color: #00000073;
+       color: whitesmoke;
+       align-items: center;
+       flex-direction: column;
+    }
+    .tela-login .logo img{
+        margin-top: 10%;
+    }
+    .tela-login .logo p{
+        width: 80%;
+        text-align: center;
+        color: white;
+        margin-top: 5%  ;
+    }
+    .tela-login .login-btns{
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        height: 50vh;
+        background-color: #00000073;
+    }
+    
+    .tela-login .login-btns button{
+        width: 60%;
+        height: 14%;
+        background: var(--p1-quaternaria);
+        border: none;
+        border-radius: 10px;
+        color: var(--p1-primaria);
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .tela-login .login-btns #or{
+            color: whitesmoke;
+    }
+    .tela-login .login-btns .btn{
+        width: 90%;
+        text-decoration: none;
+        border: 1px solid white;
+        padding: 10px 10px;
+        border-radius: 10px;
+        color: white;
+        margin: 10px;
+        text-align: center;
+    }
+    .login-btns .btn:hover{
+        background-color: var(--p1-quaternaria);
+        border: 1px solid var(--p1-quaternaria);
+        color: var(--p1-secundaria);
+    }
+    .tela-login .login-btns .btn .bi{
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 5%;
+    }
+    .tela-login .login-btns p{
+        margin-top: 30px;
+        color: #a3a3a3;
+        font-size: 14px;
+    }
+    .tela-login .login-btns a{
+        text-decoration: none;
+        color: white;
+    }
+    .login-btns a:hover{
+        color: var(--p1-ternaria);
+    }
 }
 @media screen and (max-width: 600px) {
     .tela-login{
