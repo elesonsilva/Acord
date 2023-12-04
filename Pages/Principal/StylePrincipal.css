@@ -7,6 +7,8 @@
     --p1-secundaria:#3E432E;
     --p1-ternaria:#616F39;
     --p1-quaternaria:#A7D129;
+    --p1-menu-descktop:#15161b;
+    --p1-principal-descktop:#202125;
 
     --p2-primaria:#212121;
     --p2-secundaria:#323232;
@@ -34,6 +36,54 @@ html, body{
 html::-webkit-scrollbar{
     width: 0;
     
+}
+@media screen and (min-width: 1000px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: var(--p1-principal-descktop);
+        color: white;
+        
+    }
+    header{
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 111;
+        display: flex;
+        background-color: var(--p1-menu-descktop);
+        width: 18%;
+        height: 100vh;
+        
+    }
+    header nav{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 10%;
+        background-color: transparent;
+        flex-direction: column;
+        width: 80%;
+           
+    }
+    header nav a{
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 700;
+        margin: 8px;
+    }
+    header nav .bi{
+        color: whitesmoke;
+    }
+    header nav .checked{
+        color: var(--p1-quaternaria);
+        flex-direction: column;
+        text-align: justify;
+    }
+    header nav .checked::before{
+        content: '';
+        
+    }
+
 }
 
 @media screen and (max-width: 600px){
