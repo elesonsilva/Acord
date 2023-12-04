@@ -83,6 +83,38 @@ html::-webkit-scrollbar{
         content: '';
         
     }
+    .topo-perfil{
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+    .topo-perfil .foto-perfil-user{
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    .topo-perfil .logoAcord{
+        width: 100px;
+        margin-right: 20px;
+        order: -1;
+    }
+    .topo-perfil .back-notificacoes{
+        background-color: #323232;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        order: -1;
+        margin-right: 20px;
+    }
+    .topo-perfil .back-notificacoes .bi{
+        position: relative;
+        left: 20%;
+        top: 20%;
+        order: -1;
+    }
+    
 
 }
 
