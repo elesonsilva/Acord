@@ -305,9 +305,9 @@ html::-webkit-scrollbar{
       }
       .swiper-slide .img-artista-fav {
         display: block;
-        width: 250px;
-        height: 110px;
-        background-size: cover;
+        width: 400px;
+        background-size: contain;
+        
         
       }
       .swiper-slide .playlist-titulo , 
@@ -418,7 +418,12 @@ html::-webkit-scrollbar{
         right: 5%;
         bottom: 10%;
     }
-
+    .space{
+        margin-top: 20%;    
+    }
+    .musica{
+        margin-bottom: 50px;
+    }
     .lista-aberta{
         position: relative;
         top: 0;
