@@ -429,19 +429,18 @@ html::-webkit-scrollbar{
         
     }
 
+   
     .lista-aberta{
         position: relative;
         top: 0;
         width: 0%;
-        height: 100vh;
         display: none;
         opacity: 0;
         animation: reveal 0.2s forwards;
-        overflow: hidden;
     }
    
     .lista-aberta .categoria .img-lista{
-        position: absolute;
+        position: relative;
         width: 100%;
         height: 55vh;
         
@@ -474,11 +473,10 @@ html::-webkit-scrollbar{
     }
     .informacoes .curtidas-lista{
         position: absolute;
-        width: 40%;
-        margin-left: 3%;
+        width: 30%;
         display: flex;
         bottom: 0;
-        margin-bottom: 10px;
+        margin-left: 3%;
         justify-content: space-between;
     }
     .curtidas-lista img{
@@ -490,7 +488,7 @@ html::-webkit-scrollbar{
         position: absolute;
         font-size: 12px;
         right: 0;
-        margin-right: 50%;
+        margin-right: 25%;
         bottom: 0;
         margin-bottom: 3%;
     }
@@ -500,22 +498,22 @@ html::-webkit-scrollbar{
         bottom: 0;
         margin-bottom: 3%;
         right: 0;
-        margin-right: 30%;
+        margin-right: 5%;
     }
     .lista-aberta .btn-goup-acoes{
-        position: absolute;
+        position: relative;
         display: flex;
         width: 30%;
         height: 50px;
         justify-content: space-between;
-        margin-left: 18%;
-        margin-top: 55vh;
+        margin-left: 20%;
+       
         
     }
     .btn-goup-acoes a{
         text-decoration: none;
         color: white;
-        background-color: var(--p1-menu-descktop);
+        background-color: var(--p2-secundaria);
         padding: 10px 18px;
         border-radius: 5px;
     }
@@ -527,53 +525,51 @@ html::-webkit-scrollbar{
         position: absolute;
         display: flex;
         margin-left: 5%;
-        margin-top: -5%;
+        width: 15%;
     }
     .btnplay button{
-        margin-top: 64vh;
+        margin-top: -30%;
+        width: 95%;
         text-decoration: none;
+        text-align: center;
         color: var(--p1-primaria);
         border: none;
         border-radius: 5px;
-        padding: 9px 30px;
-        font-size: 20px;
+        padding: 10px;
+        font-size: 18px;
         font-weight: 700;
         background-color: var(--p1-quaternaria);
         cursor: pointer;
-        z-index: 1;
     }
     .btnplay .bi{
         margin-right: 5px;
         transform: translateY(5px);
     }
-    
     .lista-aberta .lista-musica{
-        
+        width: 90%;
+        height: 120px;
+        margin-top: 5%;
+        margin-left: 5%;
         display: flex;
-        align-items: flex-end;
         justify-content: space-between;
-        margin-bottom: 30px;
-        margin-left: 3%;
-        width: 100%;
-        
+        margin-bottom: 40px;
+       
     }
     .lista-musica .img-musica{
-        
-        width: 250px;
+        width: 200px;
         height: 150px;
         border-radius: 10px;
+        cursor: pointer;
         
     }
     .lista-musica .informacoes-musica{
-        position: absolute; 
-        width: 250px;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.548)70%, transparent);
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        position: absolute;
+        left: 25%;
+        width: 30%;
+        line-height: 15px;
     }
     .informacoes-musica h3{
         font-size: 14px;
-        width: 200px;
         margin-left: 5px;
         text-align: left;
     }
@@ -583,16 +579,13 @@ html::-webkit-scrollbar{
         color: #7e7e7e;
     }
     .lista-musica .bi{
-        position: absolute;
         color: white;
-        bottom: 0;
-        margin-bottom: 13%;
-        display: none;
+        margin-top: 50%;
     }
     .space{
         margin-top: 20%;    
     }
-    
+ 
 
 
 

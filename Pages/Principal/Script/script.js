@@ -759,7 +759,7 @@ function transicao(){
         //VERSÃO DESKTOP
         letraMusicas.style.display = 'none'
         document.querySelector('.pagina-principal').style.display = 'none'
-        document.querySelector('.lista-aberta').style.display = 'flex'
+        document.querySelector('.lista-aberta').style.display = 'block'
        
        document.querySelector('.Listas').style.display = 'none'
        document.querySelector('.page-player').style.display = 'none'
