@@ -277,9 +277,6 @@ html::-webkit-scrollbar{
         font-size: 20px;
     }
     
-    .models{
-        display: none;
-    }
 
 
 
@@ -293,6 +290,7 @@ html::-webkit-scrollbar{
         flex-direction: row; 
         width: 250px;
         background-color: var(--p1-menu-descktop);
+        cursor: grab;
       }
   
       .swiper-slide img {
@@ -300,12 +298,12 @@ html::-webkit-scrollbar{
         width: 167px;
         height: 150px;
         background-size: contain;
-       
+        cursor: pointer;
         
       }
       .swiper-slide .img-artista-fav {
         display: block;
-        width: 400px;
+        width: 200px;
         background-size: contain;
         
         
@@ -327,7 +325,9 @@ html::-webkit-scrollbar{
         position: absolute;
         color: white;
         font-size: 14px;
-        bottom: 0;
+        top: 0;
+        right: 0;
+        margin-right: 15%;
     }
     .swiper-slide .desc-playlist, 
     .desc-album , 
@@ -424,14 +424,175 @@ html::-webkit-scrollbar{
     .musica{
         margin-bottom: 50px;
     }
+    .models{
+        display: none;
+        
+    }
+
     .lista-aberta{
         position: relative;
         top: 0;
         width: 0%;
+        height: 100vh;
         display: none;
         opacity: 0;
         animation: reveal 0.2s forwards;
+        overflow: hidden;
     }
+   
+    .lista-aberta .categoria .img-lista{
+        position: absolute;
+        width: 100%;
+        height: 55vh;
+        
+        
+        
+    }
+    .lista-aberta .categoria .informacoes{
+        position: absolute;
+        height: 55vh;
+        width: 100%;
+        top: 0;
+        background-image: linear-gradient(to top, var(--p1-principal-descktop), transparent);
+    }
+    .informacoes .titulo-lista{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 8%;
+        margin-left: 5%;
+        font-size: 30px;
+    }
+    .informacoes .desc-lista{
+        position: absolute;
+        bottom: 0;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    .informacoes .bi{
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+    .informacoes .curtidas-lista{
+        position: absolute;
+        width: 40%;
+        margin-left: 3%;
+        display: flex;
+        bottom: 0;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+    .curtidas-lista img{
+        width: 80px;
+        height: 40px;
+        margin-left: 5%;
+    }
+    .curtidas-lista .qtd-likes{
+        position: absolute;
+        font-size: 12px;
+        right: 0;
+        margin-right: 50%;
+        bottom: 0;
+        margin-bottom: 3%;
+    }
+    .curtidas-lista .duracao{
+        position: absolute;
+        font-size: 12px;
+        bottom: 0;
+        margin-bottom: 3%;
+        right: 0;
+        margin-right: 30%;
+    }
+    .lista-aberta .btn-goup-acoes{
+        position: absolute;
+        display: flex;
+        width: 30%;
+        height: 50px;
+        justify-content: space-between;
+        margin-left: 18%;
+        margin-top: 55vh;
+        
+    }
+    .btn-goup-acoes a{
+        text-decoration: none;
+        color: white;
+        background-color: var(--p1-menu-descktop);
+        padding: 10px 18px;
+        border-radius: 5px;
+    }
+    .btn-goup-acoes .bi{
+        margin-right: 5px;
+        transform: translateY(5px);
+    }
+    .lista-aberta .btnplay{
+        position: absolute;
+        display: flex;
+        margin-left: 5%;
+        margin-top: -5%;
+    }
+    .btnplay button{
+        margin-top: 64vh;
+        text-decoration: none;
+        color: var(--p1-primaria);
+        border: none;
+        border-radius: 5px;
+        padding: 9px 30px;
+        font-size: 20px;
+        font-weight: 700;
+        background-color: var(--p1-quaternaria);
+        cursor: pointer;
+        z-index: 1;
+    }
+    .btnplay .bi{
+        margin-right: 5px;
+        transform: translateY(5px);
+    }
+    
+    .lista-aberta .lista-musica{
+        
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-left: 3%;
+        width: 100%;
+        
+    }
+    .lista-musica .img-musica{
+        
+        width: 250px;
+        height: 150px;
+        border-radius: 10px;
+        
+    }
+    .lista-musica .informacoes-musica{
+        position: absolute; 
+        width: 250px;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.548)70%, transparent);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .informacoes-musica h3{
+        font-size: 14px;
+        width: 200px;
+        margin-left: 5px;
+        text-align: left;
+    }
+    .informacoes-musica p{
+        font-size: 12px;
+        margin-left: 5px;
+        color: #7e7e7e;
+    }
+    .lista-musica .bi{
+        position: absolute;
+        color: white;
+        bottom: 0;
+        margin-bottom: 13%;
+        display: none;
+    }
+    .space{
+        margin-top: 20%;    
+    }
+    
 
 
 
@@ -442,7 +603,33 @@ html::-webkit-scrollbar{
         display: none;
     }
 
-  
+   
+    @keyframes pulse {
+        0%{ box-shadow: 0;}
+        50%{ box-shadow: 0 0 0 5px rgba(62, 66, 46, 0.623);}
+        100%{box-shadow: 0 0 0 5px rgba(167, 209, 41, 0.4);}
+        
+    }
+    @keyframes reveal {
+        from{
+            opacity: 0;
+            width: 0;
+        }
+        to{
+            opacity: 1;
+            width: 100%;
+        }
+    }
+    @keyframes revealTow {
+        from{
+            opacity: 0;
+            height: 0;
+        }
+        to{
+            opacity: 1;
+            height: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 600px){
