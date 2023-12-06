@@ -588,15 +588,259 @@ html::-webkit-scrollbar{
  
 
 
-
     .page-player{
         position: relative;
         top: 0;
         width: 100%;
         display: none;
     }
+    .page-player .musica-atual .img-da-musica{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        transition: 0.5s;
+    }
+    .page-player .musica-atual .img-full-window{
+        position: relative;
+        width: 100%;
+        height: 450px;
+        transition: 0.5s ease-in-out;
+    }
+    .page-player .musica-atual .informacoes-musica{
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        top: 0;
+        transition: 0.5s;
+        background-image: linear-gradient(to top, var(--p1-primaria), transparent);
+    }
+    .page-player .musica-atual .info-full-window{
+        position: absolute;
+        height: 460px;
+        width: 100%;
+        top: 0;
+        transition: 0.5s ease-in-out;
+        background-image: linear-gradient(to top, #000000fa, #000000de,  #000000bb);
+    }
+    .informacoes-musica .nome-da-musica{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 10%;
+        width: 70%;
+        line-height: 40px;
+        margin-left: 5%;
+        font-size: 35px;
+        
+    }
+    .informacoes-musica .artista{
+        position: absolute;
+        bottom: 0;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        font-size: 16px;
+    }
+    .informacoes-musica .back-curtida{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 5%;
+        margin-right: 5%;
+        background-color: #7e7e7e;
+        border-radius: 20px;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    .informacoes-musica .back-curtida .bi{
+        position: relative;
+        left: 25%;
+        top: 25%;
+        color: var(--p1-quaternaria);
+    }
+    .informacoes-musica .back-notificacoes{
+        position: absolute;
+        right: 0;
+        margin-right: 5%;
+        margin-top: 5%;
+        background-color: #7e7e7e;
+        border-radius: 20px;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    .informacoes-musica .back-notificacoes .bi{
+        position: relative;
+        left: 25%;
+        top: 25%;
+        color: white;
+    }
+    .informacoes-musica .back-voltar{
+        position: absolute;
+        left: 0;
+        margin-left: 5%;
+        margin-top: 5%;
+        background-color: #7e7e7e;
+        border-radius: 20px;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    .informacoes-musica .back-voltar .bi{
+        position: relative;
+        left: 25%;
+        top: 25%;
+        color: white;
+    }
+    .page-player .btn-group-opcoes{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+        margin-left: 5%;
+    }
+    .active{
+        color: var(--p1-quaternaria);
+    }
+    .player{
+        width: 90%;
+        margin-left: 5%;
+        align-items: center;
+    }
+    .player #progesso{
+        -webkit-appearance: none;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #7e7e7e;
+        overflow-X: hidden;
+    }
+    #progesso::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        background: var(--p1-quaternaria);
+        width: 10px;
+        height: 20px;
+        border-radius: 50%;
+        box-shadow: -400px 0 0 400px var(--p1-quaternaria);
+    }
+    .tempo-corrido,
+    .duracao-musica{
+        font-size: 12px;
+    }
+    .duracao-musica{
+        position: absolute;
+        right: 0;
+        margin-right: 5%;
+    }
+    .player .controles{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .player .controles .btn-embaralhar{  
+        color: var(--p1-quaternaria);
+    }
+    .player .controles div{
+        margin: 15px;
+    }
+    .controles .play-btn{
+        transform: scale(1.5);
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+    }
+    .play-btn span{
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 20px;
+        border-radius: 2px;
+        background: var(--p1-primaria);
+        transition: 0.5s;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .play-btn span:nth-child(2){
+        left: 55%;
+        transform-origin: center;
 
-   
+    }
+    .play-btn.pause span:nth-child(2){
+        transform: translateY(-50%) scaleY(0);
+    }
+    .play-btn.pause span:nth-child(1){
+        width: 35%;
+        left: 35%;
+        transform: translate(-50% -50%);
+        border-radius: 0;
+        clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+    }
+    .play-btn.pause{
+        animation: pulse 1.2s linear alternate-reverse infinite;
+    }
+    
+    .player .controles .btn-repetir{  
+        color: var(--p1-quaternaria);
+    }   
+    
+    
+    .lyric {
+        position: absolute;
+        top: 12%;
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+        white-space: pre-line;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        max-height: 260px; /* Altura máxima do contêiner antes do scroll aparecer */
+        font-size: 25px;
+        animation: revealTow 0.5s ease-in-out forwards;
+        /*background-image: linear-gradient(to top , #00000091, #0000005e);*/
+        background-color: transparent;
+        z-index: 1;
+      }
+  
+      .highlighted {
+        color: var(--p1-quaternaria); /* Adiciona cor  para a linha tocada */
+      }
+      .unplayed {
+        opacity: 0.5; /* Adiciona opacidade para as linhas não tocadas */
+      }
+
+      .chord {
+        position: relative;
+        top: -1.0em; /* Ajuste vertical para posicionar a cifra acima da palavra */
+        font-weight: bold;
+        color: var(--p1-quaternaria); /* Cor verde para as cifras */
+      }
+      .chords {
+        position: absolute;
+        top: 12%;
+        width: 90%;
+        margin-left: 5%;
+        white-space: pre-line;
+        max-height: 260px; /* Altura máxima da área de cifras */
+        line-height: 50px;
+        overflow-y: hidden; /* Adiciona barra de rolagem vertical */
+        overflow-x: hidden; /* Adiciona barra de rolagem vertical */
+        font-size: 20px;
+        animation: revealTow 0.5s ease-in-out forwards;
+        /*background-image: linear-gradient(to top , #00000091, #0000005e);*/
+        background-color: transparent;
+        z-index: 1;
+        display: none;
+      }
+    
+    
+       
     @keyframes pulse {
         0%{ box-shadow: 0;}
         50%{ box-shadow: 0 0 0 5px rgba(62, 66, 46, 0.623);}

@@ -778,7 +778,20 @@ function playTransicao(){
     var tela = window.matchMedia('screen and (min-width: 800px)')
     let btnactive = document.querySelector('.btn-group-opcoes .bi-music-note-list')
     if (tela.matches){
+        var telaplay =  document.querySelector('.page-player') 
+        document.querySelector('.categoria').style.display = 'none'
+        document.querySelector('.btn-goup-acoes').style.display = 'none'
+        document.querySelector('.btnplay').style.display = 'none'
+        document.querySelector('.Listas').style.display = 'none'
         
+
+        document.querySelector('.lista-aberta').style.display = 'block'
+        document.querySelector('.page-player').style.display = 'block'
+        
+        telaplay.animate([{right:'-100%'},{right:'0'}],{duration:100,fill:'forwards'})
+
+        btnactive.classList.add('active')
+       
     }else{
         var telaplay =  document.querySelector('.page-player') 
         document.querySelector('.categoria').style.display = 'none'
