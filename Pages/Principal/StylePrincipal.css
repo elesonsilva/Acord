@@ -70,9 +70,15 @@ html::-webkit-scrollbar{
         font-size: 12px;
         font-weight: 700;
         margin: 8px;
+        color: white;
+    }
+    header nav span{
+        font-size: 18px;
+        padding: 10px;
     }
     header nav .bi{
         color: whitesmoke;
+        
     }
     header nav .checked{
         color: var(--p1-quaternaria);
@@ -1148,6 +1154,9 @@ html::-webkit-scrollbar{
         text-decoration: none;
         font-size: 12px;
         font-weight: 700;
+    }
+    header nav span{
+        display: none;
     }
     header nav .bi{
         color: #212121;

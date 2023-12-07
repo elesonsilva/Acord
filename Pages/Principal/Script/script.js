@@ -753,6 +753,10 @@ function ativaLista(){
         letraMusicas.style.display = 'block'
 }
 
+   
+       
+    
+
 function transicao(){
     var tela = window.matchMedia('screen and (min-width: 800px)')
     if( tela.matches){
