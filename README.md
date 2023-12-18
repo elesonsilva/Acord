@@ -35,9 +35,11 @@
 </div>
 <div id="#pre-requisitos">
     <h3>Pré requisitos</h3>
+    <li>Apenas internet :)</li>
 </div>
 <div id="#como-usar">
     <h3>Como Usar?</h3>
+    <p><li>Acesse o site clicando<a href="">Aqui!</a></li></p>
 </div>
 <div id="#autor">
     <h3>Autor</h3>
