@@ -4,7 +4,7 @@
     <p>Projeto de um site PWA de Streaming de audio,cifras e letras sinconizadas</p>
 </div>
     <p align="center">
-        <a href="#sobre" target="_blank">Sobre</a>
+        <a href="#sobre" color="green">Sobre</a>
         <a href="#tecnologias">Tecnologias</a>
         <a href="#pre-requisitos">Pré requisitos</a>
         <a href="#como-usar">Como Usar?</a>
