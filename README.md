@@ -16,6 +16,9 @@
     com funcionalidades que se adapatassem para dispositivos mobile, com cifras e letras sinconizadas, e para aqueles que só querem ouvir uma boa musica um player normal.</p>
     <p>Por isso não foi feito um banco de dados para armazenar varios generos musicais,faixa de musicas, lyrics e arquivos chord.pro</p>
     <p>A grande funcionalidade desse projeto é ajudar os musicos a tocar a sua musica farovita sem ter que tirar a mão do seu instrumento pra rolar a página.</p>
+    <div align="center">
+        <img src="imagens/page mobile.png" alt="">
+    </div>
 </div>
 <div id="#tecnologias">
     <h3>Tecnologias</h3>
