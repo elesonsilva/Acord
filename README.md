@@ -17,7 +17,7 @@
     <p>Por isso não foi feito um banco de dados para armazenar varios generos musicais,faixa de musicas, lyrics e arquivos chord.pro</p>
     <p>A grande funcionalidade desse projeto é ajudar os musicos a tocar a sua musica farovita sem ter que tirar a mão do seu instrumento pra rolar a página.</p>
     <div align="center">
-        <img src="imagens/banner1.png" alt="">
+        <img src="imagens/banner01.png" alt="">
     </div>
 </div>
 <div id="#tecnologias">
