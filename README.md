@@ -22,6 +22,10 @@
 </div>
 <div id="#tecnologias">
     <h3>Tecnologias</h3>
+    <p>As tecnologias ultizadas foram HTML, CSS, JAVASCRIP, para os aquivos que comportam as letras das musicas foi utilizada a extensão .lyric e paras os aquivos de cifras a extensão .chordPro</P>
+    <p>Tanbém foi usado uma API em JavaScrip para fazer as seções deslizantes das 
+    categorias do site chamada Swiperjs</p>
+    <li>saiba mais sobre o Swiperjs clicando <a href="https://swiperjs.com/">Aqui!</a></li>
     <div style="display: inline_block"><br>
         <img align="center" alt="eleson-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
         <img align="center" alt="eleson-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
