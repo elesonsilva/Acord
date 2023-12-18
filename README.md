@@ -43,12 +43,10 @@
     <p>Acord é responsivo pra qualquer dispositivo, seja PC, tablet ou Smartphone.</p>
     <li>Clique em fazer login com o Google ou Twitter <strong>Não vamos pedir nenhum dado seu! Essa tela so foi criada por questões de estrutura e padronização dos sites</strong></li>
     <img src="imagens/logimpage.png" alt="">
-    <br>
-    <li>Na pagina principal naveque nas playlist ou artitas favoritos e escolha qual estilo de musica deseja
-     escutar</li>
+    <p><li>Na pagina principal naveque nas playlist ou artitas favoritos e escolha qual estilo de musica deseja
+     escutar</li></p>
     <img src="imagens/principalpage.png" alt="">
-    <br>
-    <li>Na pagina da playList clique em  PLAY ou na sua musica de preferencia</li>
+    <p><li>Na pagina da playList clique em  PLAY ou na sua musica de preferencia</li></p>
     <img src="imagens/pageplaylist.png" alt="">
 </div>
 <div id="#autor">
