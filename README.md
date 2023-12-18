@@ -50,11 +50,12 @@
     <img src="imagens/pageplaylist.png" alt="">
     </br>
     <p><li>Ao abrir a Musica começa a tocar automaticamente mais as funções de letra e cifra referente a musica estão fechadas</li>
-    <li>Para abrir a função de letra click no icone</li>
-    <img  src="imagens/list.png" alt="">
-    <li>Para abrir a função de cifra click no icone</li>
-    <img  src="imagens/chordlist.png" alt="">
+    <li>Para abrir ou fechar a função de letra click no icone</li>
+        <img  src="imagens/list.png" alt="">
+    <li>Para abrir ou fechar a função de cifra click no icone</li>
+        <img  src="imagens/chordlist.png" alt="">
     </p>
+        <img  src="imagens/letracifra.png" alt="">
 </div>
 <div id="#autor">
     <h3>Autor</h3>
