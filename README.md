@@ -22,8 +22,8 @@
 </div>
 <div id="#tecnologias">
     <h3>Tecnologias</h3>
-    <p>As tecnologias ultizadas foram HTML, CSS, JAVASCRIP, para os aquivos que comportam as letras das musicas foi utilizada a extensão .lyric e paras os aquivos de cifras a extensão .chordPro</P>
-    <p>Tanbém foi usado uma API em JavaScrip para fazer as seções deslizantes das 
+    <p>As tecnologias ultizadas foram HTML, CSS, JAVASCRIPT, para os aquivos que comportam as letras das musicas foi utilizada a extensão .lyric e paras os aquivos de cifras a extensão .chordPro</P>
+    <p>Também foi usado uma API em JavaScript para fazer as seções deslizantes das 
     categorias do site chamada Swiperjs</p>
     <li>saiba mais sobre o Swiperjs clicando <a href="https://swiperjs.com/">Aqui!</a></li>
     <div style="display: inline_block"><br>
