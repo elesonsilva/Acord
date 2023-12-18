@@ -39,7 +39,7 @@
 </div>
 <div id="#como-usar">
     <h3>Como Usar?</h3>
-    <p><li>Acesse o site clicando<a href="">Aqui!</a></li></p>
+    <p><li>Acesse o site clicando<a href="https://elesonsilva.github.io/Acord">Aqui!</a></li></p>
 </div>
 <div id="#autor">
     <h3>Autor</h3>
