@@ -4,7 +4,7 @@
     <p>Projeto de um site PWA de Streaming de audio,cifras e letras sinconizadas</p>
 </div>
     <p align="center">
-        <a href="#sobre"> <img align="center" alt="eleson-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"></a>
+        <a href="#sobre" target="_blank">Sobre</a>
         <a href="#roadmap">Roadmap</a>
         <a href="#tecnologias">Tecnologias</a>
         <a href="#pre-requisitos">Pré requisitos</a>
