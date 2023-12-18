@@ -50,7 +50,7 @@
     <img src="imagens/pageplaylist.png" alt="">
     </br>
     <p><li>Ao abrir a Musica começa a tocar automaticamente mais as funções de letra e cifra referente a musica estão fechadas</li>
-    <li>Para abrir a função de letra click no icone <img src="imagens/music-note-list.svg" alt=""></li>
+    <li>Para abrir a função de letra click no icone <img  src="imagens/icomlist.png" alt=""></li>
     </p>
 </div>
 <div id="#autor">
