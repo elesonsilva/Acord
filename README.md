@@ -4,7 +4,7 @@
     <p>Projeto de um site PWA de Streaming de audio,cifras e letras sinconizadas</p>
 </div>
     <p align="center">
-        <a href="#sobre" target="_blank">Sobre</a>
+        <a href="#sobre" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
         <a href="#roadmap">Roadmap</a>
         <a href="#tecnologias">Tecnologias</a>
         <a href="#pre-requisitos">Pré requisitos</a>
