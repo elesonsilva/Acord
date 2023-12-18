@@ -35,11 +35,13 @@
 </div>
 <div id="#pre-requisitos">
     <h3>Pré requisitos</h3>
-    <li>Apenas internet :)</li>
+    <li>Apenas internet</li>
 </div>
 <div id="#como-usar">
     <h3>Como Usar?</h3>
     <p><li>Acesse o site clicando<a href="https://elesonsilva.github.io/Acord">Aqui!</a></li></p>
+    <p>Acord é responsivo pra qualquer dispositivo, seja PC, tablet ou Smartphone.</p>
+    <li>Clique em fazer login com o Google ou Twitter <strong>Não vamos pedir nenhum dado seu essa tela so foi criada por questões de estrutura e padronização dos sites</strong></li>
 </div>
 <div id="#autor">
     <h3>Autor</h3>
