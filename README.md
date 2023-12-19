@@ -64,9 +64,11 @@
  <br />
  <sub><b>Éleson Silva</b></sub></a> 
  <p>Feito com ❤️ por Éleson Silva 👋🏽 Entre em contato!</p>
-
-[![Twitter Badge](https://img.shields.io/badge/-@tgmarinho-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/tgmarinho)](https://twitter.com/elesonsilva)
- [![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/ÉlesonSilva/) 
-[![Gmail Badge](https://img.shields.io/badge/-elesonsilva9@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:elesonsilva@gmail.com)
+    <div> 
+    <a href="#" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
+        <a href="#" target="_blank"><img src="https://img.shields.io/badge/-Facebook-%0d730d?style=for-the-badge&logo=facebook&logoColor=white" target="_blank"></a> 
+    <a href = "mailto:#"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+    <a href="#" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+    </div>
 </div>
     
