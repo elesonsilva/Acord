@@ -214,7 +214,15 @@ let ArtistasFav =[
         img:'Imagens-tela-principal/metallica.png'
     },
 ]
+let Topbusca = [
+    { img:'Imagens-tela-principal/Gatoeletronica.png', titulo:'Eletrônica'},
+    { img:'Imagens-tela-principal/festival-playlist.png',titulo:'Festival'},
+    { img:'Imagens-tela-principal/playlist-rock.png',titulo:'Rock'},
+    { img:'Imagens-tela-principal/playlist-acostic.png',titulo:'MPB'},
+    { img:'Imagens-tela-principal/playlist-cover.png',titulo:'cover'},
+]
 JSON.stringify(TopPlaylists);
 JSON.stringify(TopAlbuns);
 JSON.stringify(TopMusica);
 JSON.stringify(ArtistasFav);
+JSON.stringify(Topbusca);

@@ -817,22 +817,28 @@ function playTransicao(){
 
 document.querySelector('.btn-pesquisa').addEventListener('click',()=>{
     document.querySelector('.conteiner-pesquisa').style.display ='flex'
-    document.querySelector('.categoria').style.display = 'none'
+    document.querySelector('.page-player').style.display = 'none'
     document.querySelector('.Listas').style.display = 'none'
     document.querySelector('.pagina-principal').style.display = 'none'
         
     
 })
 
+
+
+
+
    function playlistEletronica(){
     Eletronica.map((eletronica, index)=>{
         let eletronicaItem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
         document.querySelector('.lista-aberta').append(eletronicaItem)
 
-
         eletronicaItem.querySelector('.lista-musica img').src = eletronica.img
         eletronicaItem.querySelector('.lista-musica .informacoes-musica h3').innerHTML = eletronica.NomeDaMusica
         eletronicaItem.querySelector('.lista-musica .informacoes-musica p').innerHTML = eletronica.Artista
+
+
+
 
         eletronicaItem.querySelector('.lista-musica img').addEventListener('click', (e)=>{
             e.preventDefault()
@@ -1110,6 +1116,16 @@ document.querySelector('.btn-pesquisa').addEventListener('click',()=>{
         })
     })
    }
+
+
+   Topbusca.map((buscaItem, index)=>{
+    let busca = document.querySelector('.filtros .result-albun').cloneNode(true)
+    document.querySelector('.filtros').append(busca)
+
+    busca.querySelector('.result-albun img').src = buscaItem.img
+    busca.querySelector('.result-albun h3').innerHTML = buscaItem.titulo
+
+})
 
 
     brunoMars.map((br, index)=>{
