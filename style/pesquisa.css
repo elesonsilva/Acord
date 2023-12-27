@@ -1,8 +1,9 @@
 .conteiner-pesquisa{
     display: none;
     flex-direction: column;
-    width: 90%;
+    width: 0%;
     margin-left: 5%;
+    transition: 0.5s ease-in-out;
 }
 .conteiner-pesquisa h2{
     margin-top: 5%;

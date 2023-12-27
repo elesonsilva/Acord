@@ -817,6 +817,7 @@ function playTransicao(){
 
 document.querySelector('.btn-pesquisa').addEventListener('click',()=>{
     document.querySelector('.conteiner-pesquisa').style.display ='flex'
+    document.querySelector('.conteiner-pesquisa').style.width ='90%'
     document.querySelector('.page-player').style.display = 'none'
     document.querySelector('.Listas').style.display = 'none'
     document.querySelector('.pagina-principal').style.display = 'none'

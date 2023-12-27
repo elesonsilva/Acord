@@ -215,11 +215,26 @@ let ArtistasFav =[
     },
 ]
 let Topbusca = [
-    { img:'Imagens-tela-principal/Gatoeletronica.png', titulo:'Eletrônica'},
-    { img:'Imagens-tela-principal/festival-playlist.png',titulo:'Festival'},
-    { img:'Imagens-tela-principal/playlist-rock.png',titulo:'Rock'},
+    { img:'Medias/PlayListCover/Imagens/amarina.jpg', titulo:'SAMURAI | Djavan'},
+    { img:'Medias/PlayListFestival/Imagens/Beyonce_-_Halo.png', titulo:'Halo'},
+    { img:'Medias/PlayListFestival/Imagens/uptownFunk.jpg', titulo:'Uptown Funk'},
+    { img:'Imagens-tela-principal/anavitoria-albun.jpg',titulo:'Ana Vitória'},
+    { img:'Medias/PlayListCover/Imagens/amarina.jpg', titulo:'MASHUP FORRÓ',},
     { img:'Imagens-tela-principal/playlist-acostic.png',titulo:'MPB'},
+    { img:'Imagens-tela-principal/bruno-album.jpg',titulo:'Bruno Mars'},
+    { img:'Imagens-tela-principal/coldplay-album.jpg',titulo:'Coldplay'},
+    { img:'Imagens-tela-principal/festival-playlist.png',titulo:'Festival'},
+    { img:'Medias/PlayListEletronica/Imagens/Showtek.jpg', titulo:'Bad',},
+    { img:'Imagens-tela-principal/playlist-rock.png',titulo:'Rock'},
+    { img:'Imagens-tela-principal/worship.png',titulo:'worship'},
+    { img:'Imagens-tela-principal/guns-album.jpg',titulo:'Guns N Roses'},
+    { img:'Imagens-tela-principal/Gatoeletronica.png', titulo:'Eletrônica'},
+    { img:'Medias/PlayListRock/Imagens/whinofchange.jpg', titulo:'Wind of Change'},
+    { img:'Medias/PlayListEletronica/Imagens/Aromchupa.jpg', titulo:'Im an Albatraoz'},
     { img:'Imagens-tela-principal/playlist-cover.png',titulo:'cover'},
+    { img:'Medias/Album Coldplay/imagens/paradise.jpg', titulo:'Paradise',},
+    { img:'Medias/PlayListRock/Imagens/acoustica.jpg', titulo:'Always Somewhere',},
+    { img:'Medias/PlayListAcustica/Imagens/Jorgeversilo.jpg', titulo:'Homem-Aranha'},
 ]
 JSON.stringify(TopPlaylists);
 JSON.stringify(TopAlbuns);
