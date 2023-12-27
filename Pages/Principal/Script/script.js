@@ -815,6 +815,15 @@ function playTransicao(){
 
 }
 
+document.querySelector('.btn-pesquisa').addEventListener('click',()=>{
+    document.querySelector('.conteiner-pesquisa').style.display ='flex'
+    document.querySelector('.categoria').style.display = 'none'
+    document.querySelector('.Listas').style.display = 'none'
+    document.querySelector('.pagina-principal').style.display = 'none'
+        
+    
+})
+
    function playlistEletronica(){
     Eletronica.map((eletronica, index)=>{
         let eletronicaItem = document.querySelector('.lista-aberta .lista-musica').cloneNode(true)
