@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    font-family:'Poppins', sans-serif;
+
+    --p1-primaria:#000000;
+    --p1-secundaria:#3E432E;
+    --p1-ternaria:#616F39;
+    --p1-quaternaria:#A7D129;
+    --p1-menu-descktop:#15161b;
+    --p1-principal-descktop:#202125;
+
+    --p2-primaria:#212121;
+    --p2-secundaria:#323232;
+    --p2-ternaria:#0D7377;
+    --p2-quaternaria:#14FFEC;
+
+    --p3-primaria:#03001C;
+    --p3-secundaria:#301E67;
+    --p3-ternaria:#5B8F89;
+    --p3-quaternaria:#B6EADA;
+}
 .conteiner-pesquisa{
     display: none;
     flex-direction: column;
@@ -15,12 +37,18 @@
     width: 100%;
     height: 40px;
     border-radius: 5px;
+    text-align: center;
+}
+.conteiner-pesquisa input:focus{
+    border: none;
 }
 .conteiner-pesquisa p{
     margin-top: 5%;
 }
 ::placeholder{
     padding: 15px ;
+    color: var(--p1-secundaria);
+    
 }
 .conteiner-pesquisa .filtros {
     display: flex;

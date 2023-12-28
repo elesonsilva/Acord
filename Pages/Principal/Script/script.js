@@ -825,6 +825,17 @@ document.querySelector('.btn-pesquisa').addEventListener('click',()=>{
     
 })
 
+document.querySelector('.search').addEventListener('keyup',()=>{
+    let input = document.querySelector('.search')
+    let filter = input.value.toUpperCase()
+
+    let lista = document.querySelector('.models')
+    let item = document.querySelector('.result-albun')
+
+    for(i = 0; i < item.length; i++){
+        
+    }
+})
 
 
 
