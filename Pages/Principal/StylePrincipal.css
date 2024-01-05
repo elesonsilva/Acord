@@ -41,7 +41,7 @@ html::-webkit-scrollbar{
     body{
         width: 82%;
         height: 100vh;
-        background-color: var(--p1-principal-descktop);
+        background-color: var(--p1-primaria);
         color: white;
         margin-left: 18%;
     }
@@ -51,8 +51,8 @@ html::-webkit-scrollbar{
         top: 0;
         z-index: 111;
         display: flex;
-        background-color: var(--p1-menu-descktop);
-        width: 18%;
+        background-color: var(--p1-primaria);
+        width: 14%;
         height: 100vh;
         
     }
@@ -67,7 +67,7 @@ html::-webkit-scrollbar{
     }
     header nav a{
         text-decoration: none;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 700;
         margin: 8px;
         color: white;
@@ -324,7 +324,7 @@ html::-webkit-scrollbar{
         font-size: 18px;
         
         background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(50px);
         
     }
     .swiper-slide .artista-nome{
@@ -458,7 +458,7 @@ html::-webkit-scrollbar{
         height: 55vh;
         width: 100%;
         top: 0;
-        background-image: linear-gradient(to top, var(--p1-principal-descktop), transparent);
+        background-image: linear-gradient(to top, var(--p1-primaria), transparent);
     }
     .informacoes .titulo-lista{
         position: absolute;
@@ -476,6 +476,13 @@ html::-webkit-scrollbar{
     .informacoes .bi{
         margin-left: 3%;
         margin-top: 5%;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .informacoes .bi:hover{
+        background-color: var(--p1-quaternaria);
+        border-radius: 10%;
+        color: black;
     }
     .informacoes .curtidas-lista{
         position: absolute;
@@ -618,7 +625,7 @@ html::-webkit-scrollbar{
         width: 100%;
         top: 0;
         transition: 0.5s;
-        background-image: linear-gradient(to top, var(--p1-principal-descktop), transparent);
+        background-image: linear-gradient(to top, var(--p1-primaria), transparent);
     }
     .page-player .musica-atual .info-full-window{
         position: absolute;
@@ -626,7 +633,7 @@ html::-webkit-scrollbar{
         width: 100%;
         top: 0;
         transition: 0.5s ease-in-out;
-        background-image: linear-gradient(to top, #202125fa, #202125de,  #202125bb);
+        background-image: linear-gradient(to top, #000000fa, #000000de,  #000000bb);
     }
     .informacoes-musica .nome-da-musica{
         position: absolute;
@@ -657,6 +664,7 @@ html::-webkit-scrollbar{
         height: 50px;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
     }
     .informacoes-musica .back-curtida .bi{
         position: relative;
@@ -675,6 +683,7 @@ html::-webkit-scrollbar{
         height: 50px;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
     }
     .informacoes-musica .back-notificacoes .bi{
         position: relative;
@@ -693,6 +702,11 @@ html::-webkit-scrollbar{
         height: 50px;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    .informacoes-musica .back-voltar:hover{
+        background-color: var(--p1-quaternaria);
     }
     .informacoes-musica .back-voltar .bi{
         position: relative;
@@ -752,6 +766,7 @@ html::-webkit-scrollbar{
     }
     .player .controles .btn-embaralhar{  
         color: var(--p1-quaternaria);
+        cursor: pointer;
     }
     .player .controles div{
         margin: 15px;
@@ -762,6 +777,7 @@ html::-webkit-scrollbar{
         height: 40px;
         background-color: white;
         border-radius: 50%;
+        cursor: pointer;
     }
     .play-btn span{
         position: absolute;
@@ -796,6 +812,7 @@ html::-webkit-scrollbar{
     
     .player .controles .btn-repetir{  
         color: var(--p1-quaternaria);
+        cursor: pointer;
     }   
     
     
