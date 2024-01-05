@@ -825,18 +825,43 @@ document.querySelector('.btn-pesquisa').addEventListener('click',()=>{
     
 })
 
-document.querySelector('.search').addEventListener('keyup',()=>{
-    let input = document.querySelector('.search')
-    let filter = input.value.toUpperCase()
+const elementoEntrada = document.querySelector('.search')
 
-    let lista = document.querySelector('.models')
-    let item = document.querySelector('.result-albun')
+elementoEntrada.addEventListener('input',function(){
+    const pesquisa = elementoEntrada.value.toLowerCase()
 
-    for(i = 0; i < item.length; i++){
-        
-    }
+    const result = Topbusca.filter(function(i){
+        i.titulo.toLowerCase().includes(pesquisa)
+    })
+    exibeResultados(result)
 })
+ function exibeResultados(resultados){
 
+    const resultadosContainer = document.querySelector('.filtros');
+    resultadosContainer.innerHTML = '';
+
+    for (const resultado of resultados) {
+        // Criar um elemento de imagem
+        const imagemElement = document.createElement('img');
+        imagemElement.src = resultado.img;
+        imagemElement.alt = resultado.titulo;
+
+        // Criar um elemento de parágrafo para o título
+        const tituloElement = document.createElement('p');
+        tituloElement.textContent = resultado.titulo;
+
+        // Criar um contêiner para cada resultado
+        const resultadoContainer = document.createElement('div');
+        resultadoContainer.classList.add('.result-albun'); // Adicione uma classe se desejar estilizar os resultados
+
+        // Adicionar a imagem e o título ao contêiner do resultado
+        resultadoContainer.appendChild(imagemElement);
+        resultadoContainer.appendChild(tituloElement);
+
+        // Adicionar o contêiner do resultado ao contêiner principal
+        resultadosContainer.appendChild(resultadoContainer);
+    }
+ }
 
 
 
