@@ -87,6 +87,12 @@ html::-webkit-scrollbar{
     color: var(--p1-primaria);
     font-size: 15px;
     font-weight: 700;
+    cursor: pointer;
+}
+.tela-login .login-btns button:hover{
+    background-color: #a3a3a3;
+    color: #000000;
+    transition: 0.2s ease-in-out;
 }
 .tela-login .login-btns #or{
         color: whitesmoke;
@@ -225,12 +231,13 @@ html::-webkit-scrollbar{
         display: flex;
         width: 100%;
         align-items: center;
+        justify-content: center;
         text-align: center;
         flex-direction: column;
         background-image: none;
     }
     .tela-login .logo{
-        height: 45vh;
+        height: 40vh;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 5.8), transparent), url("../imagens/albunsRover.png");
         background-position: center;
         background-repeat: no-repeat;
@@ -266,7 +273,7 @@ html::-webkit-scrollbar{
     
 
     .tela-login .login-btns{
-        height: 55vh;
+        height: 60vh;
         background-color: var(--p1-primaria);
         display: flex;
         align-items: center;
@@ -276,7 +283,7 @@ html::-webkit-scrollbar{
     
     .tela-login .login-btns button{
         width: 90%;
-        height: 14%;
+        height: 12%;
         background: var(--p1-quaternaria);
         border: none;
         border-radius: 10px;
