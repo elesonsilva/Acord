@@ -38,3 +38,61 @@
     border-radius: 12px;
     padding: 16px;
 }
+
+.dados-artista{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.dados-artista .verif{
+    font-size: 12px;
+    color: #aaaaaa;
+}
+.dados-artista h3{
+    font-size: 32px;
+    letter-spacing: 0.5px;
+}
+.dados-artista .total-de-ouvidas{
+    display: flex;
+    gap: 2px;
+}
+.total-de-ouvidas b{
+    font-size: 12px;
+    font-weight: 600;
+}
+.btn-group{
+    display: flex;
+    gap: 15px;
+    margin-top: 24px;
+}
+.btn-group .btn-play{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--p1-quaternaria);
+    border: 2px none;
+    border-radius: 25px;
+    padding: 10px 40px;
+    transition: 0.5ms ease-in;
+}
+.btn-group .btn-play:hover{
+    background-color: transparent;
+    border: 1px solid var(--p1-quaternaria);
+    
+}
+.btn-group .btn-seguir{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 45px;
+    border-radius: 25px;
+    transition: 0.5ms;
+}
+.btn-group .btn-seguir:hover{
+    background-color: white;
+    color: var(--p1-secundaria);
+}   
