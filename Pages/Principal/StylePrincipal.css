@@ -72,13 +72,15 @@ html::-webkit-scrollbar{
         color: white;
 
     }
+    header nav a:hover{
+        color: var(--p1-quaternaria);
+    }
     header nav span{
         font-size: 12px;
         padding: 10px;
     }
-    header nav .bi{
-        color: whitesmoke;
-        
+    header nav .logo-Menu{
+        display: none;
     }
     header nav .checked{
         color: var(--p1-quaternaria);

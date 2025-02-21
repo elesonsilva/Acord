@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.2/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.2/swiper-bundle.min.css">
+    <link rel="stylesheet" href="StylePrincipal.css">
+    <link rel="stylesheet" href="../../style/pesquisa.css">
+    <link rel="stylesheet" href="../../style/StyleFavoritos.css">
+</head>
+<body>
+    <header class="teste">
+        <nav>
+            <a href="principal.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-disc-fill logo-Menu" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-6 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0zM4 8a4 4 0 0 1 4-4 .5.5 0 0 0 0-1 5 5 0 0 0-5 5 .5.5 0 0 0 1 0zm9 0a.5.5 0 1 0-1 0 4 4 0 0 1-4 4 .5.5 0 0 0 0 1 5 5 0 0 0 5-5z"/>
+                </svg><span class="menutext">Principal</span>
+            </a>
+            <a href="favoritos.html" class="checked">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill logo-Menu checked" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg><span class="menutext">Favoritas</span>
+            </a>
+            <a href="" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-archive-fill logo-Menu" viewBox="0 0 16 16">
+                    <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
+                </svg><span class="menutext">Arquivo</span>
+            </a>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-boombox-fill logo-Menu" viewBox="0 0 16 16">
+                    <path d="M14 0a.5.5 0 0 1 .5.5V2h.5a1 1 0 0 1 1 1v2H0V3a1 1 0 0 1 1-1h12.5V.5A.5.5 0 0 1 14 0ZM2 3.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm7.5.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm1.5-.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 3h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1ZM6 10.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm-1.5.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm7 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm.5-1.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                    <path d="M0 6h16v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V6Zm2 4.5a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0Zm7 0a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0Z"/>
+                </svg><span class="menutext">Player</span>
+            </a>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill logo-Menu" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                </svg><span class="menutext">Perfil</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="mainfav">
+        <div class="slider">
+            <div class="dados-artista">
+                <span>Artita Verificado</span>
+                <h3>Nome do artista</h3>
+                <div class="total-de-ouvidas">
+                    <b>71.478,075</b>
+                    <span>de MUsicas Ouvidas</span>
+                </div>
+                <div class="btn-group">
+                    <a href="">Play</a>
+                    <a href="">Seguir</a>
+                </div>
+            </div>
+            <div class="img-artista">
+                <img src="" alt="">
+            </div>
+        </div>
+    
+        <div class="favoritos">
+            <h2>Meus Favoritos</h2>
+            <div class="lista-favoritos">
+                <div class="item-favorito">
+                    <span>#</span>
+                    <img src="" alt="">
+                    <b>Artista</b>
+                    <h6>Nome da musica</h6>
+                    <b>123.2500</b>
+                    <button>Play</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
